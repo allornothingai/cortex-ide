@@ -31,6 +31,7 @@ export interface CortexInputProps {
   autoFocus?: boolean;
   multiline?: boolean;
   rows?: number;
+  ariaLabel?: string;
 }
 
 const SIZE_SPECS = {
@@ -43,7 +44,7 @@ export const CortexInput: Component<CortexInputProps> = (props) => {
   const [local] = splitProps(props, [
     "value", "placeholder", "onChange", "onSubmit", "onFocus", "onBlur",
     "disabled", "error", "size", "leftIcon", "rightIcon", "onRightIconClick",
-    "class", "style", "type", "autoFocus", "multiline", "rows",
+    "class", "style", "type", "autoFocus", "multiline", "rows", "ariaLabel",
   ]);
 
   const [isFocused, setIsFocused] = createSignal(false);
@@ -130,6 +131,7 @@ export const CortexInput: Component<CortexInputProps> = (props) => {
           name={local.leftIcon!}
           size={specs().iconSize}
           style={iconStyle(false)}
+          aria-hidden="true"
         />
       </Show>
 
@@ -141,6 +143,8 @@ export const CortexInput: Component<CortexInputProps> = (props) => {
           autofocus={local.autoFocus}
           rows={local.rows || 3}
           style={inputStyle()}
+          aria-label={local.ariaLabel}
+          aria-label={local.ariaLabel}
           onInput={handleInput}
           onFocus={handleFocus}
           onBlur={handleBlur}
@@ -154,6 +158,8 @@ export const CortexInput: Component<CortexInputProps> = (props) => {
           disabled={local.disabled}
           autofocus={local.autoFocus}
           style={inputStyle()}
+          aria-label={local.ariaLabel}
+          aria-label={local.ariaLabel}
           onInput={handleInput}
           onFocus={handleFocus}
           onBlur={handleBlur}
@@ -166,6 +172,7 @@ export const CortexInput: Component<CortexInputProps> = (props) => {
           name={local.rightIcon!}
           size={specs().iconSize}
           style={iconStyle(!!local.onRightIconClick)}
+          aria-hidden="true"
           onClick={local.onRightIconClick}
         />
       </Show>

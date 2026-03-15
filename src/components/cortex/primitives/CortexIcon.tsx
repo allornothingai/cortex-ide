@@ -19,7 +19,7 @@ export const CORTEX_ICON_SIZES = {
 
 export type CortexIconSize = keyof typeof CORTEX_ICON_SIZES | number;
 
-export interface CortexIconProps {
+export interface CortexIconProps extends JSX.SvgSVGAttributes<SVGSVGElement> {
   name: string;
   size?: CortexIconSize;
   color?: string;
@@ -203,7 +203,7 @@ const ICON_NAME_MAP: Record<string, string> = {
 };
 
 export const CortexIcon: Component<CortexIconProps> = (props) => {
-  const [local] = splitProps(props, [
+  const [local, others] = splitProps(props, [
     "name",
     "size",
     "color",
@@ -233,6 +233,7 @@ export const CortexIcon: Component<CortexIconProps> = (props) => {
 
   return (
     <Icon
+      {...others}
       name={getIconName()}
       size={getSize()}
       color={local.color}
