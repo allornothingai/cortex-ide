@@ -212,9 +212,11 @@ const ExpandedChat: Component<Omit<CortexChatPanelProps, "state">> = (props) => 
     ...props.style,
   }}>
     {/* Scrollable message area: Figma layout_77BZNU - column, gap 16px, padding 0 8px */}
-    <div style={{
-      flex: "1",
-      "overflow-y": "auto",
+    <div
+      aria-live="polite"
+      style={{
+        flex: "1",
+        "overflow-y": "auto",
       display: "flex",
       "flex-direction": "column",
       gap: "16px",
