@@ -250,6 +250,7 @@ export const CortexGitHistory: Component<CortexGitHistoryProps> = (props) => {
           placeholder="Filter commits..."
           size="sm"
           leftIcon="search"
+          ariaLabel="Filter commits"
           type="search"
         />
       </div>
