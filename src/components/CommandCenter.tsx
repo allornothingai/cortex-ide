@@ -476,6 +476,7 @@ export function CommandCenter() {
       {/* Input Field */}
       <Show when={isFocused() || isExpanded()}>
         <input
+          aria-label="Search commands"
           ref={inputRef}
           type="text"
           value={query()}

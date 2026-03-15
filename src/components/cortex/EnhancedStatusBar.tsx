@@ -115,9 +115,9 @@ export const EnhancedStatusBar: Component<EnhancedStatusBarProps> = (props) => {
             }}
             onClick={handleDiagnosticsClick}
           >
-            <CortexIcon name="circle-xmark" size={12} />
+            <CortexIcon name="circle-xmark" size={12} aria-hidden="true" />
             <span>{diagnosticCounts().error}</span>
-            <CortexIcon name="triangle-exclamation" size={12} />
+            <CortexIcon name="triangle-exclamation" size={12} aria-hidden="true" />
             <span>{diagnosticCounts().warning}</span>
           </div>
         </CortexTooltip>
@@ -125,7 +125,7 @@ export const EnhancedStatusBar: Component<EnhancedStatusBarProps> = (props) => {
         <Show when={statusBar.branchName()}>
           <CortexTooltip content={`Git Branch: ${statusBar.branchName()}`} position="top">
             <div style={itemStyle} onClick={handleBranchClick}>
-              <CortexIcon name="code-branch" size={12} />
+              <CortexIcon name="code-branch" size={12} aria-hidden="true" />
               <span>{statusBar.branchName()}</span>
               <Show when={statusBar.hasChanges()}>
                 <span style={{ color: "var(--cortex-warning)" }}>*</span>
@@ -144,7 +144,7 @@ export const EnhancedStatusBar: Component<EnhancedStatusBarProps> = (props) => {
               }}
               onClick={handleTrustClick}
             >
-              <CortexIcon name="shield-exclamation" size={12} />
+              <CortexIcon name="shield-exclamation" size={12} aria-hidden="true" />
               <span>Restricted</span>
             </div>
           </CortexTooltip>
@@ -226,7 +226,7 @@ export const EnhancedStatusBar: Component<EnhancedStatusBarProps> = (props) => {
             }}
             onClick={handleNotificationsClick}
           >
-            <CortexIcon name="bell" size={14} />
+            <CortexIcon name="bell" size={14} aria-hidden="true" />
             <Show when={statusBar.notificationCount() > 0}>
               <span
                 style={{
@@ -281,7 +281,7 @@ const StatusBarItem: Component<StatusBarItemProps> = (props) => {
       aria-label={props.item.accessibilityLabel || props.item.tooltip}
     >
       <Show when={props.item.icon}>
-        <CortexIcon name={props.item.icon!} size={12} />
+        <CortexIcon name={props.item.icon!} size={12} aria-hidden="true" />
       </Show>
       <Show when={props.item.text}>
         <span>{props.item.text}</span>

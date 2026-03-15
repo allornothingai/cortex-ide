@@ -91,6 +91,7 @@ export const ConfirmDialog: Component<ConfirmDialogProps> = (props) => {
       <div style={bodyStyle}>
         <div style={iconContainerStyle}>
           <CortexIcon
+            aria-hidden="true"
             name="triangle-exclamation"
             size={20}
             style={{ color: "var(--cortex-warning, #F59E0B)" }}
