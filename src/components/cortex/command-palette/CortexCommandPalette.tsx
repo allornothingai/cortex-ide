@@ -215,7 +215,7 @@ export function CortexCommandPalette() {
             onInput={(e) => palette.setQuery(e.currentTarget.value)} onKeyDown={handleKeyDown}
             aria-haspopup="listbox" aria-autocomplete="list" aria-controls="cortex-palette-list" style={inputStyle} />
         </div>
-        <div id="cortex-palette-list" role="listbox" ref={listRef} style={listStyle}>
+        <div id="cortex-palette-list" role="listbox" aria-label="Command palette options" ref={listRef} style={listStyle}>
           <Show when={flatList().length === 0}>
             <div style={emptyStyle}>No commands found</div>
           </Show>

@@ -381,6 +381,7 @@ export function CommandPalette() {
         <div 
           id="quick-input-list"
           role="listbox"
+          aria-label="Command palette options"
           style={{ "line-height": "18px" }}
         >
           <div 

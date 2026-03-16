@@ -158,7 +158,7 @@ export function GoToSymbolDialog() {
           </div>
         </div>
         <div class="quick-input-progress"><div class="progress-bit" /></div>
-        <div class="quick-input-list" id="symbol-picker-list" role="listbox">
+        <div class="quick-input-list" id="symbol-picker-list" role="listbox" aria-label="Symbol list">
           <div ref={listRef} class="list-container" style={{ "max-height": "440px", overflow: "auto", "overscroll-behavior": "contain" }}>
             <Show when={outlineState.loading}>
               <div style={{ padding: "16px", "text-align": "center" }}>

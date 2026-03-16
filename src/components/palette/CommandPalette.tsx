@@ -210,7 +210,7 @@ export function PaletteCommandPalette() {
             onInput={e => setQuery(e.currentTarget.value)} onKeyDown={handleKeyDown}
             style={{ flex: "1", height: "18px", background: "transparent", border: "none", outline: "none", color: "var(--jb-text-body-color)", "font-size": "11px" }} />
         </div>
-        <div role="listbox" style={{ "line-height": "18px" }}>
+        <div role="listbox" aria-label="Command palette options" style={{ "line-height": "18px" }}>
           <div ref={listRef} style={{ "max-height": "280px", overflow: "auto", "overscroll-behavior": "contain", "padding-bottom": "3px" }}>
             <Show when={flatList().length === 0}>
               <div style={{ padding: "10px", "text-align": "center", "font-size": "10px", color: "var(--jb-text-muted-color)" }}>No commands found</div>

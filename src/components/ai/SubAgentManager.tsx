@@ -361,7 +361,7 @@ export function SubAgentManager() {
             </div>
             
             {/* Agent List */}
-            <div class="flex-1 overflow-auto">
+            <div class="flex-1 overflow-auto" aria-label="Sub-agents" role="region">
               <Show when={builtInAgents().length > 0}>
                 <div class="px-3 py-1.5 text-[10px] font-medium uppercase" style={{ color: "var(--text-weaker)" }}>
                   Built-in
