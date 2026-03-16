@@ -197,7 +197,7 @@ export function CoverageBar(props: CoverageBarProps) {
             "font-size": "12px",
           }}
         >
-          <span style={{ color: "var(--text-base)" }}>{local.label}</span>
+          <span style={{ color: "var(--text-primary)" }}>{local.label}</span>
           <Show when={local.showPercentage}>
             <span
               style={{

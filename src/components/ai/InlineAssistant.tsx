@@ -303,7 +303,7 @@ export function InlineAssistant(props: InlineAssistantProps) {
         >
           <div class="flex items-center gap-2">
             <Icon name="bolt" class="w-4 h-4" style={{ color: "var(--accent-primary)" }} />
-            <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+            <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
               Inline Edit
             </span>
             <span
@@ -378,7 +378,7 @@ export function InlineAssistant(props: InlineAssistantProps) {
               type="text"
               placeholder="Describe the change..."
               class="flex-1 bg-transparent outline-none text-sm"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
               value={prompt()}
               onInput={(e) => setPrompt(e.currentTarget.value)}
               onKeyDown={handleKeyDown}
@@ -428,7 +428,7 @@ export function InlineAssistant(props: InlineAssistantProps) {
               class="text-xs font-mono whitespace-pre-wrap p-2 rounded max-h-[150px] overflow-y-auto"
               style={{ 
                 background: "var(--background-base)",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
               }}
             >
               {streamingContent()}
@@ -441,7 +441,7 @@ export function InlineAssistant(props: InlineAssistantProps) {
           <div class="inline-assistant-preview border-t" style={{ "border-color": "var(--border-weak)" }}>
             <div class="px-3 py-2">
               <div class="flex items-center gap-2 mb-2">
-                <span class="text-xs font-medium" style={{ color: "var(--text-base)" }}>
+                <span class="text-xs font-medium" style={{ color: "var(--text-primary)" }}>
                   Preview Changes
                 </span>
               </div>

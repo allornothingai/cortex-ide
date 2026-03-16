@@ -803,7 +803,7 @@ export function ReferencesView() {
                 </button>
               </Show>
               <Icon name="magnifying-glass" style={{ width: "16px", height: "16px", color: "var(--text-weak)" }} />
-              <span style={{ "font-size": "13px", "font-weight": "500", color: "var(--text-base)" }}>
+              <span style={{ "font-size": "13px", "font-weight": "500", color: "var(--text-primary)" }}>
                 {showHistory()
                   ? "Reference History"
                   : currentSearch()
@@ -907,7 +907,7 @@ export function ReferencesView() {
                             overflow: "hidden",
                             "text-overflow": "ellipsis",
                             "white-space": "nowrap",
-                            color: "var(--text-base)"
+                            color: "var(--text-primary)"
                           }}
                         >
                           {search.symbolName}
@@ -967,7 +967,7 @@ export function ReferencesView() {
                     border: "none",
                     "font-size": "13px",
                     "min-width": "0",
-                    color: "var(--text-base)"
+                    color: "var(--text-primary)"
                   }}
                   value={searchQuery()}
                   onInput={(e) => setSearchQuery(e.currentTarget.value)}
@@ -1188,7 +1188,7 @@ export function ReferencesView() {
                             overflow: "hidden",
                             "text-overflow": "ellipsis",
                             "white-space": "nowrap",
-                            color: "var(--text-base)"
+                            color: "var(--text-primary)"
                           }}
                         >
                           {fileGroup.fileName}

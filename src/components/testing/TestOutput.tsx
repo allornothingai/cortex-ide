@@ -120,7 +120,7 @@ export function TestOutput() {
   };
 
   return (
-    <div class="flex flex-col h-full" style={{ background: "var(--cortex-bg-primary)", color: "var(--text-base)" }}>
+    <div class="flex flex-col h-full" style={{ background: "var(--cortex-bg-primary)", color: "var(--text-primary)" }}>
       <div class="flex items-center justify-between px-2 shrink-0" style={{ height: "28px", "border-bottom": "1px solid var(--surface-border)" }}>
         <div class="flex items-center gap-2">
           <span style={{ "font-size": "11px", "font-weight": "600", "text-transform": "uppercase" }}>Output</span>
@@ -134,7 +134,7 @@ export function TestOutput() {
             onChange={(e) => setFilterStream(e.currentTarget.value as "all" | "stdout" | "stderr")}
             style={{
               background: "var(--cortex-bg-primary)",
-              color: "var(--text-base)",
+              color: "var(--text-primary)",
               border: "1px solid var(--surface-border)",
               "border-radius": "3px",
               "font-size": "10px",

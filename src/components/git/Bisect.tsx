@@ -357,7 +357,7 @@ export function Bisect(props: BisectProps) {
           class="w-full flex items-center justify-between px-3 py-2 rounded text-sm transition-colors"
           style={{
             background: "var(--surface-base)",
-            color: "var(--text-base)",
+            color: "var(--text-primary)",
             border: "1px solid var(--border-weak)"
           }}
           onClick={() => setOpen(!open())}
@@ -401,7 +401,7 @@ export function Bisect(props: BisectProps) {
                   type="text"
                   placeholder="Search commits..."
                   class="flex-1 bg-transparent text-sm outline-none"
-                  style={{ color: "var(--text-base)" }}
+                  style={{ color: "var(--text-primary)" }}
                   value={localSearch()}
                   onInput={(e) => setLocalSearch(e.currentTarget.value)}
                   autofocus
@@ -424,7 +424,7 @@ export function Bisect(props: BisectProps) {
                     <span class="font-mono text-xs shrink-0" style={{ color: "var(--text-weak)" }}>
                       {commit.shortHash}
                     </span>
-                    <span class="text-sm truncate flex-1" style={{ color: "var(--text-base)" }}>
+                    <span class="text-sm truncate flex-1" style={{ color: "var(--text-primary)" }}>
                       {commit.message.split("\n")[0]}
                     </span>
                     <span class="text-xs shrink-0" style={{ color: "var(--text-weaker)" }}>
@@ -476,7 +476,7 @@ export function Bisect(props: BisectProps) {
       >
         <div class="flex items-center gap-2">
           <Icon name="magnifying-glass" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />
-          <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+          <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
             Git Bisect
           </span>
           <Show when={bisectStatus().active}>
@@ -535,7 +535,7 @@ export function Bisect(props: BisectProps) {
                   <Icon name="bullseye" class="w-5 h-5" style={{ color: "var(--cortex-info)" }} />
                 </div>
                 <div>
-                  <h3 class="text-sm font-medium mb-1" style={{ color: "var(--text-base)" }}>
+                  <h3 class="text-sm font-medium mb-1" style={{ color: "var(--text-primary)" }}>
                     Find the Bug
                   </h3>
                   <p class="text-xs" style={{ color: "var(--text-weak)" }}>
@@ -574,7 +574,7 @@ export function Bisect(props: BisectProps) {
                     >
                       {item.step}
                     </span>
-                    <span class="text-xs" style={{ color: "var(--text-base)" }}>
+                    <span class="text-xs" style={{ color: "var(--text-primary)" }}>
                       {item.text}
                     </span>
                   </div>
@@ -594,7 +594,7 @@ export function Bisect(props: BisectProps) {
               >
                 1
               </span>
-              <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+              <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
                 Select Bad Commit
               </span>
             </div>
@@ -641,7 +641,7 @@ export function Bisect(props: BisectProps) {
               >
                 2
               </span>
-              <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+              <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
                 Select Good Commit
               </span>
             </div>
@@ -662,7 +662,7 @@ export function Bisect(props: BisectProps) {
                 <span class="font-mono text-xs" style={{ color: "var(--text-weak)" }}>
                   {selectedBadCommit()!.shortHash}
                 </span>
-                <span class="truncate" style={{ color: "var(--text-base)" }}>
+                <span class="truncate" style={{ color: "var(--text-primary)" }}>
                   {selectedBadCommit()!.message.split("\n")[0]}
                 </span>
               </div>
@@ -707,7 +707,7 @@ export function Bisect(props: BisectProps) {
             <div class="space-y-2">
               <div class="flex items-center justify-between text-xs">
                 <span style={{ color: "var(--text-weak)" }}>Progress</span>
-                <span style={{ color: "var(--text-base)" }}>
+                <span style={{ color: "var(--text-primary)" }}>
                   {bisectStatus().totalSteps - bisectStatus().stepsRemaining} / {bisectStatus().totalSteps} steps
                 </span>
               </div>
@@ -741,7 +741,7 @@ export function Bisect(props: BisectProps) {
               >
                 <div class="flex items-center gap-2 mb-3">
                   <Icon name="flag" class="w-4 h-4" style={{ color: "var(--cortex-info)" }} />
-                  <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+                  <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
                     Test This Commit
                   </span>
                 </div>
@@ -749,7 +749,7 @@ export function Bisect(props: BisectProps) {
                 <div class="space-y-2 mb-4">
                   <div class="flex items-center gap-2">
                     <Icon name="code-commit" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />
-                    <span class="font-mono text-sm" style={{ color: "var(--text-base)" }}>
+                    <span class="font-mono text-sm" style={{ color: "var(--text-primary)" }}>
                       {bisectStatus().currentCommit!.shortHash}
                     </span>
                     <button
@@ -762,7 +762,7 @@ export function Bisect(props: BisectProps) {
                       Copy
                     </button>
                   </div>
-                  <p class="text-sm" style={{ color: "var(--text-base)" }}>
+                  <p class="text-sm" style={{ color: "var(--text-primary)" }}>
                     {bisectStatus().currentCommit!.message.split("\n")[0]}
                   </p>
                   <div class="flex items-center gap-4 text-xs" style={{ color: "var(--text-weak)" }}>
@@ -872,7 +872,7 @@ export function Bisect(props: BisectProps) {
                           <span class="font-mono" style={{ color: "var(--text-weak)" }}>
                             {mark.shortHash}
                           </span>
-                          <span class="truncate flex-1" style={{ color: "var(--text-base)" }}>
+                          <span class="truncate flex-1" style={{ color: "var(--text-primary)" }}>
                             {mark.message.split("\n")[0]}
                           </span>
                         </div>
@@ -907,7 +907,7 @@ export function Bisect(props: BisectProps) {
                   >
                     <div class="flex items-center gap-2 mb-2">
                       <Icon name="code-commit" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />
-                      <span class="font-mono text-sm font-medium" style={{ color: "var(--text-base)" }}>
+                      <span class="font-mono text-sm font-medium" style={{ color: "var(--text-primary)" }}>
                         {bisectStatus().culprit!.shortHash}
                       </span>
                       <button
@@ -920,7 +920,7 @@ export function Bisect(props: BisectProps) {
                         Copy SHA
                       </button>
                     </div>
-                    <p class="text-sm mb-2" style={{ color: "var(--text-base)" }}>
+                    <p class="text-sm mb-2" style={{ color: "var(--text-primary)" }}>
                       {bisectStatus().culprit!.message}
                     </p>
                     <div class="flex items-center gap-4 text-xs" style={{ color: "var(--text-weak)" }}>
@@ -951,7 +951,7 @@ export function Bisect(props: BisectProps) {
                     </button>
                     <button
                       class="flex items-center justify-center gap-2 px-4 py-2 rounded text-sm transition-colors disabled:opacity-50"
-                      style={{ background: "var(--surface-active)", color: "var(--text-base)" }}
+                      style={{ background: "var(--surface-active)", color: "var(--text-primary)" }}
                       disabled={!!operationLoading()}
                       onClick={resetBisect}
                     >
@@ -994,7 +994,7 @@ export function Bisect(props: BisectProps) {
                           <span class="font-mono" style={{ color: "var(--text-weak)" }}>
                             {mark.shortHash}
                           </span>
-                          <span class="truncate flex-1" style={{ color: "var(--text-base)" }}>
+                          <span class="truncate flex-1" style={{ color: "var(--text-primary)" }}>
                             {mark.message.split("\n")[0]}
                           </span>
                         </div>

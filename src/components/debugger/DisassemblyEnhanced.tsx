@@ -101,7 +101,7 @@ export function MixedSourceDisplay(props: MixedSourceDisplayProps) {
                     {line.instruction!.instructionBytes}
                   </span>
                 </Show>
-                <span class="flex-1 truncate" style={{ color: "var(--text-base)" }}>
+                <span class="flex-1 truncate" style={{ color: "var(--text-primary)" }}>
                   {line.instruction?.instruction}
                 </span>
                 <Show when={line.instruction?.symbol}>
@@ -172,7 +172,7 @@ export function InstructionStepButton(props: InstructionStepButtonProps) {
       onClick={handleStep}
       disabled={props.disabled || !debug.state.isPaused || stepping()}
       class="flex items-center gap-1 px-2 py-1 text-xs rounded transition-colors disabled:opacity-40 hover:bg-[var(--surface-raised)]"
-      style={{ color: "var(--text-base)" }}
+      style={{ color: "var(--text-primary)" }}
       title="Step one instruction (instruction-level stepping)"
     >
       <Icon name="arrow-right-to-bracket" size="xs" />
@@ -270,7 +270,7 @@ export function AddressNavigator(props: AddressNavigatorProps) {
           class="w-full px-2 py-0.5 text-xs font-mono rounded outline-none"
           style={{
             background: "var(--surface-sunken)",
-            color: "var(--text-base)",
+            color: "var(--text-primary)",
             border: `1px solid ${error() ? "var(--cortex-error)" : "var(--border-weak)"}`,
             height: "22px",
             "line-height": "22px",
@@ -286,7 +286,7 @@ export function AddressNavigator(props: AddressNavigatorProps) {
         onClick={handleNavigate}
         disabled={!input().trim()}
         class="px-2 py-0.5 text-xs rounded transition-colors disabled:opacity-40 hover:bg-[var(--surface-raised)]"
-        style={{ color: "var(--text-base)", height: "22px" }}
+        style={{ color: "var(--text-primary)", height: "22px" }}
         title="Go to address"
       >
         <Icon name="arrow-right" size="xs" />

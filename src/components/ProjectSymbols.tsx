@@ -759,7 +759,7 @@ export function ProjectSymbols() {
                   outline: "none", 
                   border: "none",
                   "font-size": "14px",
-                  color: "var(--text-base)" 
+                  color: "var(--text-primary)" 
                 }}
                 value={query()}
                 onInput={(e) => handleQueryChange(e.currentTarget.value)}
@@ -858,7 +858,7 @@ export function ProjectSymbols() {
                       background: index() === selectedIndex()
                         ? "var(--surface-active)"
                         : "transparent",
-                      color: "var(--text-base)",
+                      color: "var(--text-primary)",
                     }}
                     data-selected={index() === selectedIndex()}
                     onMouseEnter={() => setSelectedIndex(index())}
@@ -948,7 +948,7 @@ export function ProjectSymbols() {
                     "font-family": "'JetBrains Mono', monospace",
                     "line-height": "1.5",
                     margin: "0",
-                    color: "var(--text-base)" 
+                    color: "var(--text-primary)" 
                   }}
                 >
                   <For each={previewContent() as unknown as Array<{ lineNumber: number; content: string; isSymbolLine: boolean }>}>

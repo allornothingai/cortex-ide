@@ -103,7 +103,7 @@ function FeatureSelector(props: FeatureSelectorProps) {
 
                   <div class="flex-1 min-w-0">
                     <div class="flex items-center gap-2">
-                      <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+                      <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
                         {feature.name}
                       </span>
                       <Show when={feature.version}>
@@ -189,7 +189,7 @@ function FeatureSelector(props: FeatureSelectorProps) {
                                         style={{
                                           "background-color": "var(--surface-base)",
                                           border: "1px solid var(--border-base)",
-                                          color: "var(--text-base)",
+                                          color: "var(--text-primary)",
                                         }}
                                       >
                                         <For each={option.enum}>
@@ -337,7 +337,7 @@ function TemplateSelector(props: TemplateSelectorProps) {
                           </Show>
                         </div>
                         <div class="min-w-0">
-                          <div class="text-sm font-medium truncate" style={{ color: "var(--text-base)" }}>
+                          <div class="text-sm font-medium truncate" style={{ color: "var(--text-primary)" }}>
                             {template.name}
                           </div>
                           <div class="text-xs truncate" style={{ color: "var(--text-weak)" }}>
@@ -619,7 +619,7 @@ export function DevContainerConfig(props: DevContainerConfigProps) {
       >
         <div class="flex items-center gap-2">
           <Icon name="gear" class="w-4 h-4" style={{ color: "var(--accent)" }} />
-          <h2 class="text-sm font-semibold" style={{ color: "var(--text-base)" }}>
+          <h2 class="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>
             Dev Container Configuration
           </h2>
           <Show when={hasChanges()}>
@@ -757,7 +757,7 @@ export function DevContainerConfig(props: DevContainerConfigProps) {
                     style={{
                       "background-color": "var(--surface-raised)",
                       border: "1px solid var(--border-base)",
-                      color: "var(--text-base)",
+                      color: "var(--text-primary)",
                     }}
                   >
                     <option value="none">None</option>
@@ -889,7 +889,7 @@ export function DevContainerConfig(props: DevContainerConfigProps) {
                         >
                           <div class="flex items-center gap-2">
                             <Icon name="globe" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />
-                            <span class="text-sm font-mono" style={{ color: "var(--text-base)" }}>
+                            <span class="text-sm font-mono" style={{ color: "var(--text-primary)" }}>
                               {port}
                             </span>
                           </div>
@@ -955,7 +955,7 @@ export function DevContainerConfig(props: DevContainerConfigProps) {
                                 style={{
                                   "background-color": "var(--surface-base)",
                                   border: "1px solid var(--border-base)",
-                                  color: "var(--text-base)",
+                                  color: "var(--text-primary)",
                                 }}
                               >
                                 <option value="bind">Bind</option>
@@ -1068,7 +1068,7 @@ export function DevContainerConfig(props: DevContainerConfigProps) {
                         >
                           <div class="flex items-center gap-2">
                             <Icon name="code" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />
-                            <span class="text-sm" style={{ color: "var(--text-base)" }}>
+                            <span class="text-sm" style={{ color: "var(--text-primary)" }}>
                               {ext}
                             </span>
                           </div>
@@ -1112,7 +1112,7 @@ export function DevContainerConfig(props: DevContainerConfigProps) {
               class="flex items-center justify-between px-4 py-3 border-b"
               style={{ "border-color": "var(--border-weak)" }}
             >
-              <h2 class="text-sm font-semibold" style={{ color: "var(--text-base)" }}>
+              <h2 class="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>
                 Select Template
               </h2>
               <IconButton

@@ -96,7 +96,7 @@ const StatusIcon = () => {
             style={{
               background: "var(--surface-raised)",
               border: "1px solid var(--border-base)",
-              color: "var(--text-base)",
+              color: "var(--text-primary)",
             }}
           >
             Supermaven: {config().label}
@@ -119,7 +119,7 @@ const StatusIcon = () => {
       </span>
       
       <div class="flex flex-col">
-        <span class="text-xs font-medium" style={{ color: "var(--text-base)" }}>
+        <span class="text-xs font-medium" style={{ color: "var(--text-primary)" }}>
           Supermaven
         </span>
         <span class="text-[10px]" style={{ color: config().color }}>

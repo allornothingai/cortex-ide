@@ -174,7 +174,7 @@ export function NotebookToolbar() {
             <button
               onClick={handleExportHtml}
               class="flex items-center gap-2 w-full px-3 py-1.5 text-xs hover:bg-[var(--surface-hover)] transition-colors"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
             >
               <Icon name="code" class="w-3.5 h-3.5" />
               <span>Export as HTML</span>
@@ -182,7 +182,7 @@ export function NotebookToolbar() {
             <button
               onClick={handleExportPython}
               class="flex items-center gap-2 w-full px-3 py-1.5 text-xs hover:bg-[var(--surface-hover)] transition-colors"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
             >
               <Icon name="file-lines" class="w-3.5 h-3.5" />
               <span>Export as Python</span>
@@ -190,7 +190,7 @@ export function NotebookToolbar() {
             <button
               onClick={handleExportPdf}
               class="flex items-center gap-2 w-full px-3 py-1.5 text-xs hover:bg-[var(--surface-hover)] transition-colors"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
             >
               <Icon name="file-pdf" class="w-3.5 h-3.5" />
               <span>Export as PDF</span>

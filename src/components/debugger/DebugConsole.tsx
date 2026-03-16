@@ -357,7 +357,7 @@ export function DebugConsole() {
           onInput={(e) => setFilterText((e.target as HTMLInputElement).value)}
           class="flex-1 bg-transparent text-xs outline-none px-2 py-0.5 rounded border"
           style={{
-            color: "var(--text-base)",
+            color: "var(--text-primary)",
             "border-color": "var(--border-weak)",
             background: "var(--background-stronger)",
           }}
@@ -370,7 +370,7 @@ export function DebugConsole() {
               onChange={() => setShowStdout(!showStdout())}
               class="w-3 h-3"
             />
-            <span style={{ color: "var(--text-base)" }}>stdout</span>
+            <span style={{ color: "var(--text-primary)" }}>stdout</span>
           </label>
           <label class="flex items-center gap-1 cursor-pointer">
             <input
@@ -488,7 +488,7 @@ export function DebugConsole() {
                   {/* Label */}
                   <span
                     class="flex-1 truncate"
-                    style={{ color: "var(--text-base)" }}
+                    style={{ color: "var(--text-primary)" }}
                   >
                     {item.label}
                   </span>
@@ -541,7 +541,7 @@ export function DebugConsole() {
             class="flex-1 bg-transparent text-xs outline-none resize-none"
             rows={1}
             style={{
-              color: "var(--text-base)",
+              color: "var(--text-primary)",
               opacity: debug.state.isPaused ? 1 : 0.5,
               "line-height": "1.5",
               "max-height": "120px",

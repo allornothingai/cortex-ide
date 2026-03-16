@@ -852,7 +852,7 @@ function TypeHierarchyNode(props: TypeHierarchyNodeProps) {
         <span
           style={{
             "font-weight": "500",
-            color: "var(--text-base)",
+            color: "var(--text-primary)",
             "margin-right": "4px",
           }}
         >
@@ -1291,7 +1291,7 @@ export function TypeHierarchyView() {
           >
             <div class="flex items-center gap-3">
               <Icon name="font" class="w-5 h-5" style={{ color: "var(--accent-primary)" }} />
-              <span class="font-medium" style={{ color: "var(--text-base)" }}>
+              <span class="font-medium" style={{ color: "var(--text-primary)" }}>
                 Type Hierarchy
               </span>
               <Show when={currentType()}>
@@ -1488,7 +1488,7 @@ export function TypeHierarchyView() {
                   }}
                 >
                   {getTypeIcon(currentType()!.kind)}
-                  <span style={{ "font-weight": "600", color: "var(--text-base)" }}>
+                  <span style={{ "font-weight": "600", color: "var(--text-primary)" }}>
                     {currentType()!.name}
                   </span>
                   <span

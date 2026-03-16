@@ -79,7 +79,7 @@ function RemoteFileTreeNode(props: {
         class="w-full flex items-center gap-1 py-0.5 px-1 rounded text-left transition-colors hover:bg-[var(--surface-raised)]"
         style={{
           "padding-left": `${props.depth * 12 + 4}px`,
-          color: "var(--text-base)",
+          color: "var(--text-primary)",
         }}
       >
         {/* Expand/collapse icon for directories */}

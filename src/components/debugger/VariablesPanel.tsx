@@ -127,7 +127,7 @@ function VariableTreeItem(props: { variable: Variable; depth: number; parentRef?
             class="flex-1 min-w-0"
             style={{
               background: "var(--cortex-bg-primary)",
-              color: "var(--text-base)",
+              color: "var(--text-primary)",
               border: "1px solid var(--cortex-accent-primary)",
               "border-radius": "2px",
               padding: "0 4px",
@@ -199,7 +199,7 @@ function ScopeSection(props: { scope: Scope }) {
         <span style={{ color: "var(--text-weak)", width: "12px", "text-align": "center" }}>
           {expanded() ? "▾" : "▸"}
         </span>
-        <span style={{ color: "var(--text-base)" }}>{props.scope.name}</span>
+        <span style={{ color: "var(--text-primary)" }}>{props.scope.name}</span>
         <Show when={loading()}>
           <span class="animate-spin" style={{ color: "var(--text-weak)", "font-size": "10px" }}>⟳</span>
         </Show>
@@ -231,7 +231,7 @@ export function VariablesPanel() {
   });
 
   return (
-    <div class="flex flex-col h-full" style={{ background: "var(--cortex-bg-primary)", color: "var(--text-base)" }}>
+    <div class="flex flex-col h-full" style={{ background: "var(--cortex-bg-primary)", color: "var(--text-primary)" }}>
       <div class="flex items-center px-2 shrink-0" style={{ height: "28px", "border-bottom": "1px solid var(--surface-border)" }}>
         <span style={{ "font-size": "11px", "font-weight": "600", "text-transform": "uppercase" }}>Variables</span>
       </div>

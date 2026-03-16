@@ -282,7 +282,7 @@ export function ConditionalBreakpointDialog(props: ConditionalBreakpointDialogPr
                   <div style={{ 
                     "font-family": "monospace", 
                     "font-size": "12px",
-                    color: "var(--text-base)",
+                    color: "var(--text-primary)",
                     "white-space": "pre-wrap",
                     "word-break": "break-word"
                   }}>

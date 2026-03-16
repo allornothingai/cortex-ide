@@ -196,7 +196,7 @@ export function WSLConnect(props: WSLConnectProps) {
                       {/* Distro Info */}
                       <div class="flex-1 min-w-0">
                         <div class="flex items-center gap-2">
-                          <span class="text-sm font-medium truncate" style={{ color: "var(--text-base)" }}>
+                          <span class="text-sm font-medium truncate" style={{ color: "var(--text-primary)" }}>
                             {distro.name}
                           </span>
                           <Show when={distro.isDefault}>

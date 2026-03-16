@@ -174,7 +174,7 @@ export function RecentWorkspacesModal(props: RecentWorkspacesModalProps) {
               value={searchQuery()}
               onInput={(e) => setSearchQuery(e.currentTarget.value)}
               class="flex-1 bg-transparent outline-none text-sm"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
             />
             <Show when={searchQuery()}>
               <button
@@ -320,7 +320,7 @@ function RecentWorkspaceItem(props: RecentWorkspaceItemProps) {
         <div class="flex items-center gap-2">
           <span
             class="text-sm font-medium truncate"
-            style={{ color: "var(--text-base)" }}
+            style={{ color: "var(--text-primary)" }}
           >
             {props.workspace.name}
           </span>
@@ -442,7 +442,7 @@ export function RecentWorkspacesList(props: RecentWorkspacesListProps) {
               </Show>
               <div class="flex-1 min-w-0 text-left">
                 <div class="flex items-center gap-2">
-                  <span class="text-sm truncate" style={{ color: "var(--text-base)" }}>
+                  <span class="text-sm truncate" style={{ color: "var(--text-primary)" }}>
                     {ws.name}
                   </span>
                   <Show when={ws.folderCount > 1}>

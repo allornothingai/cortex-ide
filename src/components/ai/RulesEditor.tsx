@@ -247,7 +247,7 @@ export function RulesEditor() {
               style={{
                 "border-color": "var(--border-base)",
                 background: "var(--cortex-info)10",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
               }}
             >
               <div class="font-semibold mb-2" style={{ color: "var(--text-strong)" }}>
@@ -306,7 +306,7 @@ export function RulesEditor() {
                   class="w-full px-3 py-2 rounded text-sm"
                   style={{
                     background: "var(--surface-hover)",
-                    color: "var(--text-base)",
+                    color: "var(--text-primary)",
                     border: "1px solid var(--border-base)",
                     outline: "none",
                     opacity: isNewRule() ? 1 : 0.7,

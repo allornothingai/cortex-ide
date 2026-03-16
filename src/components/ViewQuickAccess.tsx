@@ -420,7 +420,7 @@ export function ViewQuickAccess() {
               type="text"
               placeholder="Type to search views..."
               class="flex-1 bg-transparent outline-none h-[40px] text-[14px]"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
               value={query()}
               onInput={(e) => setQuery(e.currentTarget.value)}
               onKeyDown={handleKeyDown}
@@ -471,7 +471,7 @@ export function ViewQuickAccess() {
                           background: index() === selectedIndex() 
                             ? "var(--surface-active)" 
                             : "transparent",
-                          color: "var(--text-base)",
+                          color: "var(--text-primary)",
                         }}
                         onMouseEnter={() => setSelectedIndex(index())}
                         onClick={() => handleSelect(view)}

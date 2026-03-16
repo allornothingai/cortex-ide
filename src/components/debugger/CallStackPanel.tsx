@@ -33,7 +33,7 @@ function ThreadItem(props: { thread: Thread; isActive: boolean; onSelect: () => 
       onClick={props.onSelect}
     >
       <Icon name="microchip" size={12} color="var(--text-weak)" />
-      <span class="truncate" style={{ color: "var(--text-base)", "font-weight": props.isActive ? "600" : "400" }}>
+      <span class="truncate" style={{ color: "var(--text-primary)", "font-weight": props.isActive ? "600" : "400" }}>
         {props.thread.name}
       </span>
       <span
@@ -153,7 +153,7 @@ export function CallStackPanel() {
   };
 
   return (
-    <div class="flex flex-col h-full" style={{ background: "var(--cortex-bg-primary)", color: "var(--text-base)" }}>
+    <div class="flex flex-col h-full" style={{ background: "var(--cortex-bg-primary)", color: "var(--text-primary)" }}>
       <div class="flex items-center justify-between px-2 shrink-0" style={{ height: "28px", "border-bottom": "1px solid var(--surface-border)" }}>
         <span style={{ "font-size": "11px", "font-weight": "600", "text-transform": "uppercase" }}>Call Stack</span>
         <div class="flex gap-0.5">

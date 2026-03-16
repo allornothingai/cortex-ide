@@ -504,7 +504,7 @@ export function DisassemblyView() {
               class="w-40 px-2 py-1 text-xs font-mono rounded outline-none"
               style={{
                 background: "var(--surface-sunken)",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
                 border: "1px solid var(--border-weak)",
               }}
               autofocus
@@ -571,7 +571,7 @@ export function DisassemblyView() {
           class="absolute top-12 right-4 px-3 py-1.5 rounded text-xs z-50"
           style={{
             background: "var(--surface-raised)",
-            color: "var(--text-base)",
+            color: "var(--text-primary)",
             border: "1px solid var(--border-weak)",
           }}
         >

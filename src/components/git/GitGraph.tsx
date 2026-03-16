@@ -286,7 +286,7 @@ export function GitGraph(props: GitGraphProps) {
       >
         <div class="flex items-center gap-2">
           <Icon name="code-branch" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />
-          <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+          <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
             Git Graph
           </span>
           <span
@@ -323,7 +323,7 @@ export function GitGraph(props: GitGraphProps) {
             type="text"
             placeholder="Filter by message, author, or hash..."
             class="flex-1 bg-transparent text-sm outline-none"
-            style={{ color: "var(--text-base)" }}
+            style={{ color: "var(--text-primary)" }}
             value={searchQuery()}
             onInput={(e) => setSearchQuery(e.currentTarget.value)}
           />
@@ -413,7 +413,7 @@ export function GitGraph(props: GitGraphProps) {
                         {/* Message */}
                         <span
                           class="flex-1 text-sm truncate"
-                          style={{ color: "var(--text-base)" }}
+                          style={{ color: "var(--text-primary)" }}
                         >
                           {node.message.split("\n")[0]}
                         </span>
@@ -453,7 +453,7 @@ export function GitGraph(props: GitGraphProps) {
                             <div class="flex items-start gap-2">
                               <Icon name="user" class="w-4 h-4 mt-0.5 shrink-0" style={{ color: "var(--text-weak)" }} />
                               <div>
-                                <div class="text-sm" style={{ color: "var(--text-base)" }}>
+                                <div class="text-sm" style={{ color: "var(--text-primary)" }}>
                                   {node.author}
                                 </div>
                                 <div class="text-xs" style={{ color: "var(--text-weak)" }}>
@@ -464,14 +464,14 @@ export function GitGraph(props: GitGraphProps) {
 
                             <div class="flex items-center gap-2">
                               <Icon name="clock" class="w-4 h-4 shrink-0" style={{ color: "var(--text-weak)" }} />
-                              <span class="text-sm" style={{ color: "var(--text-base)" }}>
+                              <span class="text-sm" style={{ color: "var(--text-primary)" }}>
                                 {new Date(node.date < 1e12 ? node.date * 1000 : node.date).toLocaleString()}
                               </span>
                             </div>
 
                             <div class="flex items-center gap-2">
                               <Icon name="code-commit" class="w-4 h-4 shrink-0" style={{ color: "var(--text-weak)" }} />
-                              <span class="text-sm font-mono" style={{ color: "var(--text-base)" }}>
+                              <span class="text-sm font-mono" style={{ color: "var(--text-primary)" }}>
                                 {node.hash}
                               </span>
                               <button
@@ -501,7 +501,7 @@ export function GitGraph(props: GitGraphProps) {
                             >
                               <pre
                                 class="text-sm whitespace-pre-wrap"
-                                style={{ color: "var(--text-base)" }}
+                                style={{ color: "var(--text-primary)" }}
                               >
                                 {node.message}
                               </pre>
@@ -520,7 +520,7 @@ export function GitGraph(props: GitGraphProps) {
                   <button
                     class="px-4 py-1.5 text-sm rounded transition-colors hover:bg-white/10"
                     style={{
-                      color: "var(--text-base)",
+                      color: "var(--text-primary)",
                       border: "1px solid var(--border-weak)",
                     }}
                     onClick={loadMore}

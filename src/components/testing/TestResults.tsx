@@ -53,7 +53,7 @@ function TestItemRow(props: {
           <span class="w-3 shrink-0" />
         </Show>
         <Icon name={icon().name} size={14} color={icon().color} class="shrink-0" />
-        <span class="truncate" style={{ color: "var(--text-base)" }}>
+        <span class="truncate" style={{ color: "var(--text-primary)" }}>
           {props.test.name}
         </span>
         <Show when={props.test.duration !== undefined}>
@@ -148,7 +148,7 @@ export function TestResults() {
   };
 
   return (
-    <div class="flex flex-col h-full" style={{ background: "var(--cortex-bg-primary)", color: "var(--text-base)" }}>
+    <div class="flex flex-col h-full" style={{ background: "var(--cortex-bg-primary)", color: "var(--text-primary)" }}>
       <div class="flex items-center gap-2 px-2 shrink-0" style={{ height: "32px", "border-bottom": "1px solid var(--surface-border)" }}>
         <span style={{ "font-size": "11px", "font-weight": "600", "text-transform": "uppercase" }}>Test Results</span>
         <Show when={duration() !== null}>

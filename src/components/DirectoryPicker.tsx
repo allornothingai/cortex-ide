@@ -196,7 +196,7 @@ export function DirectoryPicker(props: DirectoryPickerProps) {
             }}
             placeholder="New folder name..."
             class="flex-1 text-xs bg-transparent outline-none"
-            style={{ color: "var(--text-base)" }}
+            style={{ color: "var(--text-primary)" }}
             autofocus
           />
           <button
@@ -255,7 +255,7 @@ export function DirectoryPicker(props: DirectoryPickerProps) {
                 class="w-full flex items-center gap-2 px-3 py-2 hover:bg-[var(--surface-raised)] transition-colors text-left"
               >
 <Icon name="folder" size={14} class="shrink-0" style={{ color: "var(--text-weak)" }} />
-                <span class="text-xs truncate" style={{ color: "var(--text-base)" }}>
+                <span class="text-xs truncate" style={{ color: "var(--text-primary)" }}>
                   {entry.name}
                 </span>
               </button>
@@ -275,7 +275,7 @@ export function DirectoryPicker(props: DirectoryPickerProps) {
           </div>
           <div 
             class="text-xs font-mono truncate"
-            style={{ color: "var(--text-base)" }}
+            style={{ color: "var(--text-primary)" }}
             title={currentPath()}
           >
             {currentPath()}
@@ -297,7 +297,7 @@ export function DirectoryPicker(props: DirectoryPickerProps) {
             class="px-2 py-1 text-xs rounded transition-colors"
             style={{ 
               background: "var(--surface-raised)",
-              color: "var(--text-base)"
+              color: "var(--text-primary)"
             }}
           >
             select

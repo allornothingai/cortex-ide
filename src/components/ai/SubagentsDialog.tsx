@@ -332,13 +332,14 @@ export function SubagentsDialog(props: SubagentsDialogProps) {
           aria-labelledby="subagents-dialog-title"
         >
           {/* Header - VS Code: 35px height, 13px font, font-weight 600 */}
-          <div class="dialog-header">
-<div class="flex items-center gap-2 dialog-header-title">
+          <div class="dialog-header" role="banner" aria-label="Sub-Agents dialog header">
+            <div class="flex items-center gap-2 dialog-header-title">
               <Icon name="microchip" class="w-4 h-4" style={{ color: "var(--accent-primary)" }} />
               <span id="subagents-dialog-title" class="text-sm">Sub-Agents</span>
               <span
                 class="px-2 py-0.5 text-[11px] rounded"
                 style={{ background: "var(--surface-active)" }}
+                aria-label={`${agents().length} active agents`}
               >
                 {agents().length} active
               </span>
@@ -349,10 +350,11 @@ export function SubagentsDialog(props: SubagentsDialogProps) {
                 style={{ color: "var(--text-weak)" }}
                 onClick={loadAgents}
                 title="Refresh"
+                aria-label="Refresh agents"
               >
                 <Icon name="rotate" class={`w-4 h-4 ${loading() ? "animate-spin" : ""}`} />
               </button>
-<button
+              <button
                 class="dialog-close"
                 onClick={props.onClose}
                 aria-label="Close"
@@ -364,7 +366,7 @@ export function SubagentsDialog(props: SubagentsDialogProps) {
 
           {/* Error Banner */}
           <Show when={error()}>
-<div
+            <div
               class="px-4 py-2 text-sm flex items-center gap-2"
               style={{ background: "rgba(239, 68, 68, 0.1)", color: "var(--error)" }}
             >
@@ -385,14 +387,16 @@ export function SubagentsDialog(props: SubagentsDialogProps) {
             <div
               class="w-64 flex flex-col"
               style={{ "border-right": "1px solid var(--border-base)" }}
+              role="region"
+              aria-label="Agent lists"
             >
               {/* Templates Section */}
-              <div class="p-3">
-                <div class="text-xs font-medium mb-2" style={{ color: "var(--text-weak)" }}>
+              <div class="p-3" role="region" aria-labelledby="spawn-agent-heading">
+                <h3 id="spawn-agent-heading" class="text-xs font-medium mb-2" style={{ color: "var(--text-weak)" }}>
                   SPAWN AGENT
-                </div>
-                <div class="grid grid-cols-2 gap-2">
-<For each={AGENT_TEMPLATES}>
+                </h3>
+                <div class="grid grid-cols-2 gap-2" role="group" aria-label="Agent templates">
+                  <For each={AGENT_TEMPLATES}>
                     {(template) => {
                       return (
                         <button
@@ -400,6 +404,7 @@ export function SubagentsDialog(props: SubagentsDialogProps) {
                           style={{ background: "var(--surface-raised)" }}
                           onClick={() => spawnFromTemplate(template)}
                           title={template.description}
+                          aria-label={template.name}
                         >
                           <Icon name={template.icon} class="w-4 h-4" style={{ color: "var(--accent-primary)" }} />
                           <span class="truncate w-full text-center">{template.name.split(" ")[0]}</span>
@@ -435,7 +440,7 @@ export function SubagentsDialog(props: SubagentsDialogProps) {
                   }
                 >
                   <div class="space-y-1">
-<For each={agents()}>
+                    <For each={agents()}>
                       {(agent) => {
                         const iconName = getAgentIcon(agent.agentType);
                         const isSelected = () => selectedAgent()?.id === agent.id;
@@ -469,8 +474,7 @@ export function SubagentsDialog(props: SubagentsDialogProps) {
             </div>
 
             {/* Right: Agent Details / New Agent */}
-            <div class="flex-1 flex flex-col min-w-0">
-              <Show
+            <div class="flex-1 flex flex-col min-w-0" role="region" aria-label="Right content pane">              <Show
                 when={!showNewAgent()}
                 fallback={
                   <div class="flex-1 p-4">
@@ -480,7 +484,7 @@ export function SubagentsDialog(props: SubagentsDialogProps) {
                       style={{
                         background: "var(--surface-raised)",
                         border: "1px solid var(--border-base)",
-                        color: "var(--text-base)",
+                        color: "var(--text-primary)",
                       }}
                       placeholder="Enter the system prompt for your custom agent..."
                       value={newAgentPrompt()}
@@ -580,7 +584,7 @@ export function SubagentsDialog(props: SubagentsDialogProps) {
                             style={{
                               background: "var(--surface-raised)",
                               border: "1px solid var(--border-base)",
-                              color: "var(--text-base)",
+                              color: "var(--text-primary)",
                             }}
                             placeholder="Describe the task for this agent..."
                             value={taskPrompt()}

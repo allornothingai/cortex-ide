@@ -283,7 +283,7 @@ function SingleComment(props: SingleCommentProps) {
                   class="px-2 py-1 text-xs rounded transition-colors"
                   style={{
                     background: "var(--surface-raised)",
-                    color: "var(--text-base)",
+                    color: "var(--text-primary)",
                     border: "1px solid var(--border-weak)",
                   }}
                   onClick={handleCancelEdit}
@@ -296,7 +296,7 @@ function SingleComment(props: SingleCommentProps) {
         >
           <p
             class="text-sm whitespace-pre-wrap break-words"
-            style={{ color: "var(--text-base)" }}
+            style={{ color: "var(--text-primary)" }}
           >
             {props.comment.content}
           </p>
@@ -359,7 +359,7 @@ function SingleComment(props: SingleCommentProps) {
               >
                 <button
                   class="w-full flex items-center gap-2 px-3 py-1.5 text-xs hover:bg-[var(--surface-active)] transition-colors"
-                  style={{ color: "var(--text-base)" }}
+                  style={{ color: "var(--text-primary)" }}
                   onClick={() => {
                     setIsEditing(true);
                     setShowMenu(false);
@@ -600,7 +600,7 @@ export function CommentThread(props: CommentThreadProps) {
                   class="px-2 py-1 text-xs rounded transition-colors"
                   style={{
                     background: "var(--surface-raised)",
-                    color: "var(--text-base)",
+                    color: "var(--text-primary)",
                     border: "1px solid var(--border-weak)",
                   }}
                   onClick={() => {

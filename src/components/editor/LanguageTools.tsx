@@ -1202,7 +1202,7 @@ export function LanguageTools(props: LanguageToolsProps) {
             class="flex items-center justify-between px-3 py-2 border-b"
             style={{ "border-color": "var(--border-weak)" }}
           >
-            <span class="text-xs font-medium" style={{ color: "var(--text-base)" }}>
+            <span class="text-xs font-medium" style={{ color: "var(--text-primary)" }}>
               Code Actions
             </span>
             <div class="flex items-center gap-1 text-xs" style={{ color: "var(--text-weak)" }}>
@@ -1473,7 +1473,7 @@ function ActionItem(props: ActionItemProps) {
         <Icon />
       </span>
       <div class="flex-1 min-w-0">
-        <div class="text-sm truncate" style={{ color: "var(--text-base)" }}>
+        <div class="text-sm truncate" style={{ color: "var(--text-primary)" }}>
           {props.action.title}
         </div>
         <Show when={props.action.disabled}>
@@ -1564,7 +1564,7 @@ function PreviewPanel(props: PreviewPanelProps) {
           style={{ "border-color": "var(--border-weak)" }}
         >
           <div>
-            <h3 class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+            <h3 class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
               Preview Changes
             </h3>
             <p class="text-xs mt-0.5" style={{ color: "var(--text-weak)" }}>
@@ -1632,7 +1632,7 @@ function PreviewPanel(props: PreviewPanelProps) {
             </For>
           </Show>
           <Show when={!showDiff()}>
-            <pre class="whitespace-pre-wrap" style={{ color: "var(--text-base)" }}>
+            <pre class="whitespace-pre-wrap" style={{ color: "var(--text-primary)" }}>
               {props.preview.previewContent}
             </pre>
           </Show>

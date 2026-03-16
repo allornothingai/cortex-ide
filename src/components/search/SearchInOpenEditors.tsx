@@ -314,7 +314,7 @@ export function SearchInOpenEditors(props: SearchInOpenEditorsProps) {
             "border-radius": "var(--cortex-radius-sm)",
             "font-weight": "600",
             background: "rgba(234, 179, 8, 0.4)",
-            color: "var(--text-base)",
+            color: "var(--text-primary)",
             "box-shadow": "0 0 0 1px rgba(234, 179, 8, 0.6)",
           }}
         >
@@ -395,7 +395,7 @@ export function SearchInOpenEditors(props: SearchInOpenEditorsProps) {
           >
             <div style={{ display: "flex", "align-items": "center", gap: "8px" }}>
               <Icon name="magnifying-glass" style={{ width: "16px", height: "16px", color: "var(--text-weak)" }} />
-              <span style={{ "font-size": "13px", "font-weight": "500", color: "var(--text-base)" }}>
+              <span style={{ "font-size": "13px", "font-weight": "500", color: "var(--text-primary)" }}>
                 Search in Open Editors
               </span>
             </div>
@@ -441,7 +441,7 @@ export function SearchInOpenEditors(props: SearchInOpenEditorsProps) {
                   border: "none",
                   "font-size": "13px",
                   "min-width": "0",
-                  color: "var(--text-base)"
+                  color: "var(--text-primary)"
                 }}
                 value={query()}
                 onInput={(e) => setQuery(e.currentTarget.value)}
@@ -580,7 +580,7 @@ export function SearchInOpenEditors(props: SearchInOpenEditorsProps) {
                       <Icon name="chevron-right" style={{ width: "14px", height: "14px" }} />
                     </span>
                     <Icon name="file" style={{ width: "14px", height: "14px", "flex-shrink": "0", color: "var(--text-weak)" }} />
-                    <span style={{ "font-size": "12px", "font-weight": "500", color: "var(--text-base)", overflow: "hidden", "text-overflow": "ellipsis", "white-space": "nowrap" }}>
+                    <span style={{ "font-size": "12px", "font-weight": "500", color: "var(--text-primary)", overflow: "hidden", "text-overflow": "ellipsis", "white-space": "nowrap" }}>
                       {group.fileName}
                     </span>
                     <span style={{ "margin-left": "auto", "font-size": "10px", padding: "2px 6px", "border-radius": "var(--cortex-radius-md)", "font-family": "'JetBrains Mono', monospace", background: "var(--surface-active)", color: "var(--text-weak)" }}>

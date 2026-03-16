@@ -59,7 +59,7 @@ export function WhichKey() {
                 class="w-4 h-4 shrink-0"
                 style={{ color: "var(--text-weak)" }}
               />
-              <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+              <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
                 Which Key
               </span>
               <kbd
@@ -223,7 +223,7 @@ function BindingItem(props: { continuation: ContinuationBinding; showDescription
         {/* Command label */}
         <span
           class="text-sm truncate"
-          style={{ color: "var(--text-base)" }}
+          style={{ color: "var(--text-primary)" }}
           title={props.continuation.binding.label}
         >
           {props.continuation.binding.label}
@@ -253,14 +253,14 @@ export function WhichKeySettings() {
 
   return (
     <div class="space-y-4">
-      <h3 class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+      <h3 class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
         Which Key Settings
       </h3>
 
       {/* Enable/Disable toggle */}
       <div class="flex items-center justify-between">
         <div>
-          <div class="text-sm" style={{ color: "var(--text-base)" }}>
+          <div class="text-sm" style={{ color: "var(--text-primary)" }}>
             Enable Which Key
           </div>
           <div class="text-xs" style={{ color: "var(--text-weak)" }}>
@@ -288,7 +288,7 @@ export function WhichKeySettings() {
       {/* Delay slider */}
       <div>
         <div class="flex items-center justify-between mb-2">
-          <div class="text-sm" style={{ color: "var(--text-base)" }}>
+          <div class="text-sm" style={{ color: "var(--text-primary)" }}>
             Popup Delay
           </div>
           <span class="text-xs font-mono" style={{ color: "var(--text-weak)" }}>
@@ -318,7 +318,7 @@ export function WhichKeySettings() {
       {/* Max items per column */}
       <div>
         <div class="flex items-center justify-between mb-2">
-          <div class="text-sm" style={{ color: "var(--text-base)" }}>
+          <div class="text-sm" style={{ color: "var(--text-primary)" }}>
             Max Items Per Category
           </div>
           <span class="text-xs font-mono" style={{ color: "var(--text-weak)" }}>
@@ -346,7 +346,7 @@ export function WhichKeySettings() {
       {/* Show descriptions toggle */}
       <div class="flex items-center justify-between">
         <div>
-          <div class="text-sm" style={{ color: "var(--text-base)" }}>
+          <div class="text-sm" style={{ color: "var(--text-primary)" }}>
             Show Descriptions
           </div>
           <div class="text-xs" style={{ color: "var(--text-weak)" }}>

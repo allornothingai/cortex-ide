@@ -485,7 +485,7 @@ export function QuickChat() {
               />
               <span
                 class="text-sm font-semibold"
-                style={{ color: "var(--text-base)" }}
+                style={{ color: "var(--text-primary)" }}
               >
                 Quick Chat
               </span>
@@ -633,7 +633,7 @@ export function QuickChat() {
                       class="max-w-[85%] rounded-lg px-3 py-2"
                       style={{
                         background: "var(--surface-raised)",
-                        color: "var(--text-base)",
+                        color: "var(--text-primary)",
                       }}
                     >
                       <p class="text-sm whitespace-pre-wrap break-words">
@@ -735,7 +735,7 @@ export function QuickChat() {
                 placeholder="Ask a question... (@ for context)"
                 class="flex-1 bg-transparent outline-none text-sm resize-none"
                 style={{
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                   "min-height": "24px",
                   "max-height": "120px",
                 }}

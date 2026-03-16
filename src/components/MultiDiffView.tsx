@@ -566,7 +566,7 @@ export function MultiDiffView(props: MultiDiffViewProps) {
               ) : (
                 <Icon name="chevron-right" class="w-3.5 h-3.5" style={{ color: "var(--text-weak)" }} />
               )}
-              <Text size="xs" weight="medium" style={{ color: "var(--text-base)" }}>
+              <Text size="xs" weight="medium" style={{ color: "var(--text-primary)" }}>
                 {sectionProps.title}
               </Text>
               <Badge
@@ -599,7 +599,7 @@ export function MultiDiffView(props: MultiDiffViewProps) {
       >
         {/* Title and stats */}
         <div class="flex items-center gap-3">
-          <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+          <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
             {props.title || "Changes"}
           </span>
           <div class="flex items-center gap-2 text-xs">
@@ -759,7 +759,7 @@ export function MultiDiffView(props: MultiDiffViewProps) {
                 >
                   <div class="flex items-center gap-2">
                     {getStatusIcon(file().status)}
-                    <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+                    <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
                       {file().path}
                     </span>
                     <Show when={file().oldPath}>

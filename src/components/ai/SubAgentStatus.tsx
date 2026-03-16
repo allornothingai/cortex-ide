@@ -220,7 +220,7 @@ function SubAgentCard(props: SubAgentCardProps): JSX.Element {
         >
           <div
             class="text-xs mb-2 line-clamp-2"
-            style={{ color: "var(--text-base)" }}
+            style={{ color: "var(--text-primary)" }}
           >
             {truncate(currentTask()!.prompt, 100)}
           </div>

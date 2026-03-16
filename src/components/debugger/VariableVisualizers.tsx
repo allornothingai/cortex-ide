@@ -491,7 +491,7 @@ function JsonNode(props: JsonNodeProps): JSX.Element {
         }
         return { text: `Object`, color: "var(--text-weak)" };
       default:
-        return { text: String(val), color: "var(--text-base)" };
+        return { text: String(val), color: "var(--text-primary)" };
     }
   };
 
@@ -610,7 +610,7 @@ export function ArrayVisualizer(props: ArrayVisualizerProps): JSX.Element {
         if (Array.isArray(val)) return { text: `Array(${val.length})`, color: "var(--text-weak)" };
         return { text: "{...}", color: "var(--text-weak)" };
       default:
-        return { text: String(val), color: "var(--text-base)" };
+        return { text: String(val), color: "var(--text-primary)" };
     }
   };
 
@@ -1076,7 +1076,7 @@ export function MapVisualizer(props: MapVisualizerProps): JSX.Element {
         if (Array.isArray(val)) return { text: `Array(${val.length})`, color: "var(--text-weak)" };
         return { text: "{...}", color: "var(--text-weak)" };
       default:
-        return { text: String(val), color: "var(--text-base)" };
+        return { text: String(val), color: "var(--text-primary)" };
     }
   };
 
@@ -1163,7 +1163,7 @@ export function SetVisualizer(props: SetVisualizerProps): JSX.Element {
         if (Array.isArray(val)) return { text: `Array(${val.length})`, color: "var(--text-weak)" };
         return { text: "{...}", color: "var(--text-weak)" };
       default:
-        return { text: String(val), color: "var(--text-base)" };
+        return { text: String(val), color: "var(--text-primary)" };
     }
   };
 

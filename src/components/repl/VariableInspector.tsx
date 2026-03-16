@@ -248,7 +248,7 @@ function VariableRow(props: VariableRowProps) {
           class="px-3 py-2 font-mono text-xs"
           style={{
             background: "var(--surface-sunken)",
-            color: "var(--text-base)",
+            color: "var(--text-primary)",
             "white-space": "pre-wrap",
             "word-break": "break-all",
           }}
@@ -378,7 +378,7 @@ export function VariableInspector() {
           style={{
             background: "var(--surface-sunken)",
             border: "1px solid var(--border-base)",
-            color: "var(--text-base)",
+            color: "var(--text-primary)",
           }}
         />
       </div>

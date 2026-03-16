@@ -136,7 +136,7 @@ export function TaskStatusBarItem() {
             class="flex items-center justify-between px-3 py-2 border-b"
             style={{ "border-color": "var(--border-weak)" }}
           >
-            <span class="text-xs font-medium" style={{ color: "var(--text-base)" }}>
+            <span class="text-xs font-medium" style={{ color: "var(--text-primary)" }}>
               Running Tasks
             </span>
             <button
@@ -228,7 +228,7 @@ function RunningTaskItem(props: RunningTaskItemProps) {
       <Icon name="spinner" class="w-3.5 h-3.5 animate-spin shrink-0" style={{ color: "var(--cortex-info)" }} />
 
       <div class="flex-1 min-w-0">
-        <div class="text-xs truncate" style={{ color: "var(--text-base)" }}>
+        <div class="text-xs truncate" style={{ color: "var(--text-primary)" }}>
           {props.run.taskLabel}
         </div>
         <div class="text-[10px]" style={{ color: "var(--text-weak)" }}>
@@ -291,7 +291,7 @@ function BackgroundTaskItem(props: BackgroundTaskItemProps) {
       {getStatusIcon()}
 
       <div class="flex-1 min-w-0">
-        <div class="text-xs truncate" style={{ color: "var(--text-base)" }}>
+        <div class="text-xs truncate" style={{ color: "var(--text-primary)" }}>
           {props.run.taskLabel}
         </div>
         <div class="text-[10px]" style={{ color: "var(--text-weak)" }}>

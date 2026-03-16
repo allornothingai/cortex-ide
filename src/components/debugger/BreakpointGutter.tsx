@@ -575,7 +575,7 @@ export function useBreakpointGutter(props: BreakpointGutterProps) {
             <Show when={!contextMenu().hasBreakpoint}>
               <button
                 class="w-full px-3 py-1.5 text-left text-xs hover:bg-[var(--surface-sunken)] transition-colors"
-                style={{ color: "var(--text-base)" }}
+                style={{ color: "var(--text-primary)" }}
                 onClick={handleAddBreakpoint}
               >
                 Add Breakpoint
@@ -598,7 +598,7 @@ export function useBreakpointGutter(props: BreakpointGutterProps) {
             <Show when={contextMenu().hasBreakpoint && !contextMenu().hasLogpoint && !contextMenu().isInlineBreakpoint}>
               <button
                 class="w-full px-3 py-1.5 text-left text-xs hover:bg-[var(--surface-sunken)] transition-colors"
-                style={{ color: "var(--text-base)" }}
+                style={{ color: "var(--text-primary)" }}
                 onClick={handleRemoveBreakpoint}
               >
                 Remove Breakpoint
@@ -621,7 +621,7 @@ export function useBreakpointGutter(props: BreakpointGutterProps) {
             <Show when={contextMenu().hasBreakpoint && !contextMenu().hasLogpoint && contextMenu().isInlineBreakpoint}>
               <button
                 class="w-full px-3 py-1.5 text-left text-xs hover:bg-[var(--surface-sunken)] transition-colors"
-                style={{ color: "var(--text-base)" }}
+                style={{ color: "var(--text-primary)" }}
                 onClick={handleRemoveBreakpoint}
               >
                 Remove Inline Breakpoint
@@ -637,7 +637,7 @@ export function useBreakpointGutter(props: BreakpointGutterProps) {
               </button>
               <button
                 class="w-full px-3 py-1.5 text-left text-xs hover:bg-[var(--surface-sunken)] transition-colors"
-                style={{ color: "var(--text-base)" }}
+                style={{ color: "var(--text-primary)" }}
                 onClick={handleConvertToBreakpoint}
               >
                 Convert to Breakpoint
@@ -668,7 +668,7 @@ export function useBreakpointGutter(props: BreakpointGutterProps) {
             }}
             onClick={(e) => e.stopPropagation()}
           >
-            <div class="text-xs mb-2" style={{ color: "var(--text-base)" }}>
+            <div class="text-xs mb-2" style={{ color: "var(--text-primary)" }}>
               {logpointEdit().isNew ? "Add Logpoint" : "Edit Logpoint"} at line {logpointEdit().line}
             </div>
             <div class="text-xs mb-2" style={{ color: "var(--text-weak)" }}>
@@ -686,7 +686,7 @@ export function useBreakpointGutter(props: BreakpointGutterProps) {
               class="w-full px-2 py-1.5 text-xs rounded outline-none mb-2"
               style={{
                 background: "var(--surface-sunken)",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
                 border: "1px solid var(--border-weak)",
               }}
               autofocus

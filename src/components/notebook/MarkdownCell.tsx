@@ -75,7 +75,7 @@ export function MarkdownCell(props: MarkdownCellProps) {
           class="w-full resize-none outline-none font-mono text-sm p-3"
           style={{
             background: "var(--surface-base)",
-            color: "var(--text-base)",
+            color: "var(--text-primary)",
             border: "1px solid var(--accent)",
             "border-radius": "var(--cortex-radius-sm)",
             "min-height": "80px",

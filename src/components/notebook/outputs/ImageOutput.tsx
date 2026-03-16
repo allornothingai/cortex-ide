@@ -54,7 +54,7 @@ export function ImageOutput(props: ImageOutputProps) {
             class="absolute top-4 right-4 p-2 rounded-full"
             style={{ background: "var(--surface-raised)" }}
           >
-            <Icon name="xmark" class="w-5 h-5" style={{ color: "var(--text-base)" }} />
+            <Icon name="xmark" class="w-5 h-5" style={{ color: "var(--text-primary)" }} />
           </button>
           <img
             src={src()}

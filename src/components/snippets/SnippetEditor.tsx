@@ -199,7 +199,7 @@ export function SnippetEditor() {
               style={{
                 "border-color": "var(--border-base)",
                 background: "var(--cortex-info)10",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
               }}
             >
               <div class="font-semibold mb-2" style={{ color: "var(--text-strong)" }}>
@@ -270,7 +270,7 @@ export function SnippetEditor() {
                 class="w-full px-3 py-2 rounded text-sm"
                 style={{
                   background: "var(--surface-hover)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                   border: "1px solid var(--border-base)",
                   outline: "none",
                 }}
@@ -297,7 +297,7 @@ export function SnippetEditor() {
                 class="w-full px-3 py-2 rounded text-sm"
                 style={{
                   background: "var(--surface-hover)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                   border: getFieldError("name")
                     ? "1px solid var(--cortex-error)"
                     : "1px solid var(--border-base)",
@@ -322,7 +322,7 @@ export function SnippetEditor() {
                 class="w-full px-3 py-2 rounded text-sm font-mono"
                 style={{
                   background: "var(--surface-hover)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                   border: getFieldError("prefix")
                     ? "1px solid var(--cortex-error)"
                     : "1px solid var(--border-base)",
@@ -350,7 +350,7 @@ export function SnippetEditor() {
                 class="w-full px-3 py-2 rounded text-sm"
                 style={{
                   background: "var(--surface-hover)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                   border: "1px solid var(--border-base)",
                   outline: "none",
                 }}
@@ -423,7 +423,7 @@ function \${1:name}(\${2:params}) {
               class="px-4 py-2 rounded text-sm font-medium"
               style={{
                 background: "var(--surface-hover)",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
               }}
             >
               Cancel

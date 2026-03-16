@@ -1100,7 +1100,7 @@ export function SearchEditor(props: SearchEditorProps) {
           >
             <div style={{ display: "flex", "align-items": "center", gap: "8px" }}>
               <Icon name="magnifying-glass" style={{ width: "16px", height: "16px", color: "var(--text-weak)" }} />
-              <span style={{ "font-size": "13px", "font-weight": "500", color: "var(--text-base)" }}>
+              <span style={{ "font-size": "13px", "font-weight": "500", color: "var(--text-primary)" }}>
                 Search Editor
               </span>
               <Show when={hasEdits()}>
@@ -1243,7 +1243,7 @@ export function SearchEditor(props: SearchEditorProps) {
                   border: "none",
                   "font-size": "13px",
                   "min-width": "0",
-                  color: "var(--text-base)"
+                  color: "var(--text-primary)"
                 }}
                 value={query()}
                 onInput={(e) => setQuery(e.currentTarget.value)}
@@ -1288,7 +1288,7 @@ export function SearchEditor(props: SearchEditorProps) {
                   outline: "none",
                   border: "none",
                   background: "var(--background-base)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                 }}
                 value={includePattern()}
                 onInput={(e) => setIncludePattern(e.currentTarget.value)}
@@ -1303,7 +1303,7 @@ export function SearchEditor(props: SearchEditorProps) {
                   outline: "none",
                   border: "none",
                   background: "var(--background-base)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                 }}
                 value={excludePattern()}
                 onInput={(e) => setExcludePattern(e.currentTarget.value)}
@@ -1465,7 +1465,7 @@ export function SearchEditor(props: SearchEditorProps) {
                           overflow: "hidden",
                           "text-overflow": "ellipsis",
                           "white-space": "nowrap",
-                          color: "var(--text-base)"
+                          color: "var(--text-primary)"
                         }}
                       >
                         {getFileName(result.file)}
@@ -1639,7 +1639,7 @@ export function SearchEditor(props: SearchEditorProps) {
                 border: "none",
                 background: "transparent",
                 cursor: "pointer",
-                color: "var(--text-base)"
+                color: "var(--text-primary)"
               }}
               onMouseEnter={(e) => e.currentTarget.style.background = "rgba(255, 255, 255, 0.1)"}
               onMouseLeave={(e) => e.currentTarget.style.background = "transparent"}
@@ -1672,7 +1672,7 @@ export function SearchEditor(props: SearchEditorProps) {
                 border: "none",
                 background: "transparent",
                 cursor: "pointer",
-                color: "var(--text-base)"
+                color: "var(--text-primary)"
               }}
               onMouseEnter={(e) => e.currentTarget.style.background = "rgba(255, 255, 255, 0.1)"}
               onMouseLeave={(e) => e.currentTarget.style.background = "transparent"}
@@ -1705,7 +1705,7 @@ export function SearchEditor(props: SearchEditorProps) {
                   border: "none",
                   background: "transparent",
                   cursor: "pointer",
-                  color: "var(--text-base)"
+                  color: "var(--text-primary)"
                 }}
                 onMouseEnter={(e) => e.currentTarget.style.background = "rgba(255, 255, 255, 0.1)"}
                 onMouseLeave={(e) => e.currentTarget.style.background = "transparent"}

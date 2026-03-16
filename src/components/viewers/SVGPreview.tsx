@@ -679,7 +679,7 @@ export function SVGPreview(props: SVGPreviewProps) {
                 "border-color": "var(--border-weak)",
               }}
             >
-              <span class="text-xs font-medium" style={{ color: "var(--text-base)" }}>
+              <span class="text-xs font-medium" style={{ color: "var(--text-primary)" }}>
                 Elements
               </span>
               <span 
@@ -707,7 +707,7 @@ export function SVGPreview(props: SVGPreviewProps) {
                 class="shrink-0 border-t p-3 max-h-[200px] overflow-y-auto"
                 style={{ "border-color": "var(--border-weak)" }}
               >
-                <div class="text-xs font-medium mb-2" style={{ color: "var(--text-base)" }}>
+                <div class="text-xs font-medium mb-2" style={{ color: "var(--text-primary)" }}>
                   &lt;{state.selectedElement!.tag}&gt;
                 </div>
                 <div class="space-y-1">

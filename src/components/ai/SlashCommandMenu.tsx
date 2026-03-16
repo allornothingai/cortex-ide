@@ -891,7 +891,7 @@ export function SlashCommandMenu(props: SlashCommandMenuProps) {
                 </span>
                 <span
                   class="font-medium"
-                  style={{ color: "var(--text-base)", "font-size": "13px" }}
+                  style={{ color: "var(--text-primary)", "font-size": "13px" }}
                 >
                   /{cmd.name}
                 </span>
@@ -948,7 +948,7 @@ export function SlashCommandMenu(props: SlashCommandMenuProps) {
                       <span
                         class="command-name font-medium shrink-0"
                         style={{ 
-                          color: "var(--text-base)",
+                          color: "var(--text-primary)",
                           "font-size": "13px",
                         }}
                       >

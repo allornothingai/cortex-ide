@@ -117,7 +117,7 @@ function BreakpointRow(props: { bp: Breakpoint; onNavigate: (path: string, line:
           class="flex-1 min-w-0"
           style={{
             background: "var(--cortex-bg-primary)",
-            color: "var(--text-base)",
+            color: "var(--text-primary)",
             border: "1px solid var(--cortex-accent-primary)",
             "border-radius": "2px",
             padding: "0 4px",
@@ -165,7 +165,7 @@ function ExceptionBreakpointRow(props: { eb: ExceptionBreakpoint }) {
           onChange={handleToggle}
           style={{ width: "14px", height: "14px", "accent-color": "var(--cortex-accent-primary)" }}
         />
-        <span class="truncate" style={{ color: "var(--text-base)" }}>{props.eb.label}</span>
+        <span class="truncate" style={{ color: "var(--text-primary)" }}>{props.eb.label}</span>
         <Show when={props.eb.description}>
           <span class="truncate" style={{ color: "var(--text-weak)", "font-size": "11px", "margin-left": "4px" }}>
             {props.eb.description}
@@ -190,7 +190,7 @@ function ExceptionBreakpointRow(props: { eb: ExceptionBreakpoint }) {
             style={{
               width: "100%",
               background: "var(--cortex-bg-primary)",
-              color: "var(--text-base)",
+              color: "var(--text-primary)",
               border: "1px solid var(--cortex-accent-primary)",
               "border-radius": "2px",
               padding: "2px 6px",
@@ -224,7 +224,7 @@ export function BreakpointPanel() {
   };
 
   return (
-    <div class="flex flex-col h-full" style={{ background: "var(--cortex-bg-primary)", color: "var(--text-base)" }}>
+    <div class="flex flex-col h-full" style={{ background: "var(--cortex-bg-primary)", color: "var(--text-primary)" }}>
       <div class="flex items-center justify-between px-2 shrink-0" style={{ height: "28px", "border-bottom": "1px solid var(--surface-border)" }}>
         <span style={{ "font-size": "11px", "font-weight": "600", "text-transform": "uppercase" }}>Breakpoints</span>
         <div class="flex gap-0.5">

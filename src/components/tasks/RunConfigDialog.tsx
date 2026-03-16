@@ -125,7 +125,7 @@ export function RunConfigDialog() {
               type="text"
               placeholder="Run task..."
               class="flex-1 bg-transparent outline-none text-sm"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
               value={query()}
               onInput={(e) => setQuery(e.currentTarget.value)}
               onKeyDown={handleKeyDown}
@@ -179,7 +179,7 @@ export function RunConfigDialog() {
                   {/* Task Info */}
                   <div class="flex-1 min-w-0">
                     <div class="flex items-center gap-2">
-                      <span class="text-sm truncate" style={{ color: "var(--text-base)" }}>
+                      <span class="text-sm truncate" style={{ color: "var(--text-primary)" }}>
                         {task.label}
                       </span>
                       <Show when={isRecentTask(task.label)}>
@@ -317,7 +317,7 @@ export function QuickRunInput() {
           style={{ 
             background: "var(--surface-raised)",
             border: "1px solid var(--border-base)",
-            color: "var(--text-base)"
+            color: "var(--text-primary)"
           }}
           value={command()}
           onInput={(e) => setCommand(e.currentTarget.value)}

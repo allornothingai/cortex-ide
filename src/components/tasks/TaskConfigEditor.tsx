@@ -330,7 +330,7 @@ export function TaskConfigEditor() {
 
                 {/* Type */}
                 <div>
-                  <label class="block text-sm font-medium mb-1.5" style={{ color: "var(--text-base)" }}>
+                  <label class="block text-sm font-medium mb-1.5" style={{ color: "var(--text-primary)" }}>
                     Type
                   </label>
                   <div class="grid grid-cols-4 gap-2">
@@ -351,7 +351,7 @@ export function TaskConfigEditor() {
                           onClick={() => setType(option.value)}
                         >
                           <span class="text-lg">{option.icon}</span>
-                          <span class="text-xs" style={{ color: "var(--text-base)" }}>{option.label}</span>
+                          <span class="text-xs" style={{ color: "var(--text-primary)" }}>{option.label}</span>
                         </Button>
                       )}
                     </For>
@@ -374,7 +374,7 @@ export function TaskConfigEditor() {
                 {/* Arguments */}
                 <div>
                   <div class="flex items-center justify-between mb-1.5">
-                    <label class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+                    <label class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
                       Arguments
                     </label>
                     <Button
@@ -413,7 +413,7 @@ export function TaskConfigEditor() {
 
                 {/* Group */}
                 <div>
-                  <label class="block text-sm font-medium mb-1.5" style={{ color: "var(--text-base)" }}>
+                  <label class="block text-sm font-medium mb-1.5" style={{ color: "var(--text-primary)" }}>
                     Group
                   </label>
                   <select
@@ -421,7 +421,7 @@ export function TaskConfigEditor() {
                     style={{ 
                       background: "var(--surface-raised)",
                       border: "1px solid var(--border-base)",
-                      color: "var(--text-base)"
+                      color: "var(--text-primary)"
                     }}
                     value={group()}
                     onChange={(e) => setGroup(e.currentTarget.value as TaskGroup)}
@@ -436,7 +436,7 @@ export function TaskConfigEditor() {
 
                 {/* Task Options */}
                 <div class="space-y-2">
-                  <label class="block text-sm font-medium mb-1.5" style={{ color: "var(--text-base)" }}>
+                  <label class="block text-sm font-medium mb-1.5" style={{ color: "var(--text-primary)" }}>
                     Task Options
                   </label>
                   
@@ -454,7 +454,7 @@ export function TaskConfigEditor() {
                         "accent-color": "var(--cortex-info)",
                       }}
                     />
-                    <Text variant="body" style={{ color: "var(--text-base)" }}>
+                    <Text variant="body" style={{ color: "var(--text-primary)" }}>
                       Set as default task for this group
                     </Text>
                   </div>
@@ -475,7 +475,7 @@ export function TaskConfigEditor() {
                     />
                     <div class="flex items-center gap-1.5">
                       <Icon name="eye" class="w-3.5 h-3.5" style={{ color: "var(--cortex-success)" }} />
-                      <Text variant="body" style={{ color: "var(--text-base)" }}>
+                      <Text variant="body" style={{ color: "var(--text-primary)" }}>
                         Background/Watch task (runs indefinitely)
                       </Text>
                     </div>
@@ -484,7 +484,7 @@ export function TaskConfigEditor() {
 
                 {/* Run On */}
                 <div>
-                  <label class="block text-sm font-medium mb-1.5" style={{ color: "var(--text-base)" }}>
+                  <label class="block text-sm font-medium mb-1.5" style={{ color: "var(--text-primary)" }}>
                     Auto-run
                   </label>
                   <select
@@ -492,7 +492,7 @@ export function TaskConfigEditor() {
                     style={{ 
                       background: "var(--surface-raised)",
                       border: "1px solid var(--border-base)",
-                      color: "var(--text-base)"
+                      color: "var(--text-primary)"
                     }}
                     value={runOn()}
                     onChange={(e) => setRunOn(e.currentTarget.value as "default" | "folderOpen")}
@@ -512,7 +512,7 @@ export function TaskConfigEditor() {
               <div class="space-y-4">
                 {/* Working Directory */}
                 <div>
-                  <label class="block text-sm font-medium mb-1.5" style={{ color: "var(--text-base)" }}>
+                  <label class="block text-sm font-medium mb-1.5" style={{ color: "var(--text-primary)" }}>
                     Working Directory
                   </label>
                   <div class="flex items-center gap-2">
@@ -535,7 +535,7 @@ export function TaskConfigEditor() {
                 {/* Environment Variables */}
                 <div>
                   <div class="flex items-center justify-between mb-1.5">
-                    <label class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+                    <label class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
                       Environment Variables
                     </label>
                     <Button
@@ -583,7 +583,7 @@ export function TaskConfigEditor() {
                 {/* Problem Matchers */}
                 <div>
                   <div class="flex items-center justify-between mb-1.5">
-                    <label class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+                    <label class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
                       Problem Matchers
                     </label>
                   </div>
@@ -599,7 +599,7 @@ export function TaskConfigEditor() {
                             border: problemMatchers().includes(matcher)
                               ? "1px solid var(--cortex-info)"
                               : "1px solid var(--border-base)",
-                            color: "var(--text-base)",
+                            color: "var(--text-primary)",
                           }}
                           onClick={() => {
                             if (problemMatchers().includes(matcher)) {
@@ -648,7 +648,7 @@ export function TaskConfigEditor() {
 
                 {/* Reveal Mode */}
                 <div>
-                  <label class="block text-sm font-medium mb-1.5" style={{ color: "var(--text-base)" }}>
+                  <label class="block text-sm font-medium mb-1.5" style={{ color: "var(--text-primary)" }}>
                     Reveal Terminal
                   </label>
                   <select
@@ -656,7 +656,7 @@ export function TaskConfigEditor() {
                     style={{ 
                       background: "var(--surface-raised)",
                       border: "1px solid var(--border-base)",
-                      color: "var(--text-base)"
+                      color: "var(--text-primary)"
                     }}
                     value={revealMode()}
                     onChange={(e) => setRevealMode(e.currentTarget.value as "always" | "silent" | "never")}
@@ -669,7 +669,7 @@ export function TaskConfigEditor() {
 
                 {/* Panel Mode */}
                 <div>
-                  <label class="block text-sm font-medium mb-1.5" style={{ color: "var(--text-base)" }}>
+                  <label class="block text-sm font-medium mb-1.5" style={{ color: "var(--text-primary)" }}>
                     Terminal Panel
                   </label>
                   <select
@@ -677,7 +677,7 @@ export function TaskConfigEditor() {
                     style={{ 
                       background: "var(--surface-raised)",
                       border: "1px solid var(--border-base)",
-                      color: "var(--text-base)"
+                      color: "var(--text-primary)"
                     }}
                     value={panelMode()}
                     onChange={(e) => setPanelMode(e.currentTarget.value as "shared" | "dedicated" | "new")}
@@ -703,7 +703,7 @@ export function TaskConfigEditor() {
                         "accent-color": "var(--cortex-info)",
                       }}
                     />
-                    <Text variant="body" style={{ color: "var(--text-base)" }}>
+                    <Text variant="body" style={{ color: "var(--text-primary)" }}>
                       Focus terminal when task starts
                     </Text>
                   </div>
@@ -721,7 +721,7 @@ export function TaskConfigEditor() {
                         "accent-color": "var(--cortex-info)",
                       }}
                     />
-                    <Text variant="body" style={{ color: "var(--text-base)" }}>
+                    <Text variant="body" style={{ color: "var(--text-primary)" }}>
                       Clear terminal before running task
                     </Text>
                   </div>
@@ -742,7 +742,7 @@ export function TaskConfigEditor() {
 
                 <div>
                   <div class="flex items-center justify-between mb-1.5">
-                    <label class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+                    <label class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
                       Depends On
                     </label>
                     <Button

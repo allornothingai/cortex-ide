@@ -76,7 +76,7 @@ function HexRow(props: { row: MemoryRow }) {
       >
         {formatAddr(props.row.address)}
       </span>
-      <span class="shrink-0" style={{ width: `${BYTES_PER_ROW * 3}ch`, color: "var(--text-base)" }}>
+      <span class="shrink-0" style={{ width: `${BYTES_PER_ROW * 3}ch`, color: "var(--text-primary)" }}>
         {props.row.bytes.map((b) => byteToHex(b)).join(" ")}
         {props.row.bytes.length < BYTES_PER_ROW ? "   ".repeat(BYTES_PER_ROW - props.row.bytes.length) : ""}
       </span>
@@ -160,7 +160,7 @@ export function MemoryInspector() {
   };
 
   return (
-    <div class="flex flex-col h-full" style={{ background: "var(--cortex-bg-primary)", color: "var(--text-base)" }}>
+    <div class="flex flex-col h-full" style={{ background: "var(--cortex-bg-primary)", color: "var(--text-primary)" }}>
       <div class="flex items-center gap-1 px-2 shrink-0" style={{ height: "32px", "border-bottom": "1px solid var(--surface-border)" }}>
         <Icon name="memory" size={14} color="var(--text-weak)" />
         <span style={{ "font-size": "11px", "font-weight": "600", "text-transform": "uppercase" }}>Memory</span>
@@ -176,7 +176,7 @@ export function MemoryInspector() {
           style={{
             flex: "1",
             background: "var(--cortex-bg-primary)",
-            color: "var(--text-base)",
+            color: "var(--text-primary)",
             border: "1px solid var(--surface-border)",
             "border-radius": "3px",
             padding: "2px 6px",

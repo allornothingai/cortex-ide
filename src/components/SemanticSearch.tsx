@@ -266,7 +266,7 @@ export function SemanticSearch(props: SemanticSearchProps) {
         }}
       >
         <Icon name="spinner" class="w-3.5 h-3.5 animate-spin" style={{ color: "var(--accent-primary)" }} />
-        <span style={{ color: "var(--text-base)" }}>
+        <span style={{ color: "var(--text-primary)" }}>
           Indexing: {semanticSearch.state.indexingProgress}%
         </span>
         <Show when={semanticSearch.state.indexingCurrentFile}>
@@ -318,19 +318,19 @@ export function SemanticSearch(props: SemanticSearchProps) {
       >
         <div class="flex justify-between">
           <span style={{ color: "var(--text-weak)" }}>Indexed Files:</span>
-          <span style={{ color: "var(--text-base)" }}>{stats().totalFiles}</span>
+          <span style={{ color: "var(--text-primary)" }}>{stats().totalFiles}</span>
         </div>
         <div class="flex justify-between">
           <span style={{ color: "var(--text-weak)" }}>Total Chunks:</span>
-          <span style={{ color: "var(--text-base)" }}>{stats().totalChunks}</span>
+          <span style={{ color: "var(--text-primary)" }}>{stats().totalChunks}</span>
         </div>
         <div class="flex justify-between">
           <span style={{ color: "var(--text-weak)" }}>Cache Size:</span>
-          <span style={{ color: "var(--text-base)" }}>{(stats().cacheSize / 1024).toFixed(1)} KB</span>
+          <span style={{ color: "var(--text-primary)" }}>{(stats().cacheSize / 1024).toFixed(1)} KB</span>
         </div>
         <div class="flex justify-between">
           <span style={{ color: "var(--text-weak)" }}>Model:</span>
-          <span style={{ color: "var(--text-base)" }}>{semanticSearch.state.modelId}</span>
+          <span style={{ color: "var(--text-primary)" }}>{semanticSearch.state.modelId}</span>
         </div>
       </div>
     </Show>
@@ -444,7 +444,7 @@ export function SemanticSearch(props: SemanticSearchProps) {
           >
             <div class="flex items-center gap-2">
               <Icon name="bolt" class="w-4 h-4" style={{ color: "var(--accent-primary)" }} />
-              <span class="text-[13px] font-medium" style={{ color: "var(--text-base)" }}>
+              <span class="text-[13px] font-medium" style={{ color: "var(--text-primary)" }}>
                 AI Search
               </span>
               <Show when={semanticSearch.state.indexedFilesCount > 0}>
@@ -487,7 +487,7 @@ export function SemanticSearch(props: SemanticSearchProps) {
                 type="text"
                 placeholder="Search with natural language..."
                 class="flex-1 bg-transparent outline-none text-[13px] min-w-0"
-                style={{ color: "var(--text-base)" }}
+                style={{ color: "var(--text-primary)" }}
                 value={query()}
                 onInput={(e) => setQuery(e.currentTarget.value)}
               />
@@ -535,7 +535,7 @@ export function SemanticSearch(props: SemanticSearchProps) {
                         }
                       </span>
                       <Icon name="file" class="w-3.5 h-3.5 shrink-0" style={{ color: "var(--text-weak)" }} />
-                      <span class="text-[12px] font-medium truncate" style={{ color: "var(--text-base)" }}>
+                      <span class="text-[12px] font-medium truncate" style={{ color: "var(--text-primary)" }}>
                         {getFileName(result.file)}
                       </span>
                       <Show when={getDirectory(result.file)}>
@@ -629,7 +629,7 @@ export function SemanticSearch(props: SemanticSearchProps) {
           type="text"
           placeholder="AI Search..."
           class="flex-1 bg-transparent outline-none text-[12px] min-w-0"
-          style={{ color: "var(--text-base)" }}
+          style={{ color: "var(--text-primary)" }}
           value={query()}
           onInput={(e) => setQuery(e.currentTarget.value)}
         />
@@ -650,7 +650,7 @@ export function SemanticSearch(props: SemanticSearchProps) {
                 onClick={() => handleResultClick(result)}
               >
                 <Icon name="file" class="w-3.5 h-3.5 shrink-0" style={{ color: "var(--text-weak)" }} />
-                <span class="text-[11px] truncate flex-1" style={{ color: "var(--text-base)" }}>
+                <span class="text-[11px] truncate flex-1" style={{ color: "var(--text-primary)" }}>
                   {getFileName(result.file)}:{result.startLine + 1}
                 </span>
                 <span 

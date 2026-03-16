@@ -170,7 +170,7 @@ export function ImageViewer(props: ImageViewerProps) {
         <div class="flex items-center gap-2">
           <Icon name="image" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />
           <Show when={props.filePath}>
-            <span class="text-xs truncate max-w-[200px]" style={{ color: "var(--text-base)" }}>
+            <span class="text-xs truncate max-w-[200px]" style={{ color: "var(--text-primary)" }}>
               {props.filePath!.split(/[/\\]/).pop()}
             </span>
           </Show>
@@ -184,7 +184,7 @@ export function ImageViewer(props: ImageViewerProps) {
           >
             <Icon name="magnifying-glass-minus" class="w-4 h-4" />
           </button>
-          <span class="w-14 text-center text-xs tabular-nums" style={{ color: "var(--text-base)" }}>
+          <span class="w-14 text-center text-xs tabular-nums" style={{ color: "var(--text-primary)" }}>
             {zoomPercent()}
           </span>
           <button

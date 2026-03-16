@@ -198,7 +198,7 @@ export function ConsoleInput(props: ConsoleInputProps) {
             {(item, index) => (
               <div class="flex items-center gap-2 px-2 py-1 cursor-pointer text-xs font-mono" style={{ background: index() === selectedCompletion() ? "var(--surface-hover)" : "transparent" }} onClick={() => applyCompletion(item)} onMouseEnter={() => setSelectedCompletion(index())}>
                 <span class="w-4 text-center shrink-0" style={{ color: getTypeColor(item.type) }}>{getTypeIcon(item.type)}</span>
-                <span class="flex-1 truncate" style={{ color: "var(--text-base)" }}>{item.label}</span>
+                <span class="flex-1 truncate" style={{ color: "var(--text-primary)" }}>{item.label}</span>
                 <Show when={item.detail}>
                   <span class="shrink-0 truncate max-w-[150px]" style={{ color: "var(--text-weak)" }}>{item.detail}</span>
                 </Show>
@@ -221,7 +221,7 @@ export function ConsoleInput(props: ConsoleInputProps) {
           placeholder={debug.state.isPaused ? "Evaluate expression... (Shift+Enter for newline)" : "Paused to evaluate"}
           disabled={!debug.state.isPaused}
           class="flex-1 bg-transparent text-xs outline-none resize-none font-mono"
-          style={{ color: "var(--text-base)", opacity: debug.state.isPaused ? 1 : 0.5, "min-height": "20px", height: isMultiline() ? "auto" : "20px" }}
+          style={{ color: "var(--text-primary)", opacity: debug.state.isPaused ? 1 : 0.5, "min-height": "20px", height: isMultiline() ? "auto" : "20px" }}
           rows={isMultiline() ? Math.min(input().split("\n").length, 8) : 1}
         />
         <button onClick={handleSubmit} disabled={!debug.state.isPaused || !input().trim()} class="p-1 rounded transition-colors disabled:opacity-30 mt-0.5" style={{ color: "var(--text-weak)" }} title="Evaluate (Enter)">

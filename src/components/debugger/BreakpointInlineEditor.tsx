@@ -70,7 +70,7 @@ export function BreakpointInlineEditor(props: BreakpointInlineEditorProps) {
         class="flex-1 px-2 py-0.5 text-xs font-mono rounded outline-none"
         style={{
           background: "var(--surface-base)",
-          color: "var(--text-base)",
+          color: "var(--text-primary)",
           border: "1px solid var(--accent)",
           height: "20px",
           "line-height": "20px",

@@ -169,7 +169,7 @@ export function BlameView(props: BlameViewProps) {
       >
         <div class="flex items-center gap-2">
           <Icon name="code-branch" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />
-          <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+          <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
             Git Blame
           </span>
           <span class="text-xs truncate max-w-[200px]" style={{ color: "var(--text-weak)" }}>
@@ -284,7 +284,7 @@ export function BlameView(props: BlameViewProps) {
                             <div class="py-1">
                               <div 
                                 class="text-xs truncate"
-                                style={{ color: "var(--text-base)" }}
+                                style={{ color: "var(--text-primary)" }}
                               >
                                 {line.commit.author}
                               </div>
@@ -328,7 +328,7 @@ export function BlameView(props: BlameViewProps) {
                         <td class="px-3 py-0">
                           <pre 
                             class="py-0"
-                            style={{ color: "var(--text-base)" }}
+                            style={{ color: "var(--text-primary)" }}
                           >
                             {line.content}
                           </pre>
@@ -353,13 +353,13 @@ export function BlameView(props: BlameViewProps) {
                     border: "1px solid var(--border-weak)",
                   }}
                 >
-                  <div class="font-medium" style={{ color: "var(--text-base)" }}>
+                  <div class="font-medium" style={{ color: "var(--text-primary)" }}>
                     {info().commit.author}
                   </div>
                   <div style={{ color: "var(--text-weak)" }}>
                     {info().commit.email}
                   </div>
-                  <div class="mt-1" style={{ color: "var(--text-base)" }}>
+                  <div class="mt-1" style={{ color: "var(--text-primary)" }}>
                     {info().commit.message}
                   </div>
                   <div class="mt-1 font-mono" style={{ color: "var(--text-weak)" }}>
@@ -401,14 +401,14 @@ export function BlameView(props: BlameViewProps) {
                     </div>
                     <div class="flex-1 min-w-0">
                       <div class="flex items-center gap-2">
-                        <span class="font-medium" style={{ color: "var(--text-base)" }}>
+                        <span class="font-medium" style={{ color: "var(--text-primary)" }}>
                           {commit.author}
                         </span>
                         <span class="text-xs" style={{ color: "var(--text-weak)" }}>
                           {commit.email}
                         </span>
                       </div>
-                      <p class="text-sm mt-1" style={{ color: "var(--text-base)" }}>
+                      <p class="text-sm mt-1" style={{ color: "var(--text-primary)" }}>
                         {commit.message}
                       </p>
                       <div class="flex items-center gap-3 mt-2 text-xs" style={{ color: "var(--text-weak)" }}>

@@ -330,7 +330,7 @@ export function LanguageSelector(props: LanguageSelectorProps) {
             ref={inputRef}
             type="text"
             class="flex-1 bg-transparent outline-none text-sm"
-            style={{ color: "var(--text-base)" }}
+            style={{ color: "var(--text-primary)" }}
             placeholder="Search languages..."
             value={searchQuery()}
             onInput={(e) => setSearchQuery(e.currentTarget.value)}

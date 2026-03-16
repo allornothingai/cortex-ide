@@ -174,7 +174,7 @@ function CreateTunnelDialog(props: CreateTunnelDialogProps) {
             class="flex items-center justify-between px-4 py-3 border-b"
             style={{ "border-color": "var(--border-weak)" }}
           >
-            <h2 class="text-sm font-semibold" style={{ color: "var(--text-base)" }}>
+            <h2 class="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>
               Create Remote Tunnel
             </h2>
             <IconButton
@@ -205,7 +205,7 @@ function CreateTunnelDialog(props: CreateTunnelDialogProps) {
                 style={{
                   "background-color": "var(--surface-base)",
                   border: "1px solid var(--border-base)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                 }}
                 required
               />
@@ -269,7 +269,7 @@ function CreateTunnelDialog(props: CreateTunnelDialogProps) {
                 color: "var(--text-weak)",
               }}
             >
-              <p class="font-medium mb-1" style={{ color: "var(--text-base)" }}>
+              <p class="font-medium mb-1" style={{ color: "var(--text-primary)" }}>
                 How Remote Tunnels Work
               </p>
               <ul class="space-y-1 list-disc list-inside">
@@ -359,7 +359,7 @@ function ConnectTunnelDialog(props: ConnectTunnelDialogProps) {
             class="flex items-center justify-between px-4 py-3 border-b"
             style={{ "border-color": "var(--border-weak)" }}
           >
-            <h2 class="text-sm font-semibold" style={{ color: "var(--text-base)" }}>
+            <h2 class="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>
               Connect to Remote Tunnel
             </h2>
             <IconButton
@@ -388,7 +388,7 @@ function ConnectTunnelDialog(props: ConnectTunnelDialogProps) {
                 style={{
                   "background-color": "var(--surface-base)",
                   border: "1px solid var(--border-base)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                 }}
                 required
               />
@@ -636,7 +636,7 @@ export function TunnelManager(props: TunnelManagerProps) {
                   onClick={() => setShowConnectDialog(true)}
                   class="text-xs font-medium px-3 py-1.5 rounded transition-colors"
                   style={{ 
-                    color: "var(--text-base)",
+                    color: "var(--text-primary)",
                     "background-color": "var(--surface-raised)",
                   }}
                 >
@@ -725,7 +725,7 @@ export function TunnelManager(props: TunnelManagerProps) {
                       <Icon name="link" class="w-3 h-3 flex-shrink-0" style={{ color: "var(--text-weak)" }} />
                       <span
                         class="font-mono text-xs truncate flex-1"
-                        style={{ color: "var(--text-base)" }}
+                        style={{ color: "var(--text-primary)" }}
                       >
                         {tunnel.url}
                       </span>
@@ -796,7 +796,7 @@ export function TunnelStatusBar(props: { tunnel: TunnelInfo | null; onCopy?: () 
           title="Click to copy tunnel URL"
         >
           <TunnelStatusIcon status={tunnel().status} />
-          <span class="font-mono truncate max-w-[200px]" style={{ color: "var(--text-base)" }}>
+          <span class="font-mono truncate max-w-[200px]" style={{ color: "var(--text-primary)" }}>
             {tunnel().url ? new URL(tunnel().url).hostname : "Tunnel"}
           </span>
           <span style={{ color: "var(--text-weaker)" }}>:{tunnel().localPort}</span>

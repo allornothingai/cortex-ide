@@ -41,7 +41,7 @@ export function WebPreview() {
             <button
               onClick={() => setShowServerList(!showServerList())}
               class="flex items-center gap-2 px-2 py-1 rounded transition-colors hover:bg-[var(--surface-raised)]"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
             >
               <Icon name="globe" class="w-3.5 h-3.5" style={{ color: "var(--cortex-success)" }} />
               <span class="text-xs font-mono">{state.activeServer!.url}</span>

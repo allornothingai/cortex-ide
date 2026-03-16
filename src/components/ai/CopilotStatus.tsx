@@ -234,7 +234,7 @@ export function CopilotSignInModal(props: CopilotSignInModalProps) {
           >
             <div class="flex items-center gap-3">
               <CopilotIcon class="w-6 h-6" />
-              <h2 class="text-lg font-semibold" style={{ color: "var(--text-base)" }}>
+              <h2 class="text-lg font-semibold" style={{ color: "var(--text-primary)" }}>
                 GitHub Copilot
               </h2>
             </div>
@@ -259,7 +259,7 @@ export function CopilotSignInModal(props: CopilotSignInModalProps) {
                   <Icon name="check" class="w-8 h-8" />
                 </div>
                 <div>
-                  <h3 class="text-lg font-medium" style={{ color: "var(--text-base)" }}>
+                  <h3 class="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
                     Connected to GitHub Copilot
                   </h3>
                   <p class="text-sm mt-1" style={{ color: "var(--text-weak)" }}>
@@ -272,7 +272,7 @@ export function CopilotSignInModal(props: CopilotSignInModalProps) {
                     class="px-4 py-2 rounded-lg text-sm font-medium transition-colors"
                     style={{
                       background: "var(--surface-hover)",
-                      color: "var(--text-base)",
+                      color: "var(--text-primary)",
                     }}
                   >
                     Sign Out
@@ -334,7 +334,7 @@ export function CopilotSignInModal(props: CopilotSignInModalProps) {
               <div class="text-center space-y-4">
                 <CopilotIcon class="w-16 h-16 mx-auto opacity-50" />
                 <div>
-                  <h3 class="text-lg font-medium" style={{ color: "var(--text-base)" }}>
+                  <h3 class="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
                     Connect to GitHub Copilot
                   </h3>
                   <p class="text-sm mt-1" style={{ color: "var(--text-weak)" }}>
@@ -453,7 +453,7 @@ export function CopilotSettingsPanel(props: CopilotSettingsPanelProps) {
       {/* Header */}
       <div class="flex items-center gap-3">
         <CopilotIcon class="w-5 h-5" />
-        <h3 class="font-medium" style={{ color: "var(--text-base)" }}>
+        <h3 class="font-medium" style={{ color: "var(--text-primary)" }}>
           GitHub Copilot
         </h3>
         <Show when={status() === "signedin"}>
@@ -472,7 +472,7 @@ export function CopilotSettingsPanel(props: CopilotSettingsPanelProps) {
         style={{ background: "var(--surface-hover)" }}
       >
         <div>
-          <p class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+          <p class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
             Enable Copilot
           </p>
           <p class="text-xs" style={{ color: "var(--text-weak)" }}>
@@ -503,7 +503,7 @@ export function CopilotSettingsPanel(props: CopilotSettingsPanelProps) {
               style={{ background: "var(--surface-hover)" }}
             >
               <div class="flex items-center justify-between">
-                <span class="text-sm" style={{ color: "var(--text-base)" }}>
+                <span class="text-sm" style={{ color: "var(--text-primary)" }}>
                   Status
                 </span>
                 <span class="text-sm flex items-center gap-1.5" style={{ color: "var(--success)" }}>
@@ -513,7 +513,7 @@ export function CopilotSettingsPanel(props: CopilotSettingsPanelProps) {
               </div>
               <Show when={models().length > 0}>
                 <div class="flex items-center justify-between">
-                  <span class="text-sm" style={{ color: "var(--text-base)" }}>
+                  <span class="text-sm" style={{ color: "var(--text-primary)" }}>
                     Available Models
                   </span>
                   <span class="text-sm" style={{ color: "var(--text-weak)" }}>
@@ -527,7 +527,7 @@ export function CopilotSettingsPanel(props: CopilotSettingsPanelProps) {
               class="w-full px-4 py-2 rounded-lg text-sm transition-colors"
               style={{
                 background: "var(--surface-hover)",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
               }}
             >
               Sign Out
@@ -552,7 +552,7 @@ export function CopilotSettingsPanel(props: CopilotSettingsPanelProps) {
           class="p-3 rounded-lg border"
           style={{ background: "var(--surface-base)", "border-color": "var(--border-weak)" }}
         >
-          <h4 class="text-sm font-medium mb-2" style={{ color: "var(--text-base)" }}>
+          <h4 class="text-sm font-medium mb-2" style={{ color: "var(--text-primary)" }}>
             Keyboard Shortcuts
           </h4>
           <div class="grid grid-cols-2 gap-2 text-xs" style={{ color: "var(--text-weak)" }}>

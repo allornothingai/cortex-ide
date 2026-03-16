@@ -86,7 +86,7 @@ export function KernelPicker() {
       <button
         onClick={() => setIsOpen(!isOpen())}
         class="flex items-center gap-2 px-2.5 py-1.5 rounded hover:bg-[var(--surface-hover)] transition-colors text-xs"
-        style={{ color: "var(--text-base)" }}
+        style={{ color: "var(--text-primary)" }}
       >
         <span
           class="inline-block w-2 h-2 rounded-full"
@@ -147,7 +147,7 @@ export function KernelPicker() {
                 onClick={handleInterrupt}
                 disabled={!isBusy()}
                 class="flex items-center gap-2 w-full px-3 py-1.5 text-xs hover:bg-[var(--surface-hover)] transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
-                style={{ color: "var(--text-base)" }}
+                style={{ color: "var(--text-primary)" }}
               >
                 <Icon name="stop" class="w-3.5 h-3.5" style={{ color: "var(--warning)" }} />
                 <span>Interrupt Kernel</span>
@@ -155,7 +155,7 @@ export function KernelPicker() {
               <button
                 onClick={handleRestart}
                 class="flex items-center gap-2 w-full px-3 py-1.5 text-xs hover:bg-[var(--surface-hover)] transition-colors"
-                style={{ color: "var(--text-base)" }}
+                style={{ color: "var(--text-primary)" }}
               >
                 <Icon name="rotate-right" class="w-3.5 h-3.5" style={{ color: "var(--cortex-info)" }} />
                 <span>Restart Kernel</span>

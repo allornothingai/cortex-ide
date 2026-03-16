@@ -282,7 +282,7 @@ export function JournalPanel() {
                 </button>
                 
                 <div class="text-center">
-                  <span class="font-medium" style={{ color: "var(--text-base)" }}>
+                  <span class="font-medium" style={{ color: "var(--text-primary)" }}>
                     {MONTHS[journal.state.selectedDate.getMonth()]} {journal.state.selectedDate.getFullYear()}
                   </span>
                 </div>
@@ -380,7 +380,7 @@ export function JournalPanel() {
                         {(template) => (
                           <button
                             class="w-full px-3 py-2 text-left text-sm hover:bg-white/10 transition-colors"
-                            style={{ color: "var(--text-base)" }}
+                            style={{ color: "var(--text-primary)" }}
                             onClick={() => handleNewEntry(template.id)}
                           >
                             {template.name}
@@ -406,7 +406,7 @@ export function JournalPanel() {
                     type="text"
                     placeholder="Search journal entries..."
                     class="flex-1 bg-transparent outline-none text-sm"
-                    style={{ color: "var(--text-base)" }}
+                    style={{ color: "var(--text-primary)" }}
                     value={searchInput()}
                     onInput={(e) => setSearchInput(e.currentTarget.value)}
                     onKeyDown={handleSearchKeyDown}
@@ -453,7 +453,7 @@ export function JournalPanel() {
                         >
                           <div class="flex items-center gap-2 mb-1">
                             <Icon name="file-lines" class="w-4 h-4 shrink-0" style={{ color: "var(--text-weak)" }} />
-                            <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+                            <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
                               {formatDisplayDate(entry.date)}
                             </span>
                           </div>
@@ -485,7 +485,7 @@ export function JournalPanel() {
                   <div class="min-w-0">
                     <h2
                       class="font-medium truncate"
-                      style={{ color: "var(--text-base)" }}
+                      style={{ color: "var(--text-primary)" }}
                     >
                       {formatDisplayDate(journal.state.currentEntry!.date)}
                     </h2>
@@ -562,7 +562,7 @@ export function JournalPanel() {
                       class="w-full h-full p-4 resize-none outline-none font-mono text-sm"
                       style={{
                         background: "transparent",
-                        color: "var(--text-base)",
+                        color: "var(--text-primary)",
                       }}
                       value={journal.state.currentEntry?.content || ""}
                       onInput={(e) => journal.updateEntryContent(e.currentTarget.value)}

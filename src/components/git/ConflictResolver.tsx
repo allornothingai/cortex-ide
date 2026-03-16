@@ -170,7 +170,7 @@ export function ConflictResolver(props: ConflictResolverProps) {
         <div class="flex items-center gap-3">
           <Icon name="code-merge" class="w-5 h-5 text-orange-400" />
           <div>
-            <h2 class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+            <h2 class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
               Resolve Conflicts
             </h2>
             <p class="text-xs" style={{ color: "var(--text-weak)" }}>
@@ -233,7 +233,7 @@ export function ConflictResolver(props: ConflictResolverProps) {
                     <Icon name="triangle-exclamation" class="w-4 h-4 text-orange-400 shrink-0" />
                   </Show>
                   <div class="flex-1 min-w-0">
-                    <div class="text-sm truncate" style={{ color: "var(--text-base)" }}>
+                    <div class="text-sm truncate" style={{ color: "var(--text-primary)" }}>
                       Conflict {index() + 1}
                     </div>
                     <div class="text-xs" style={{ color: "var(--text-weak)" }}>
@@ -304,7 +304,7 @@ export function ConflictResolver(props: ConflictResolverProps) {
                     </button>
                     <button
                       class="flex items-center gap-1.5 px-3 py-1.5 rounded text-sm transition-colors border"
-                      style={{ "border-color": "var(--border-weak)", color: "var(--text-base)" }}
+                      style={{ "border-color": "var(--border-weak)", color: "var(--text-primary)" }}
                       onClick={() => startCustomEdit(hunk())}
                     >
                       Edit Manually
@@ -345,7 +345,7 @@ export function ConflictResolver(props: ConflictResolverProps) {
                                 <span class="inline-block w-8 text-right mr-3 select-none" style={{ color: "var(--text-weaker)" }}>
                                   {hunk().startLine + i()}
                                 </span>
-                                <span style={{ color: "var(--text-base)" }}>{line}</span>
+                                <span style={{ color: "var(--text-primary)" }}>{line}</span>
                               </div>
                             )}
                           </For>
@@ -371,7 +371,7 @@ export function ConflictResolver(props: ConflictResolverProps) {
                                 <span class="inline-block w-8 text-right mr-3 select-none" style={{ color: "var(--text-weaker)" }}>
                                   {hunk().startLine + i()}
                                 </span>
-                                <span style={{ color: "var(--text-base)" }}>{line}</span>
+                                <span style={{ color: "var(--text-primary)" }}>{line}</span>
                               </div>
                             )}
                           </For>
@@ -396,7 +396,7 @@ export function ConflictResolver(props: ConflictResolverProps) {
                               {hunk().startLine + i()}
                             </span>
                             <span class="text-green-400">+ </span>
-                            <span style={{ color: "var(--text-base)" }}>{line}</span>
+                            <span style={{ color: "var(--text-primary)" }}>{line}</span>
                           </div>
                         )}
                       </For>
@@ -423,7 +423,7 @@ export function ConflictResolver(props: ConflictResolverProps) {
                               {hunk().startLine + i()}
                             </span>
                             <span class="text-blue-400">+ </span>
-                            <span style={{ color: "var(--text-base)" }}>{line}</span>
+                            <span style={{ color: "var(--text-primary)" }}>{line}</span>
                           </div>
                         )}
                       </For>
@@ -446,7 +446,7 @@ export function ConflictResolver(props: ConflictResolverProps) {
                               <span class="inline-block w-8 text-right mr-3 select-none" style={{ color: "var(--text-weaker)" }}>
                                 {hunk().startLine + i()}
                               </span>
-                              <span style={{ color: "var(--text-base)" }}>{line}</span>
+                              <span style={{ color: "var(--text-primary)" }}>{line}</span>
                             </div>
                           )}
                         </For>
@@ -529,7 +529,7 @@ export function ConflictResolver(props: ConflictResolverProps) {
             onClick={(e) => e.stopPropagation()}
           >
             <div class="flex items-center justify-between px-4 py-3 border-b" style={{ "border-color": "var(--border-weak)" }}>
-              <h3 id="conflict-edit-title" class="text-lg font-medium" style={{ color: "var(--text-base)" }}>
+              <h3 id="conflict-edit-title" class="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
                 Edit Resolution
               </h3>
               <p id="conflict-edit-desc" class="sr-only">
@@ -550,7 +550,7 @@ export function ConflictResolver(props: ConflictResolverProps) {
                 aria-label="Resolution content"
                 style={{
                   background: "var(--background-stronger)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                   border: "1px solid var(--border-weak)"
                 }}
                 value={customContent()}

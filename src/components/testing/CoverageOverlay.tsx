@@ -54,7 +54,7 @@ function FileCoverageRow(props: { file: CoverageFileData }) {
       onClick={handleNavigate}
     >
       <Icon name="file" size={12} color="var(--text-weak)" class="shrink-0" />
-      <span class="truncate flex-1" style={{ color: "var(--text-base)" }} title={props.file.filePath}>
+      <span class="truncate flex-1" style={{ color: "var(--text-primary)" }} title={props.file.filePath}>
         {fileName()}
       </span>
       <div class="shrink-0" style={{ width: "60px" }}>
@@ -101,7 +101,7 @@ export function CoverageOverlay() {
   });
 
   return (
-    <div class="flex flex-col h-full" style={{ background: "var(--cortex-bg-primary)", color: "var(--text-base)" }}>
+    <div class="flex flex-col h-full" style={{ background: "var(--cortex-bg-primary)", color: "var(--text-primary)" }}>
       <div class="flex items-center justify-between px-2 shrink-0" style={{ height: "32px", "border-bottom": "1px solid var(--surface-border)" }}>
         <div class="flex items-center gap-2">
           <Icon name="chart-pie" size={14} color="var(--text-weak)" />

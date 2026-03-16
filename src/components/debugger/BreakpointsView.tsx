@@ -701,7 +701,7 @@ export function BreakpointsView() {
 
                         {/* Line number and info - VS Code spec: name overflow ellipsis */}
                         <div class="name flex-1 min-w-0" style={{ overflow: "hidden", "text-overflow": "ellipsis" }}>
-                          <span style={{ color: "var(--text-base)" }}>
+                          <span style={{ color: "var(--text-primary)" }}>
                             Line {bp.line}{bp.column !== undefined ? `:${bp.column}` : ""}
                           </span>
                           <Show when={bp.column !== undefined}>
@@ -1006,7 +1006,7 @@ export function BreakpointsView() {
                               class="px-2 py-1 text-xs rounded outline-none"
                               style={{
                                 background: "var(--surface-sunken)",
-                                color: "var(--text-base)",
+                                color: "var(--text-primary)",
                                 border: "1px solid var(--cortex-success)",
                               }}
                             >
@@ -1201,7 +1201,7 @@ export function BreakpointsView() {
                     >
                       <span 
                         class="flex-1 truncate" 
-                        style={{ color: "var(--text-base)" }}
+                        style={{ color: "var(--text-primary)" }}
                         onDblClick={(e) => {
                           e.stopPropagation();
                           handleRenameGroup(group.id);
@@ -1270,7 +1270,7 @@ export function BreakpointsView() {
                                     type={getBreakpointType(bp!)} 
                                     state={getBreakpointState(bp!)} 
                                   />
-                                  <span class="truncate flex-1" style={{ color: "var(--text-base)" }}>
+                                  <span class="truncate flex-1" style={{ color: "var(--text-primary)" }}>
                                     {getFileName(bp!.path)}:{bp!.line}
                                   </span>
                                   <IconButton
@@ -1497,7 +1497,7 @@ export function BreakpointsView() {
                 class="px-2 py-1 text-xs rounded outline-none"
                 style={{
                   background: "var(--surface-base)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                   border: "1px solid var(--border-weak)",
                 }}
               >

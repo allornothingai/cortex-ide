@@ -152,7 +152,7 @@ export function BranchComparison(props: BranchComparisonProps) {
       >
         <div class="flex items-center gap-2">
           <Icon name="code-branch" class="w-5 h-5" style={{ color: "var(--text-weak)" }} />
-          <h2 class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+          <h2 class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
             Compare Branches
           </h2>
         </div>
@@ -177,7 +177,7 @@ export function BranchComparison(props: BranchComparisonProps) {
             class="w-full flex items-center justify-between px-3 py-2 rounded text-sm"
             style={{
               background: "var(--background-stronger)",
-              color: "var(--text-base)",
+              color: "var(--text-primary)",
               border: "1px solid var(--border-weak)"
             }}
             onClick={() => setShowBaseDropdown(!showBaseDropdown())}
@@ -204,7 +204,7 @@ export function BranchComparison(props: BranchComparisonProps) {
                     }}
                   >
                     <Icon name="code-branch" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />
-                    <span class="text-sm" style={{ color: "var(--text-base)" }}>
+                    <span class="text-sm" style={{ color: "var(--text-primary)" }}>
                       {branch.name}
                     </span>
                     <Show when={branch.current}>
@@ -234,7 +234,7 @@ export function BranchComparison(props: BranchComparisonProps) {
             class="w-full flex items-center justify-between px-3 py-2 rounded text-sm"
             style={{
               background: "var(--background-stronger)",
-              color: "var(--text-base)",
+              color: "var(--text-primary)",
               border: "1px solid var(--border-weak)"
             }}
             onClick={() => setShowCompareDropdown(!showCompareDropdown())}
@@ -261,7 +261,7 @@ export function BranchComparison(props: BranchComparisonProps) {
                     }}
                   >
                     <Icon name="code-branch" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />
-                    <span class="text-sm" style={{ color: "var(--text-base)" }}>
+                    <span class="text-sm" style={{ color: "var(--text-primary)" }}>
                       {branch.name}
                     </span>
                     <Show when={branch.current}>
@@ -403,7 +403,7 @@ export function BranchComparison(props: BranchComparisonProps) {
                       </span>
                       <span
                         class="text-sm truncate"
-                        style={{ color: "var(--text-base)" }}
+                        style={{ color: "var(--text-primary)" }}
                       >
                         {commit.message.split("\n")[0]}
                       </span>
@@ -446,7 +446,7 @@ export function BranchComparison(props: BranchComparisonProps) {
                     </Show>
                     <span
                       class="text-sm truncate block"
-                      style={{ color: "var(--text-base)" }}
+                      style={{ color: "var(--text-primary)" }}
                     >
                       {file.path}
                     </span>
@@ -492,7 +492,7 @@ export function BranchComparison(props: BranchComparisonProps) {
               class="flex items-center gap-2 px-4 py-2 rounded text-sm transition-colors"
               style={{
                 background: "var(--surface-active)",
-                color: "var(--text-base)"
+                color: "var(--text-primary)"
               }}
               onClick={() => props.onCreatePR?.(compareBranch(), baseBranch())}
             >

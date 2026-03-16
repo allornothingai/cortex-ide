@@ -119,7 +119,7 @@ export function REPLCell(props: REPLCellProps) {
               class="w-full resize-none outline-none font-mono text-sm p-3"
               style={{
                 background: "transparent",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
                 "min-height": "40px",
               }}
               rows={1}

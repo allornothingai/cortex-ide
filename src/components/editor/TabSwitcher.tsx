@@ -146,7 +146,7 @@ function TabItem(props: TabItemProps) {
       class="w-full flex items-center gap-3 px-4 py-2.5 text-left transition-colors group"
       style={{
         background: props.isSelected ? "var(--surface-active)" : "transparent",
-        color: "var(--text-base)",
+        color: "var(--text-primary)",
       }}
       onMouseEnter={props.onSelect}
       onClick={() => {
@@ -280,7 +280,7 @@ export function TabSwitcher() {
               type="text"
               placeholder="Search open files..."
               class="flex-1 bg-transparent outline-none text-sm"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
               value={tabSwitcher.state.query}
               onInput={(e) => tabSwitcher.setQuery(e.currentTarget.value)}
               onKeyDown={handleKeyDown}

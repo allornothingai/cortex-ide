@@ -350,7 +350,7 @@ export function AccessibilityHelp() {
           class="w-full px-3 py-2 rounded-md text-sm"
           style={{
             background: "var(--surface-base)",
-            color: "var(--text-base)",
+            color: "var(--text-primary)",
             border: "1px solid var(--border-weak)",
             outline: "none",
           }}
@@ -384,7 +384,7 @@ export function AccessibilityHelp() {
                       class="flex items-center justify-between px-2 py-1.5 rounded"
                       style={{ background: "var(--surface-base)" }}
                     >
-                      <span class="text-sm" style={{ color: "var(--text-base)" }}>
+                      <span class="text-sm" style={{ color: "var(--text-primary)" }}>
                         {shortcut.description}
                       </span>
                       <kbd
@@ -423,7 +423,7 @@ export function AccessibilityHelp() {
             <h3
               class="text-sm font-semibold px-2 py-1.5 rounded mb-2"
               style={{
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
                 background: "var(--surface-base)",
               }}
             >
@@ -457,7 +457,7 @@ export function AccessibilityHelp() {
             <h3
               class="text-sm font-semibold px-2 py-1.5 rounded mb-2 flex items-center gap-2"
               style={{
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
                 background: "var(--surface-base)",
               }}
             >
@@ -533,7 +533,7 @@ export function AccessibilityHelp() {
         <div class="flex items-center gap-3 mb-3">
           <Icon name="font" size={16} style={{ color: "var(--accent)" }} />
           <div>
-            <div class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+            <div class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
               Font Size
             </div>
             <div class="text-xs" style={{ color: "var(--text-weak)" }}>
@@ -567,7 +567,7 @@ export function AccessibilityHelp() {
             class="text-xs font-mono px-2 py-1 rounded"
             style={{
               background: "var(--background-base)",
-              color: "var(--text-base)",
+              color: "var(--text-primary)",
               "min-width": "48px",
               "text-align": "center",
             }}
@@ -593,7 +593,7 @@ export function AccessibilityHelp() {
           class="w-full px-4 py-2 text-sm rounded-md transition-colors"
           style={{
             background: "var(--surface-raised)",
-            color: "var(--text-base)",
+            color: "var(--text-primary)",
             border: "1px solid var(--border-weak)",
           }}
           onMouseEnter={(e) => {
@@ -640,7 +640,7 @@ export function AccessibilityHelp() {
               <h2
                 id="accessibility-help-title"
                 class="text-lg font-semibold"
-                style={{ color: "var(--text-base)" }}
+                style={{ color: "var(--text-primary)" }}
               >
                 Accessibility Help
               </h2>
@@ -824,7 +824,7 @@ function SettingToggle(props: SettingToggleProps) {
       <div class="flex items-center gap-3">
         <span style={{ color: "var(--accent)" }}>{props.icon}</span>
         <div>
-          <div class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+          <div class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
             {props.title}
           </div>
           <div class="text-xs" style={{ color: "var(--text-weak)" }}>

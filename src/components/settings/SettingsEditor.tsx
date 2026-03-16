@@ -1152,6 +1152,7 @@ function BooleanRenderer(props: {
       <Toggle
         checked={props.value}
         onChange={props.onChange}
+        aria-label={props.setting.label}
       />
       <Show when={props.hasOverride}>
         <button

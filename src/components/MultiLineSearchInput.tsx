@@ -189,7 +189,7 @@ export function MultiLineSearchInput(props: MultiLineSearchInputProps) {
                 border: "none",
                 "font-size": "13px",
                 "min-width": "0",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
               }}
               value={displayValue()}
               onInput={(e) => props.onChange(e.currentTarget.value.replace(/\\n/g, '\n'))}
@@ -244,7 +244,7 @@ export function MultiLineSearchInput(props: MultiLineSearchInputProps) {
               "line-height": "1.4",
               resize: "none",
               "min-width": "0",
-              color: "var(--text-base)",
+              color: "var(--text-primary)",
               "min-height": "36px",
               "max-height": "120px",
               overflow: "auto",

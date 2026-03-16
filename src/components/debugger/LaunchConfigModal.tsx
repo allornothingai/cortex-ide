@@ -113,7 +113,7 @@ export function LaunchConfigModal(props: LaunchConfigModalProps) {
           class="shrink-0 flex items-center justify-between px-4 py-3 border-b"
           style={{ "border-color": "var(--border-weak)" }}
         >
-          <h2 class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+          <h2 class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
             Start Debugging
           </h2>
           <button
@@ -141,7 +141,7 @@ export function LaunchConfigModal(props: LaunchConfigModalProps) {
                       class="flex items-center gap-2 px-3 py-2 rounded text-left transition-colors hover:bg-[var(--surface-raised)]"
                       style={{
                         background: "var(--surface-sunken)",
-                        color: "var(--text-base)",
+                        color: "var(--text-primary)",
                       }}
                     >
                       <Icon name="terminal" size="md" style={{ color: "var(--text-weak)" }} />
@@ -160,7 +160,7 @@ export function LaunchConfigModal(props: LaunchConfigModalProps) {
               <div class="flex items-center justify-between">
                 <div class="flex items-center gap-2">
                   <Icon name="terminal" size="md" style={{ color: "var(--text-weak)" }} />
-                  <span class="text-sm" style={{ color: "var(--text-base)" }}>
+                  <span class="text-sm" style={{ color: "var(--text-primary)" }}>
                     {selectedTemplate()!.name}
                   </span>
                 </div>
@@ -185,7 +185,7 @@ export function LaunchConfigModal(props: LaunchConfigModalProps) {
                   class="w-full px-3 py-2 text-sm rounded outline-none"
                   style={{
                     background: "var(--surface-sunken)",
-                    color: "var(--text-base)",
+                    color: "var(--text-primary)",
                     border: "1px solid var(--border-weak)",
                   }}
                 />
@@ -205,7 +205,7 @@ export function LaunchConfigModal(props: LaunchConfigModalProps) {
                     class="flex-1 px-3 py-2 text-sm rounded outline-none"
                     style={{
                       background: "var(--surface-sunken)",
-                      color: "var(--text-base)",
+                      color: "var(--text-primary)",
                       border: "1px solid var(--border-weak)",
                     }}
                   />
@@ -236,7 +236,7 @@ export function LaunchConfigModal(props: LaunchConfigModalProps) {
                   class="w-full px-3 py-2 text-sm rounded outline-none"
                   style={{
                     background: "var(--surface-sunken)",
-                    color: "var(--text-base)",
+                    color: "var(--text-primary)",
                     border: "1px solid var(--border-weak)",
                   }}
                 />
@@ -256,7 +256,7 @@ export function LaunchConfigModal(props: LaunchConfigModalProps) {
                     class="flex-1 px-3 py-2 text-sm rounded outline-none"
                     style={{
                       background: "var(--surface-sunken)",
-                      color: "var(--text-base)",
+                      color: "var(--text-primary)",
                       border: "1px solid var(--border-weak)",
                     }}
                   />
@@ -287,7 +287,7 @@ export function LaunchConfigModal(props: LaunchConfigModalProps) {
                   class="w-full px-3 py-2 text-sm rounded outline-none resize-none font-mono"
                   style={{
                     background: "var(--surface-sunken)",
-                    color: "var(--text-base)",
+                    color: "var(--text-primary)",
                     border: "1px solid var(--border-weak)",
                   }}
                 />
@@ -305,7 +305,7 @@ export function LaunchConfigModal(props: LaunchConfigModalProps) {
                 <label
                   for="stopOnEntry"
                   class="text-sm"
-                  style={{ color: "var(--text-base)" }}
+                  style={{ color: "var(--text-primary)" }}
                 >
                   Stop on entry
                 </label>
@@ -331,7 +331,7 @@ export function LaunchConfigModal(props: LaunchConfigModalProps) {
                       class="w-full px-3 py-2 text-sm rounded outline-none"
                       style={{
                         background: "var(--surface-sunken)",
-                        color: "var(--text-base)",
+                        color: "var(--text-primary)",
                         border: "1px solid var(--border-weak)",
                       }}
                     >
@@ -356,7 +356,7 @@ export function LaunchConfigModal(props: LaunchConfigModalProps) {
                       class="w-full px-3 py-2 text-sm rounded outline-none"
                       style={{
                         background: "var(--surface-sunken)",
-                        color: "var(--text-base)",
+                        color: "var(--text-primary)",
                         border: "1px solid var(--border-weak)",
                       }}
                     >
@@ -383,7 +383,7 @@ export function LaunchConfigModal(props: LaunchConfigModalProps) {
                       class="w-full px-3 py-2 text-sm rounded outline-none"
                       style={{
                         background: "var(--surface-sunken)",
-                        color: "var(--text-base)",
+                        color: "var(--text-primary)",
                         border: "1px solid var(--border-weak)",
                       }}
                     />

@@ -209,7 +209,7 @@ export function NotebookCell(props: NotebookCellProps) {
                 class="w-full resize-none outline-none font-mono text-sm p-3"
                 style={{
                   background: "var(--surface-base)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                   border: "1px solid var(--border-base)",
                   "border-radius": "var(--cortex-radius-sm)",
                   "min-height": "60px",

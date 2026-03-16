@@ -625,7 +625,7 @@ function CellContentPanel(props: {
           <pre
             class="font-mono text-code-sm whitespace-pre-wrap break-words m-0"
             style={{
-              color: "var(--text-base)",
+              color: "var(--text-primary)",
               "line-height": "1.5",
             }}
           >
@@ -729,7 +729,7 @@ function OutputDiffPanel(props: { outputDiffs: OutputDiff[] }) {
                     <div class="p-2">
                       <pre
                         class="font-mono text-code-sm whitespace-pre-wrap m-0"
-                        style={{ color: "var(--text-base)" }}
+                        style={{ color: "var(--text-primary)" }}
                       >
                         {getOutputText(outputDiff.leftOutput || outputDiff.rightOutput!)}
                       </pre>
@@ -799,7 +799,7 @@ function CellDiffRow(props: CellDiffRowProps) {
           <Icon name="chevron-down" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />
         </Show>
 
-        <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+        <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
           Cell {props.index + 1}
         </span>
 
@@ -1097,13 +1097,13 @@ export function NotebookDiff(props: NotebookDiffProps) {
         <div class="flex items-center gap-3">
           <div class="flex items-center gap-2">
             <Icon name="chevron-left" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />
-            <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+            <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
               {props.leftLabel || "Original"}
             </span>
           </div>
           <span class="text-sm" style={{ color: "var(--text-weaker)" }}>vs</span>
           <div class="flex items-center gap-2">
-            <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+            <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
               {props.rightLabel || "Modified"}
             </span>
             <Icon name="chevron-right" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />

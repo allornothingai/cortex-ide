@@ -247,7 +247,7 @@ export function CoverageView(props: CoverageViewProps) {
         "flex-direction": "column",
         height: props.height || "100%",
         background: "var(--background-base)",
-        color: "var(--text-base)",
+        color: "var(--text-primary)",
         "font-size": "13px",
         ...props.style,
       }}

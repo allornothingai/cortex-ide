@@ -407,7 +407,7 @@ export function TasksJsonEditor(props: TasksJsonEditorProps) {
               class="w-full h-full p-4 font-mono text-sm resize-none outline-none"
               style={{
                 background: "var(--ui-panel-bg)",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
                 border: "none",
               }}
               value={content()}

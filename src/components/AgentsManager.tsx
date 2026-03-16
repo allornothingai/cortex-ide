@@ -487,7 +487,7 @@ Guidelines for generating agents:
           style={{ "border-color": "var(--border-weak)" }}
         >
           <div class="flex items-center gap-2">
-            <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+            <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
               {mode() === "list" ? "Agents" : mode() === "ai" ? "Generate Agent with AI" : mode() === "create" ? "Create Agent" : "Edit Agent"}
             </span>
           </div>
@@ -510,7 +510,7 @@ Guidelines for generating agents:
                 class="flex-1 flex items-center justify-center gap-2 px-3 py-2 rounded border transition-colors hover:bg-[var(--surface-raised)]"
                 style={{ 
                   "border-color": "var(--border-base)",
-                  color: "var(--text-base)"
+                  color: "var(--text-primary)"
                 }}
               >
                 <Icon name="bolt" size={16} />
@@ -557,7 +557,7 @@ Guidelines for generating agents:
                     <div class="flex items-start justify-between">
                       <div class="flex-1 min-w-0">
                         <div class="flex items-center gap-2">
-                          <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+                          <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
                             {agent.name}
                           </span>
                           <span 
@@ -602,7 +602,7 @@ Guidelines for generating agents:
             <div class="space-y-4">
               <div class="text-center mb-6">
                 <Icon name="bolt" size={32} style={{ color: "var(--text-weak)" }} class="mx-auto mb-2" />
-                <p class="text-sm" style={{ color: "var(--text-base)" }}>
+                <p class="text-sm" style={{ color: "var(--text-primary)" }}>
                   Describe the agent you want to create
                 </p>
                 <p class="text-xs mt-1" style={{ color: "var(--text-weaker)" }}>
@@ -622,7 +622,7 @@ Guidelines for generating agents:
                     style={{ 
                       "border-color": formScope() === "project" ? "var(--text-weak)" : "var(--border-weak)",
                       background: formScope() === "project" ? "var(--surface-raised)" : "transparent",
-                      color: "var(--text-base)"
+                      color: "var(--text-primary)"
                     }}
                   >
                     <Icon name="folder" size={14} />
@@ -634,7 +634,7 @@ Guidelines for generating agents:
                     style={{ 
                       "border-color": formScope() === "user" ? "var(--text-weak)" : "var(--border-weak)",
                       background: formScope() === "user" ? "var(--surface-raised)" : "transparent",
-                      color: "var(--text-base)"
+                      color: "var(--text-primary)"
                     }}
                   >
                     <Icon name="user" size={14} />
@@ -657,7 +657,7 @@ Guidelines for generating agents:
                   style={{ 
                     background: "var(--background-base)",
                     "border-color": "var(--border-base)",
-                    color: "var(--text-base)"
+                    color: "var(--text-primary)"
                   }}
                   disabled={generating()}
                 />
@@ -735,7 +735,7 @@ Guidelines for generating agents:
                     style={{ 
                       "border-color": formScope() === "project" ? "var(--text-weak)" : "var(--border-weak)",
                       background: formScope() === "project" ? "var(--surface-raised)" : "transparent",
-                      color: "var(--text-base)"
+                      color: "var(--text-primary)"
                     }}
                   >
                     <Icon name="folder" size={14} />
@@ -747,7 +747,7 @@ Guidelines for generating agents:
                     style={{ 
                       "border-color": formScope() === "user" ? "var(--text-weak)" : "var(--border-weak)",
                       background: formScope() === "user" ? "var(--surface-raised)" : "transparent",
-                      color: "var(--text-base)"
+                      color: "var(--text-primary)"
                     }}
                   >
                     <Icon name="user" size={14} />
@@ -770,7 +770,7 @@ Guidelines for generating agents:
                   style={{ 
                     background: "var(--background-base)",
                     "border-color": "var(--border-base)",
-                    color: "var(--text-base)"
+                    color: "var(--text-primary)"
                   }}
                 />
               </div>
@@ -789,7 +789,7 @@ Guidelines for generating agents:
                   style={{ 
                     background: "var(--background-base)",
                     "border-color": "var(--border-base)",
-                    color: "var(--text-base)"
+                    color: "var(--text-primary)"
                   }}
                 />
               </div>
@@ -825,7 +825,7 @@ Guidelines for generating agents:
                         class="flex items-center gap-2 px-2 py-1.5 rounded text-xs text-left transition-colors"
                         style={{ 
                           background: formTools().includes(tool.id) ? "var(--surface-raised)" : "transparent",
-                          color: "var(--text-base)"
+                          color: "var(--text-primary)"
                         }}
                       >
                         <span style={{ color: formTools().includes(tool.id) ? "var(--text-base)" : "var(--text-weaker)" }}>
@@ -850,7 +850,7 @@ Guidelines for generating agents:
                   style={{ 
                     background: "var(--background-base)",
                     "border-color": "var(--border-base)",
-                    color: "var(--text-base)"
+                    color: "var(--text-primary)"
                   }}
                 >
                   <For each={MODELS}>
@@ -875,7 +875,7 @@ Guidelines for generating agents:
                   style={{ 
                     background: "var(--background-base)",
                     "border-color": "var(--border-base)",
-                    color: "var(--text-base)"
+                    color: "var(--text-primary)"
                   }}
                 />
               </div>

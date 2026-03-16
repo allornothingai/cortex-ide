@@ -268,7 +268,7 @@ export function WebviewPanel(props: WebviewPanelProps) {
             </Show>
             <span 
               class="text-xs font-medium truncate"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
             >
               {title()}
             </span>
@@ -374,7 +374,7 @@ export function WebviewPanel(props: WebviewPanelProps) {
               >
                 <Icon name="xmark" class="w-6 h-6" style={{ color: "var(--cortex-error)" }} />
               </div>
-              <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+              <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
                 Failed to load content
               </span>
               <span class="text-xs" style={{ color: "var(--text-weaker)" }}>
@@ -385,7 +385,7 @@ export function WebviewPanel(props: WebviewPanelProps) {
                 class="mt-2 px-3 py-1.5 rounded-lg text-xs font-medium transition-colors"
                 style={{ 
                   background: "var(--surface-raised)",
-                  color: "var(--text-base)"
+                  color: "var(--text-primary)"
                 }}
               >
                 Try Again

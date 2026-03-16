@@ -825,7 +825,7 @@ export function TerminalSuggest(props: TerminalSuggestProps) {
                 <div class="flex-1 min-w-0">
                   <div 
                     class="text-sm truncate"
-                    style={{ color: "var(--text-base)" }}
+                    style={{ color: "var(--text-primary)" }}
                   >
                     <HighlightedText 
                       text={suggestion.text} 

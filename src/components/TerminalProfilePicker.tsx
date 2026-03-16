@@ -171,7 +171,7 @@ function ProfileEditor(props: ProfileEditorProps) {
         >
           <div class="flex items-center gap-2">
             <Icon name={iconName()} class="w-4 h-4" style={{ color: color() }} />
-            <span class="font-medium" style={{ color: "var(--text-base)" }}>
+            <span class="font-medium" style={{ color: "var(--text-primary)" }}>
               {props.isNew ? "New Terminal Profile" : "Edit Profile"}
             </span>
           </div>
@@ -200,7 +200,7 @@ function ProfileEditor(props: ProfileEditorProps) {
               style={{
                 background: "var(--surface-raised)",
                 "border-color": "var(--border-base)",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
               }}
               autofocus
             />
@@ -221,7 +221,7 @@ function ProfileEditor(props: ProfileEditorProps) {
                 style={{
                   background: "var(--surface-raised)",
                   "border-color": "var(--border-base)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                 }}
               />
               <button
@@ -252,7 +252,7 @@ function ProfileEditor(props: ProfileEditorProps) {
               style={{
                 background: "var(--surface-raised)",
                 "border-color": "var(--border-base)",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
               }}
             />
             <span class="text-xs mt-1 block" style={{ color: "var(--text-weaker)" }}>
@@ -276,7 +276,7 @@ function ProfileEditor(props: ProfileEditorProps) {
                 style={{
                   background: "var(--surface-raised)",
                   "border-color": showIconPicker() ? "var(--text-weak)" : "var(--border-base)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                 }}
               >
                 <Icon name={iconName()} class="w-4 h-4" style={{ color: color() }} />
@@ -313,7 +313,7 @@ function ProfileEditor(props: ProfileEditorProps) {
                             setShowIconPicker(false);
                           }}
                           class="w-full flex items-center gap-2 px-3 py-2 text-sm hover:bg-[var(--surface-hover)]"
-                          style={{ color: "var(--text-base)" }}
+                          style={{ color: "var(--text-primary)" }}
                         >
                           <Icon name={iconTypeName} class="w-4 h-4" style={{ color: color() }} />
                           <span class="flex-1 text-left">{PROFILE_ICONS[iconType].label}</span>
@@ -342,7 +342,7 @@ function ProfileEditor(props: ProfileEditorProps) {
                 style={{
                   background: "var(--surface-raised)",
                   "border-color": showColorPicker() ? "var(--text-weak)" : "var(--border-base)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                 }}
               >
                 <div
@@ -409,7 +409,7 @@ function ProfileEditor(props: ProfileEditorProps) {
                       style={{
                         background: "var(--surface-raised)",
                         "border-color": "var(--border-base)",
-                        color: "var(--text-base)",
+                        color: "var(--text-primary)",
                       }}
                     />
                   </div>
@@ -461,7 +461,7 @@ function ProfileEditor(props: ProfileEditorProps) {
                         style={{
                           background: "var(--surface-raised)",
                           "border-color": "var(--border-base)",
-                          color: "var(--text-base)",
+                          color: "var(--text-primary)",
                         }}
                       />
                       <span class="text-xs" style={{ color: "var(--text-weaker)" }}>=</span>
@@ -474,7 +474,7 @@ function ProfileEditor(props: ProfileEditorProps) {
                         style={{
                           background: "var(--surface-raised)",
                           "border-color": "var(--border-base)",
-                          color: "var(--text-base)",
+                          color: "var(--text-primary)",
                         }}
                       />
                       <button
@@ -500,7 +500,7 @@ function ProfileEditor(props: ProfileEditorProps) {
           <button
             onClick={props.onCancel}
             class="px-4 py-2 rounded-lg text-sm font-medium hover:bg-[var(--surface-hover)]"
-            style={{ color: "var(--text-base)" }}
+            style={{ color: "var(--text-primary)" }}
           >
             Cancel
           </button>
@@ -647,7 +647,7 @@ export function TerminalProfilePicker(props: TerminalProfilePickerProps) {
         {/* Name and info */}
         <div class="flex-1 min-w-0">
           <div class="flex items-center gap-1.5">
-            <span class="text-sm truncate" style={{ color: "var(--text-base)" }}>
+            <span class="text-sm truncate" style={{ color: "var(--text-primary)" }}>
               {profile.name}
             </span>
             <Show when={profile.isDefault}>
@@ -765,7 +765,7 @@ export function TerminalProfilePicker(props: TerminalProfilePickerProps) {
           style={{
             background: "var(--surface-raised)",
             "border-color": isOpen() ? "var(--text-weak)" : "var(--border-base)",
-            color: "var(--text-base)",
+            color: "var(--text-primary)",
           }}
         >
           <Show

@@ -222,7 +222,7 @@ function ChangeItem(props: {
         
         {getStatusIcon(props.change.status)}
         
-        <span class="flex-1 text-sm truncate" style={{ color: "var(--text-base)" }}>
+        <span class="flex-1 text-sm truncate" style={{ color: "var(--text-primary)" }}>
           {props.change.fileName}
         </span>
         
@@ -333,7 +333,7 @@ function FileGroup(props: {
         
         <Icon name="file" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />
         
-        <span class="flex-1 text-sm font-medium truncate" style={{ color: "var(--text-base)" }}>
+        <span class="flex-1 text-sm font-medium truncate" style={{ color: "var(--text-primary)" }}>
           {props.group.fileName}
         </span>
         
@@ -396,7 +396,7 @@ function WorkingSetIndicator(props: { files: Set<string> }) {
         }}
       >
         <Icon name="pen" class="w-4 h-4" style={{ color: "var(--accent-primary)" }} />
-        <span class="text-sm" style={{ color: "var(--text-base)" }}>
+        <span class="text-sm" style={{ color: "var(--text-primary)" }}>
           Working Set: {fileCount()} file{fileCount() !== 1 ? "s" : ""}
         </span>
         <div class="flex-1" />
@@ -449,7 +449,7 @@ function ProgressIndicator(props: { progress: number; currentFile?: string; stat
           <Icon name="circle-xmark" class="w-4 h-4" style={{ color: "var(--error)" }} />
         </Show>
         
-        <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+        <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
           {props.status === "generating"
             ? "AI is generating changes..."
             : props.status === "applying"
@@ -541,7 +541,7 @@ export function ChatEditingMode() {
           <div class="flex items-center gap-3">
             <Icon name="pen" class="w-5 h-5" style={{ color: "var(--accent-primary)" }} />
             <div>
-              <h2 class="text-sm font-semibold" style={{ color: "var(--text-base)" }}>
+              <h2 class="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>
                 Chat Editing Mode
               </h2>
               <p class="text-xs" style={{ color: "var(--text-muted)" }}>
@@ -568,7 +568,7 @@ export function ChatEditingMode() {
             class="flex items-center gap-4 px-4 py-2 border-b text-xs"
             style={{ "border-color": "var(--border-weak)", background: "var(--surface-base)" }}
           >
-            <span style={{ color: "var(--text-base)" }}>
+            <span style={{ color: "var(--text-primary)" }}>
               {stats().files} file{stats().files !== 1 ? "s" : ""}
             </span>
             <span class="flex items-center gap-1" style={{ color: "var(--success)" }}>
@@ -612,7 +612,7 @@ export function ChatEditingMode() {
                   Error
                 </span>
               </div>
-              <pre class="text-xs whitespace-pre-wrap" style={{ color: "var(--text-base)" }}>
+              <pre class="text-xs whitespace-pre-wrap" style={{ color: "var(--text-primary)" }}>
                 {chatEditing.state.session!.error}
               </pre>
             </div>
@@ -746,7 +746,7 @@ export function ChatEditingModeCompact() {
           <Icon name="spinner" class="w-4 h-4 animate-spin" style={{ color: "var(--accent-primary)" }} />
         </Show>
         
-        <span class="text-sm" style={{ color: "var(--text-base)" }}>
+        <span class="text-sm" style={{ color: "var(--text-primary)" }}>
           {isGenerating() ? "Generating..." : "Editing Mode"}
         </span>
         

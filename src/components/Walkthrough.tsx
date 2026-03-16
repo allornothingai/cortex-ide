@@ -550,7 +550,7 @@ function ProgressBar(props: { progress: number; showLabel?: boolean }) {
           </span>
           <span
             class="text-xs font-medium"
-            style={{ color: "var(--text-base)" }}
+            style={{ color: "var(--text-primary)" }}
           >
             {props.progress}%
           </span>
@@ -593,7 +593,7 @@ function CompletionCelebration(props: { walkthroughTitle: string; onClose: () =>
       </div>
       <h3
         class="text-xl font-bold mb-2"
-        style={{ color: "var(--text-base)" }}
+        style={{ color: "var(--text-primary)" }}
       >
         Walkthrough Complete!
       </h3>
@@ -750,7 +750,7 @@ export function Walkthrough(props: WalkthroughProps) {
             <div>
               <h2
                 class="font-semibold"
-                style={{ color: "var(--text-base)" }}
+                style={{ color: "var(--text-primary)" }}
               >
                 {props.walkthrough.title}
               </h2>
@@ -918,7 +918,7 @@ function WalkthroughCard(props: WalkthroughCardProps) {
           <div class="flex items-center gap-2">
             <h3
               class="font-medium text-sm"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
             >
               {props.walkthrough.title}
             </h3>
@@ -1026,7 +1026,7 @@ export function WalkthroughList(props: WalkthroughListProps) {
           <div>
             <h2
               class="font-semibold"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
             >
               Walkthroughs
             </h2>

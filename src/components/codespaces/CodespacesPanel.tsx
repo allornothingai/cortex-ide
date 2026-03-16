@@ -163,7 +163,7 @@ function CodespacesList(props: CodespacesListProps) {
                   <div class="flex items-center gap-2 mb-1">
                     <StatusIcon state={codespace.state} />
                     <div class="flex-1 min-w-0">
-                      <div class="text-sm font-medium truncate" style={{ color: "var(--text-base)" }}>
+                      <div class="text-sm font-medium truncate" style={{ color: "var(--text-primary)" }}>
                         {codespace.display_name || codespace.name}
                       </div>
                     </div>
@@ -277,7 +277,7 @@ function CodespacesList(props: CodespacesListProps) {
                           setMenuOpenId(null);
                         }}
                         class="w-full flex items-center gap-2 px-3 py-1.5 text-sm text-left transition-colors hover:bg-[var(--surface-raised)]"
-                        style={{ color: "var(--text-base)" }}
+                        style={{ color: "var(--text-primary)" }}
                       >
                         <Icon name="arrow-up-right-from-square" class="w-4 h-4" />
                         Open in Browser
@@ -288,7 +288,7 @@ function CodespacesList(props: CodespacesListProps) {
                           setMenuOpenId(null);
                         }}
                         class="w-full flex items-center gap-2 px-3 py-1.5 text-sm text-left transition-colors hover:bg-[var(--surface-raised)]"
-                        style={{ color: "var(--text-base)" }}
+                        style={{ color: "var(--text-primary)" }}
                       >
                         <Icon name="display" class="w-4 h-4" />
                         Open in VS Code
@@ -299,7 +299,7 @@ function CodespacesList(props: CodespacesListProps) {
                           setMenuOpenId(null);
                         }}
                         class="w-full flex items-center gap-2 px-3 py-1.5 text-sm text-left transition-colors hover:bg-[var(--surface-raised)]"
-                        style={{ color: "var(--text-base)" }}
+                        style={{ color: "var(--text-primary)" }}
                       >
                         <Icon name="terminal" class="w-4 h-4" />
                         Connect via SSH
@@ -473,7 +473,7 @@ function CreateCodespaceDialog(props: CreateCodespaceDialogProps) {
             class="flex items-center justify-between px-4 py-3 border-b"
             style={{ "border-color": "var(--border-base)" }}
           >
-            <h2 class="text-base font-semibold" style={{ color: "var(--text-base)" }}>
+            <h2 class="text-base font-semibold" style={{ color: "var(--text-primary)" }}>
               Create New Codespace
             </h2>
             <button
@@ -507,7 +507,7 @@ function CreateCodespaceDialog(props: CreateCodespaceDialogProps) {
                   style={{
                     "background-color": "var(--surface-raised)",
                     "border": "1px solid var(--border-base)",
-                    color: "var(--text-base)",
+                    color: "var(--text-primary)",
                   }}
                 />
                 <Show when={isSearching()}>
@@ -543,7 +543,7 @@ function CreateCodespaceDialog(props: CreateCodespaceDialogProps) {
                           class="w-5 h-5 rounded-full"
                         />
                         <div class="flex-1 min-w-0">
-                          <div class="text-sm truncate" style={{ color: "var(--text-base)" }}>
+                          <div class="text-sm truncate" style={{ color: "var(--text-primary)" }}>
                             {repo.full_name}
                           </div>
                         </div>
@@ -578,7 +578,7 @@ function CreateCodespaceDialog(props: CreateCodespaceDialogProps) {
                     alt=""
                     class="w-5 h-5 rounded-full"
                   />
-                  <span class="flex-1 text-sm" style={{ color: "var(--text-base)" }}>
+                  <span class="flex-1 text-sm" style={{ color: "var(--text-primary)" }}>
                     {selectedRepo()!.full_name}
                   </span>
                   <button
@@ -610,7 +610,7 @@ function CreateCodespaceDialog(props: CreateCodespaceDialogProps) {
                   style={{
                     "background-color": "var(--surface-raised)",
                     "border": "1px solid var(--border-base)",
-                    color: "var(--text-base)",
+                    color: "var(--text-primary)",
                   }}
                 />
               </div>
@@ -633,7 +633,7 @@ function CreateCodespaceDialog(props: CreateCodespaceDialogProps) {
                     style={{
                       "background-color": "var(--surface-raised)",
                       "border": "1px solid var(--border-base)",
-                      color: "var(--text-base)",
+                      color: "var(--text-primary)",
                     }}
                   >
                     <For each={machines()}>
@@ -661,7 +661,7 @@ function CreateCodespaceDialog(props: CreateCodespaceDialogProps) {
                   style={{
                     "background-color": "var(--surface-raised)",
                     "border": "1px solid var(--border-base)",
-                    color: "var(--text-base)",
+                    color: "var(--text-primary)",
                   }}
                 />
               </div>
@@ -689,7 +689,7 @@ function CreateCodespaceDialog(props: CreateCodespaceDialogProps) {
             <button
               onClick={props.onClose}
               class="px-4 py-1.5 rounded-md text-sm transition-colors hover:bg-[var(--surface-raised)]"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
             >
               Cancel
             </button>
@@ -790,7 +790,7 @@ export function CodespacesPanel() {
         fallback={
           <div class="flex-1 flex flex-col items-center justify-center px-4 py-8">
             <Icon name="github" class="w-12 h-12 mb-4" style={{ color: "var(--text-weaker)" }} />
-            <h3 class="text-sm font-medium mb-2" style={{ color: "var(--text-base)" }}>
+            <h3 class="text-sm font-medium mb-2" style={{ color: "var(--text-primary)" }}>
               Sign in to GitHub
             </h3>
             <p class="text-xs text-center mb-4" style={{ color: "var(--text-weak)" }}>
@@ -834,7 +834,7 @@ export function CodespacesPanel() {
               alt=""
               class="w-5 h-5 rounded-full"
             />
-            <span class="flex-1 text-xs truncate" style={{ color: "var(--text-base)" }}>
+            <span class="flex-1 text-xs truncate" style={{ color: "var(--text-primary)" }}>
               {codespaces.getUser()!.login}
             </span>
           </Show>

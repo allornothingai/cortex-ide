@@ -572,7 +572,7 @@ export function InteractiveRebase(props: InteractiveRebaseProps) {
                       <Icon name={action.iconName} class="w-4 h-4" />
                     </span>
                     <div class="flex-1 min-w-0">
-                      <div class="text-sm" style={{ color: "var(--text-base)" }}>
+                      <div class="text-sm" style={{ color: "var(--text-primary)" }}>
                         {action.label}
                       </div>
                       <div class="text-xs truncate" style={{ color: "var(--text-weak)" }}>
@@ -603,7 +603,7 @@ export function InteractiveRebase(props: InteractiveRebaseProps) {
             class={`flex-1 text-sm truncate ${
               rowProps.commit.action === "drop" ? "line-through opacity-50" : ""
             }`}
-            style={{ color: "var(--text-base)" }}
+            style={{ color: "var(--text-primary)" }}
             title={rowProps.commit.message}
           >
             {rowProps.commit.message.split("\n")[0]}
@@ -616,7 +616,7 @@ export function InteractiveRebase(props: InteractiveRebaseProps) {
             class="flex-1 px-2 py-1 rounded text-sm outline-none"
             style={{
               background: "var(--surface-base)",
-              color: "var(--text-base)",
+              color: "var(--text-primary)",
               border: "1px solid var(--accent-primary)"
             }}
             value={editedMessage()}
@@ -695,7 +695,7 @@ export function InteractiveRebase(props: InteractiveRebaseProps) {
         <div class="flex items-center gap-3">
           <Icon name="code-commit" class="w-5 h-5" style={{ color: "var(--text-weak)" }} />
           <div>
-            <h2 class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+            <h2 class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
               Interactive Rebase
             </h2>
             <Show when={props.targetBranch || props.ontoCommit}>
@@ -955,7 +955,7 @@ export function InteractiveRebase(props: InteractiveRebaseProps) {
               <Show when={rebaseState() === "paused-conflict"}>
                 <button
                   class="flex items-center gap-2 px-4 py-2 rounded text-sm transition-colors border"
-                  style={{ "border-color": "var(--border-weak)", color: "var(--text-base)" }}
+                  style={{ "border-color": "var(--border-weak)", color: "var(--text-primary)" }}
                   onClick={resolveConflicts}
                 >
                   <Icon name="code-merge" class="w-4 h-4" />

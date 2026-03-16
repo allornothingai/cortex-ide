@@ -30,6 +30,7 @@ export function Toggle(props: ToggleProps) {
         onChange={local.onChange}
         disabled={local.disabled}
         size={local.size || "md"}
+        aria-label={local["aria-label"]}
       />
       <Show when={local.label || local.description}>
         <div style={{ display: "flex", "flex-direction": "column", gap: "2px" }}>

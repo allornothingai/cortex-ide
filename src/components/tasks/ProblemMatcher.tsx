@@ -126,7 +126,7 @@ export function ProblemMatcherPreview(props: ProblemMatcherPreviewProps) {
         style={{ "border-color": "var(--border-base)" }}
       >
         <div class="flex items-center gap-2">
-          <span class="text-xs font-medium" style={{ color: "var(--text-base)" }}>
+          <span class="text-xs font-medium" style={{ color: "var(--text-primary)" }}>
             Problem Matcher: {props.matcherName}
           </span>
         </div>
@@ -193,7 +193,7 @@ export function ProblemMatcherPreview(props: ProblemMatcherPreviewProps) {
                     }}
                   />
                   <Icon name="file" class="w-3.5 h-3.5 shrink-0" style={{ color: "var(--text-weak)" }} />
-                  <span class="text-xs truncate" style={{ color: "var(--text-base)" }}>
+                  <span class="text-xs truncate" style={{ color: "var(--text-primary)" }}>
                     {group.relativePath}
                   </span>
                   <div class="flex-1" />
@@ -298,7 +298,7 @@ function DiagnosticItem(props: DiagnosticItemProps) {
         </div>
         <p
           class="text-xs break-words"
-          style={{ color: "var(--text-base)" }}
+          style={{ color: "var(--text-primary)" }}
         >
           {props.diagnostic.message}
         </p>
@@ -433,7 +433,7 @@ export function TaskProblemsPanel(props: TaskProblemsPanelProps) {
         style={{ "border-color": "var(--border-base)" }}
       >
         <div class="flex items-center gap-2">
-          <span class="text-xs font-medium" style={{ color: "var(--text-base)" }}>
+          <span class="text-xs font-medium" style={{ color: "var(--text-primary)" }}>
             Problems
           </span>
 
@@ -561,7 +561,7 @@ function FileProblemsGroup(props: FileProblemsGroupProps) {
           }}
         />
         <Icon name="file" class="w-3.5 h-3.5 shrink-0" style={{ color: "var(--text-weak)" }} />
-        <span class="text-xs truncate text-left" style={{ color: "var(--text-base)" }}>
+        <span class="text-xs truncate text-left" style={{ color: "var(--text-primary)" }}>
           {props.group.relativePath}
         </span>
         <div class="flex-1" />
@@ -646,7 +646,7 @@ export function ProblemMatcherSelector(props: ProblemMatcherSelectorProps) {
 
   return (
     <div class="space-y-2">
-      <label class="text-xs font-medium" style={{ color: "var(--text-base)" }}>
+      <label class="text-xs font-medium" style={{ color: "var(--text-primary)" }}>
         Problem Matchers
       </label>
       <div class="grid grid-cols-2 gap-2">
@@ -661,7 +661,7 @@ export function ProblemMatcherSelector(props: ProblemMatcherSelectorProps) {
                 border: props.value.includes(matcher)
                   ? "1px solid var(--cortex-info)"
                   : "1px solid var(--border-base)",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
               }}
               onClick={() => toggleMatcher(matcher)}
             >

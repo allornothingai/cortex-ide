@@ -101,7 +101,7 @@ function TaskItem(props: TaskItemProps) {
         <div class="flex items-center gap-2">
           <span
             class="text-xs font-medium truncate"
-            style={{ color: "var(--text-base)" }}
+            style={{ color: "var(--text-primary)" }}
           >
             {props.task.title}
           </span>

@@ -120,7 +120,7 @@ export function DataBreakpointPanel(_props: DataBreakpointPanelProps) {
             class="w-full px-2 py-1 text-xs rounded outline-none"
             style={{
               background: "var(--surface-sunken)",
-              color: "var(--text-base)",
+              color: "var(--text-primary)",
               border: "1px solid var(--border-weak)",
             }}
             autofocus
@@ -136,7 +136,7 @@ export function DataBreakpointPanel(_props: DataBreakpointPanelProps) {
               class="flex-1 px-2 py-1 text-xs rounded outline-none"
               style={{
                 background: "var(--surface-sunken)",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
                 border: "1px solid var(--border-weak)",
               }}
             >

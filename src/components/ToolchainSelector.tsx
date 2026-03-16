@@ -280,7 +280,7 @@ export function ToolchainSelector(props: ToolchainSelectorProps) {
             ref={inputRef}
             type="text"
             class="flex-1 bg-transparent outline-none text-sm"
-            style={{ color: "var(--text-base)" }}
+            style={{ color: "var(--text-primary)" }}
             placeholder={`Search ${getToolchainLabel(selectedKind())} installations...`}
             value={searchQuery()}
             onInput={(e) => setSearchQuery(e.currentTarget.value)}
@@ -309,7 +309,7 @@ export function ToolchainSelector(props: ToolchainSelectorProps) {
               <span class="text-xs font-medium" style={{ color: "var(--text-weak)" }}>
                 Active:
               </span>
-              <span class="text-xs" style={{ color: "var(--text-base)" }}>
+              <span class="text-xs" style={{ color: "var(--text-primary)" }}>
                 {activeToolchain()?.name}
               </span>
             </div>

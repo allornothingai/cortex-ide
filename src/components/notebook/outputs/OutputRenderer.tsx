@@ -79,7 +79,7 @@ export function OutputRenderer(props: OutputRendererProps) {
         return (
           <pre
             class="font-mono text-code-sm"
-            style={{ color: "var(--text-base)", margin: "4px 0" }}
+            style={{ color: "var(--text-primary)", margin: "4px 0" }}
           >
             {resolveDataField(data["text/latex"])}
           </pre>

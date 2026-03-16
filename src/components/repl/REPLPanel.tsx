@@ -69,7 +69,7 @@ export function REPLPanel() {
             <button
               onClick={() => addCell()}
               class="flex items-center gap-1 px-2 py-1 text-xs rounded hover:bg-[var(--surface-hover)]"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
               title="Add cell"
             >
               <Icon name="plus" class="w-4 h-4" />

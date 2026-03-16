@@ -479,7 +479,7 @@ function CallStackContextMenu(props: CallStackContextMenuProps) {
       <Show when={canRestartFrame()}>
         <button
           class="w-full px-3 py-1.5 text-left text-sm flex items-center gap-2 hover:bg-[var(--surface-raised)] transition-colors"
-          style={{ color: "var(--text-base)" }}
+          style={{ color: "var(--text-primary)" }}
           onClick={() => {
             const frame = targetFrame();
             if (frame) props.onRestartFrame(frame.id);
@@ -502,7 +502,7 @@ function CallStackContextMenu(props: CallStackContextMenuProps) {
         {(frame) => (
           <button
             class="w-full px-3 py-1.5 text-left text-sm flex items-center gap-2 hover:bg-[var(--surface-raised)] transition-colors"
-            style={{ color: "var(--text-base)" }}
+            style={{ color: "var(--text-primary)" }}
             onClick={() => props.onCopyFrame(frame())}
           >
             <Icon name="copy" size="sm" style={{ color: "var(--text-weak)" }} />
@@ -514,7 +514,7 @@ function CallStackContextMenu(props: CallStackContextMenuProps) {
       {/* Copy All Call Stack */}
       <button
         class="w-full px-3 py-1.5 text-left text-sm flex items-center gap-2 hover:bg-[var(--surface-raised)] transition-colors"
-        style={{ color: "var(--text-base)" }}
+        style={{ color: "var(--text-primary)" }}
         onClick={props.onCopyStackTrace}
       >
         <Icon name="clipboard" size="sm" style={{ color: "var(--text-weak)" }} />

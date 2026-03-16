@@ -207,7 +207,7 @@ export function PromptStore() {
               class="px-3 py-1.5 rounded text-sm"
               style={{
                 background: "var(--surface-hover)",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
                 border: "1px solid var(--border-base)",
                 outline: "none",
               }}
@@ -590,7 +590,7 @@ function PromptItem(props: PromptItemProps) {
         <Show when={props.prompt.description}>
           <p
             class="text-sm mb-2 line-clamp-1"
-            style={{ color: "var(--text-base)" }}
+            style={{ color: "var(--text-primary)" }}
           >
             {props.prompt.description}
           </p>
@@ -819,7 +819,7 @@ function PromptEditor(props: PromptEditorProps) {
                 class="w-full px-3 py-2 rounded text-sm"
                 style={{
                   background: "var(--surface-hover)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                   border: "1px solid var(--border-base)",
                   outline: "none",
                 }}

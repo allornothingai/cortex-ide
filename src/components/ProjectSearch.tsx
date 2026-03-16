@@ -163,20 +163,20 @@ function highlightMatch(text: string, start: number, end: number): JSX.Element {
   
   return (
     <>
-      <span style={{ color: "var(--text-base)" }}>{text.slice(0, safeStart)}</span>
+      <span style={{ color: "var(--text-primary)" }}>{text.slice(0, safeStart)}</span>
       <span 
         style={{ 
           padding: "0 4px",
           "border-radius": "var(--cortex-radius-sm)",
           "font-weight": "600",
           background: "rgba(234, 179, 8, 0.4)",
-          color: "var(--text-base)",
+          color: "var(--text-primary)",
           "box-shadow": "0 0 0 1px rgba(234, 179, 8, 0.6)",
         }}
       >
         {text.slice(safeStart, safeEnd)}
       </span>
-      <span style={{ color: "var(--text-base)" }}>{text.slice(safeEnd)}</span>
+      <span style={{ color: "var(--text-primary)" }}>{text.slice(safeEnd)}</span>
     </>
   );
 }
@@ -1049,7 +1049,7 @@ export function ProjectSearch() {
           >
             <div style={{ display: "flex", "align-items": "center", gap: "8px" }}>
               <Icon name="magnifying-glass" style={{ width: "16px", height: "16px", color: "var(--text-weak)" }} />
-              <span style={{ "font-size": "13px", "font-weight": "500", color: "var(--text-base)" }}>
+              <span style={{ "font-size": "13px", "font-weight": "500", color: "var(--text-primary)" }}>
                 Search in Project
               </span>
             </div>
@@ -1122,7 +1122,7 @@ export function ProjectSearch() {
                       border: "none",
                       "font-size": "13px",
                       "min-width": "0",
-                      color: "var(--text-base)"
+                      color: "var(--text-primary)"
                     }}
                     value={query()}
                     onInput={(e) => setQuery(e.currentTarget.value)}
@@ -1265,7 +1265,7 @@ export function ProjectSearch() {
                           overflow: "hidden",
                           "text-overflow": "ellipsis",
                           "white-space": "nowrap",
-                          color: "var(--text-base)" 
+                          color: "var(--text-primary)" 
                         }}
                       >
                         {item}
@@ -1389,7 +1389,7 @@ export function ProjectSearch() {
                     border: "none",
                     "font-size": "13px",
                     "min-width": "0",
-                    color: "var(--text-base)"
+                    color: "var(--text-primary)"
                   }}
                   value={replaceText()}
                   onInput={(e) => {
@@ -1652,7 +1652,7 @@ export function ProjectSearch() {
                       outline: "none",
                       border: "none",
                       background: "transparent",
-                      color: "var(--text-base)",
+                      color: "var(--text-primary)",
                     }}
                     value={includePattern()}
                     onInput={(e) => setIncludePattern(e.currentTarget.value)}
@@ -1768,7 +1768,7 @@ export function ProjectSearch() {
                             border: "none",
                             cursor: "pointer",
                             background: includeHistoryIndex() === index() ? "var(--surface-active)" : "transparent",
-                            color: "var(--text-base)",
+                            color: "var(--text-primary)",
                             overflow: "hidden",
                             "text-overflow": "ellipsis",
                             "white-space": "nowrap",
@@ -1811,7 +1811,7 @@ export function ProjectSearch() {
                       outline: "none",
                       border: "none",
                       background: "transparent",
-                      color: "var(--text-base)",
+                      color: "var(--text-primary)",
                     }}
                     value={excludePattern()}
                     onInput={(e) => setExcludePattern(e.currentTarget.value)}
@@ -1927,7 +1927,7 @@ export function ProjectSearch() {
                             border: "none",
                             cursor: "pointer",
                             background: excludeHistoryIndex() === index() ? "var(--surface-active)" : "transparent",
-                            color: "var(--text-base)",
+                            color: "var(--text-primary)",
                             overflow: "hidden",
                             "text-overflow": "ellipsis",
                             "white-space": "nowrap",
@@ -1981,7 +1981,7 @@ export function ProjectSearch() {
               }}
             >
               <Icon name="spinner" style={{ width: "14px", height: "14px", animation: "spin 1s linear infinite", color: "var(--accent-primary)" }} />
-              <span style={{ color: "var(--text-base)" }}>
+              <span style={{ color: "var(--text-primary)" }}>
                 Indexing for AI search: {semanticSearch.state.indexingProgress}%
               </span>
               <button
@@ -2091,7 +2091,7 @@ export function ProjectSearch() {
                       }
                     </span>
                     <Icon name="file" style={{ width: "16px", height: "16px", "flex-shrink": "0", color: "var(--accent-primary)" }} />
-                    <span style={{ "font-size": "13px", "font-weight": "bold", overflow: "hidden", "text-overflow": "ellipsis", "white-space": "nowrap", color: "var(--text-base)" }}>
+                    <span style={{ "font-size": "13px", "font-weight": "bold", overflow: "hidden", "text-overflow": "ellipsis", "white-space": "nowrap", color: "var(--text-primary)" }}>
                       {getFileName(result.file)}
                     </span>
                     <Show when={getFileDirectory(result.file)}>
@@ -2362,7 +2362,7 @@ export function ProjectSearch() {
                   }}
                 >
                   <Icon name="bolt" style={{ width: "14px", height: "14px", color: "var(--accent-primary)" }} />
-                  <span style={{ "font-size": "11px", "font-weight": "500", color: "var(--text-base)" }}>
+                  <span style={{ "font-size": "11px", "font-weight": "500", color: "var(--text-primary)" }}>
                     AI Semantic Matches
                   </span>
                   <span 
@@ -2409,7 +2409,7 @@ export function ProjectSearch() {
                       }}
                     >
                       <Icon name="file" style={{ width: "14px", height: "14px", "flex-shrink": "0", color: "var(--text-weak)" }} />
-                      <span style={{ "font-size": "12px", "font-weight": "500", overflow: "hidden", "text-overflow": "ellipsis", "white-space": "nowrap", color: "var(--text-base)" }}>
+                      <span style={{ "font-size": "12px", "font-weight": "500", overflow: "hidden", "text-overflow": "ellipsis", "white-space": "nowrap", color: "var(--text-primary)" }}>
                         {getFileName(aiResult.file)}
                       </span>
                       <Show when={getFileDirectory(aiResult.file)}>

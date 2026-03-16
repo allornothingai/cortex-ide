@@ -504,7 +504,7 @@ export function FormatterPromptDialog(props: FormatterPromptDialogProps) {
         >
           {/* Header */}
           <div class="px-4 py-3 border-b" style={{ "border-color": "var(--border-weak)" }}>
-            <h2 class="text-lg font-semibold" style={{ color: "var(--text-base)" }}>
+            <h2 class="text-lg font-semibold" style={{ color: "var(--text-primary)" }}>
               Choose a Formatter
             </h2>
             <p class="text-sm mt-1" style={{ color: "var(--text-weaker)" }}>
@@ -548,7 +548,7 @@ export function FormatterPromptDialog(props: FormatterPromptDialogProps) {
                       </div>
                       <div class="flex-1 min-w-0">
                         <div class="flex items-center gap-2">
-                          <span class="font-medium" style={{ color: "var(--text-base)" }}>
+                          <span class="font-medium" style={{ color: "var(--text-primary)" }}>
                             {FORMATTER_DISPLAY_NAMES[formatterId]}
                           </span>
                           <Show when={!isAvailable()}>
@@ -592,7 +592,7 @@ export function FormatterPromptDialog(props: FormatterPromptDialogProps) {
                     </div>
                     <div class="flex-1 min-w-0">
                       <div class="flex items-center gap-2">
-                        <span class="font-medium" style={{ color: "var(--text-base)" }}>
+                        <span class="font-medium" style={{ color: "var(--text-primary)" }}>
                           {provider.name}
                         </span>
                         <span

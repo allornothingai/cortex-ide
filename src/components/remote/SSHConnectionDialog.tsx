@@ -439,7 +439,7 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
               <div>
                 <h2
                   class="text-lg font-semibold"
-                  style={{ color: "var(--text-base)" }}
+                  style={{ color: "var(--text-primary)" }}
                 >
                   {props.editProfile ? "Edit SSH Connection" : "New SSH Connection"}
                 </h2>
@@ -523,7 +523,7 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
                       <div class="flex-1 min-w-0">
                         <div
                           class="font-medium truncate"
-                          style={{ color: "var(--text-base)" }}
+                          style={{ color: "var(--text-primary)" }}
                         >
                           {profile.name}
                         </div>
@@ -575,7 +575,7 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
                 <div class="space-y-2">
                   <label
                     class="text-sm font-medium"
-                    style={{ color: "var(--text-base)" }}
+                    style={{ color: "var(--text-primary)" }}
                   >
                     Connection Name
                   </label>
@@ -594,7 +594,7 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
                       style={{
                         "background-color": "var(--surface-raised)",
                         border: "1px solid var(--border-base)",
-                        color: "var(--text-base)",
+                        color: "var(--text-primary)",
                       }}
                     />
                   </div>
@@ -605,7 +605,7 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
                   <div class="col-span-3 space-y-2">
                     <label
                       class="text-sm font-medium"
-                      style={{ color: "var(--text-base)" }}
+                      style={{ color: "var(--text-primary)" }}
                     >
                       Host <span style={{ color: tokens.colors.semantic.error }}>*</span>
                     </label>
@@ -618,14 +618,14 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
                       style={{
                         "background-color": "var(--surface-raised)",
                         border: "1px solid var(--border-base)",
-                        color: "var(--text-base)",
+                        color: "var(--text-primary)",
                       }}
                     />
                   </div>
                   <div class="space-y-2">
                     <label
                       class="text-sm font-medium"
-                      style={{ color: "var(--text-base)" }}
+                      style={{ color: "var(--text-primary)" }}
                     >
                       Port
                     </label>
@@ -639,7 +639,7 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
                       style={{
                         "background-color": "var(--surface-raised)",
                         border: "1px solid var(--border-base)",
-                        color: "var(--text-base)",
+                        color: "var(--text-primary)",
                       }}
                     />
                   </div>
@@ -649,7 +649,7 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
                 <div class="space-y-2">
                   <label
                     class="text-sm font-medium"
-                    style={{ color: "var(--text-base)" }}
+                    style={{ color: "var(--text-primary)" }}
                   >
                     Username <span style={{ color: tokens.colors.semantic.error }}>*</span>
                   </label>
@@ -668,7 +668,7 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
                       style={{
                         "background-color": "var(--surface-raised)",
                         border: "1px solid var(--border-base)",
-                        color: "var(--text-base)",
+                        color: "var(--text-primary)",
                       }}
                     />
                   </div>
@@ -678,7 +678,7 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
                 <div class="space-y-3">
                   <label
                     class="text-sm font-medium"
-                    style={{ color: "var(--text-base)" }}
+                    style={{ color: "var(--text-primary)" }}
                   >
                     Authentication
                   </label>
@@ -729,7 +729,7 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
                   <div class="space-y-2">
                     <label
                       class="text-sm font-medium"
-                      style={{ color: "var(--text-base)" }}
+                      style={{ color: "var(--text-primary)" }}
                     >
                       Password <span style={{ color: tokens.colors.semantic.error }}>*</span>
                     </label>
@@ -748,7 +748,7 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
                         style={{
                           "background-color": "var(--surface-raised)",
                           border: "1px solid var(--border-base)",
-                          color: "var(--text-base)",
+                          color: "var(--text-primary)",
                         }}
                       />
                       <button
@@ -769,7 +769,7 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
                     <div class="space-y-2">
                       <label
                         class="text-sm font-medium"
-                        style={{ color: "var(--text-base)" }}
+                        style={{ color: "var(--text-primary)" }}
                       >
                         Private Key Path{" "}
                         <span style={{ color: tokens.colors.semantic.error }}>*</span>
@@ -787,7 +787,7 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
                               style={{
                                 "background-color": "var(--surface-raised)",
                                 border: "1px solid var(--border-base)",
-                                color: "var(--text-base)",
+                                color: "var(--text-primary)",
                               }}
                             />
                           }
@@ -799,7 +799,7 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
                             style={{
                               "background-color": "var(--surface-raised)",
                               border: "1px solid var(--border-base)",
-                              color: "var(--text-base)",
+                              color: "var(--text-primary)",
                             }}
                           >
                             <For each={availableKeys()}>
@@ -814,7 +814,7 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
                           style={{
                             "background-color": "var(--surface-raised)",
                             border: "1px solid var(--border-base)",
-                            color: "var(--text-base)",
+                            color: "var(--text-primary)",
                           }}
                         >
                           <Icon name="file" class="w-4 h-4" />
@@ -825,7 +825,7 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
                     <div class="space-y-2">
                       <label
                         class="text-sm font-medium"
-                        style={{ color: "var(--text-base)" }}
+                        style={{ color: "var(--text-primary)" }}
                       >
                         Passphrase (if key is encrypted)
                       </label>
@@ -838,7 +838,7 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
                         style={{
                           "background-color": "var(--surface-raised)",
                           border: "1px solid var(--border-base)",
-                          color: "var(--text-base)",
+                          color: "var(--text-primary)",
                         }}
                       />
                     </div>
@@ -887,7 +887,7 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
                 <div class="space-y-2">
                   <label
                     class="text-sm font-medium"
-                    style={{ color: "var(--text-base)" }}
+                    style={{ color: "var(--text-primary)" }}
                   >
                     Default Directory (optional)
                   </label>
@@ -906,7 +906,7 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
                       style={{
                         "background-color": "var(--surface-raised)",
                         border: "1px solid var(--border-base)",
-                        color: "var(--text-base)",
+                        color: "var(--text-primary)",
                       }}
                     />
                   </div>
@@ -931,7 +931,7 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
                         <Icon name="check" class="w-3.5 h-3.5 text-white" />
                       </Show>
                     </div>
-                    <span class="text-sm" style={{ color: "var(--text-base)" }}>
+                    <span class="text-sm" style={{ color: "var(--text-primary)" }}>
                       Save this connection for future use
                     </span>
                   </label>
@@ -1020,7 +1020,7 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
                 disabled={!isValid() || isTesting()}
                 class="flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-medium transition-colors disabled:opacity-50 hover:bg-[var(--surface-raised)]"
                 style={{
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                   border: "1px solid var(--border-base)",
                 }}
               >
@@ -1042,7 +1042,7 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
               <button
                 onClick={props.onClose}
                 class="px-4 py-2.5 rounded-lg text-sm font-medium transition-colors hover:bg-[var(--surface-raised)]"
-                style={{ color: "var(--text-base)" }}
+                style={{ color: "var(--text-primary)" }}
               >
                 Cancel
               </button>
@@ -1055,7 +1055,7 @@ export function SSHConnectionDialog(props: SSHConnectionDialogProps) {
                     class="flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-medium transition-colors disabled:opacity-50"
                     style={{
                       "background-color": "var(--surface-raised)",
-                      color: "var(--text-base)",
+                      color: "var(--text-primary)",
                       border: "1px solid var(--border-base)",
                     }}
                   >

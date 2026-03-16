@@ -352,7 +352,7 @@ export function SnippetsPanel() {
               class="px-3 py-1.5 rounded text-sm"
               style={{
                 background: "var(--surface-hover)",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
                 border: "1px solid var(--border-base)",
                 outline: "none",
               }}
@@ -502,7 +502,7 @@ export function SnippetsPanel() {
               
               {/* Modal Content */}
               <div class="flex-1 overflow-y-auto p-4 space-y-4">
-                <p class="text-sm" style={{ color: "var(--text-base)" }}>
+                <p class="text-sm" style={{ color: "var(--text-primary)" }}>
                   Paste VSCode-compatible snippet JSON or upload a snippet file.
                 </p>
                 
@@ -517,7 +517,7 @@ export function SnippetsPanel() {
                     class="w-full px-3 py-2 rounded text-sm"
                     style={{
                       background: "var(--surface-hover)",
-                      color: "var(--text-base)",
+                      color: "var(--text-primary)",
                       border: "1px solid var(--border-base)",
                       outline: "none",
                     }}

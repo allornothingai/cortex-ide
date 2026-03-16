@@ -148,7 +148,7 @@ export function RecentProjectsModal(props: RecentProjectsModalProps) {
               value={searchQuery()}
               onInput={(e) => setSearchQuery(e.currentTarget.value)}
               class="flex-1 bg-transparent outline-none text-sm"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
             />
             <Show when={searchQuery()}>
               <button
@@ -267,7 +267,7 @@ function RecentProjectItem(props: RecentProjectItemProps) {
         <div class="flex items-center gap-2">
           <span
             class="text-sm font-medium truncate"
-            style={{ color: "var(--text-base)" }}
+            style={{ color: "var(--text-primary)" }}
           >
             {props.project.name}
           </span>
@@ -399,7 +399,7 @@ export function RecentProjectsList(props: RecentProjectsListProps) {
                 <div class="flex items-center gap-2">
                   <span
                     class="text-sm truncate"
-                    style={{ color: "var(--text-base)" }}
+                    style={{ color: "var(--text-primary)" }}
                   >
                     {project.name}
                   </span>
@@ -486,7 +486,7 @@ export function WelcomePageRecentProjects(props: WelcomePageRecentProjectsProps)
             style={{
               background: "var(--surface-base)",
               border: "1px solid var(--border-weak)",
-              color: "var(--text-base)",
+              color: "var(--text-primary)",
             }}
           />
         </div>
@@ -545,7 +545,7 @@ export function WelcomePageRecentProjects(props: WelcomePageRecentProjectsProps)
                 class="mt-4 px-4 py-2 text-sm rounded-lg transition-colors"
                 style={{
                   background: "var(--surface-raised)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                 }}
               >
                 Open Folder

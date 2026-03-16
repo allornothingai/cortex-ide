@@ -207,7 +207,7 @@ function ScriptItem(props: ScriptItemProps) {
       <Icon name="file" size="xs" class="shrink-0" style={{ color: "var(--text-weak)" }} />
 
       {/* Script name */}
-      <span class="flex-1 truncate" style={{ color: "var(--text-base)" }}>
+      <span class="flex-1 truncate" style={{ color: "var(--text-primary)" }}>
         {props.script.name}
       </span>
 
@@ -245,7 +245,7 @@ function ScriptGroupHeader(props: ScriptGroupHeaderProps) {
       <Icon name={props.group.iconName} size="sm" style={{ color: getGroupColor(props.group.type) }} />
 
       {/* Group label */}
-      <span class="font-medium" style={{ color: "var(--text-base)" }}>
+      <span class="font-medium" style={{ color: "var(--text-primary)" }}>
         {props.group.label}
       </span>
 
@@ -504,7 +504,7 @@ export function LoadedScriptsView() {
             class="w-full pl-7 pr-2 py-1.5 text-xs rounded outline-none"
             style={{
               background: "var(--surface-sunken)",
-              color: "var(--text-base)",
+              color: "var(--text-primary)",
               border: "1px solid var(--border-weak)",
             }}
           />

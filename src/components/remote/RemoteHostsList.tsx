@@ -248,7 +248,7 @@ export function RemoteHostsList(props: RemoteHostsListProps) {
 
                     {/* Connection info */}
                     <div class="flex-1 min-w-0">
-                      <div class="text-sm font-medium truncate" style={{ color: "var(--text-base)" }}>
+                      <div class="text-sm font-medium truncate" style={{ color: "var(--text-primary)" }}>
                         {profile.name}
                       </div>
                       <div class="text-xs truncate" style={{ color: "var(--text-weak)" }}>
@@ -291,7 +291,7 @@ export function RemoteHostsList(props: RemoteHostsListProps) {
                             setMenuOpenId(null);
                           }}
                           class="w-full flex items-center gap-2 px-3 py-1.5 text-sm text-left transition-colors hover:bg-[var(--surface-raised)]"
-                          style={{ color: "var(--text-base)" }}
+                          style={{ color: "var(--text-primary)" }}
                         >
                           <Icon name="wifi-slash" class="w-4 h-4" />
                           Disconnect
@@ -305,7 +305,7 @@ export function RemoteHostsList(props: RemoteHostsListProps) {
                             setMenuOpenId(null);
                           }}
                           class="w-full flex items-center gap-2 px-3 py-1.5 text-sm text-left transition-colors hover:bg-[var(--surface-raised)]"
-                          style={{ color: "var(--text-base)" }}
+                          style={{ color: "var(--text-primary)" }}
                         >
                           <Icon name="rotate" class="w-4 h-4" />
                           Reconnect
@@ -318,7 +318,7 @@ export function RemoteHostsList(props: RemoteHostsListProps) {
                           setMenuOpenId(null);
                         }}
                         class="w-full flex items-center gap-2 px-3 py-1.5 text-sm text-left transition-colors hover:bg-[var(--surface-raised)]"
-                        style={{ color: "var(--text-base)" }}
+                        style={{ color: "var(--text-primary)" }}
                       >
                         <Icon name="pen" class="w-4 h-4" />
                         Edit
@@ -407,7 +407,7 @@ export function RemoteHostsList(props: RemoteHostsListProps) {
                       {/* Distro info */}
                       <div class="flex-1 min-w-0">
                         <div class="flex items-center gap-1.5">
-                          <span class="text-sm font-medium truncate" style={{ color: "var(--text-base)" }}>
+                          <span class="text-sm font-medium truncate" style={{ color: "var(--text-primary)" }}>
                             {distro.name}
                           </span>
                           <Show when={distro.isDefault}>
@@ -468,7 +468,7 @@ export function RemoteHostsList(props: RemoteHostsListProps) {
                             handleOpenWSLTerminal(distro.name);
                           }}
                           class="w-full flex items-center gap-2 px-3 py-1.5 text-sm text-left transition-colors hover:bg-[var(--surface-raised)]"
-                          style={{ color: "var(--text-base)" }}
+                          style={{ color: "var(--text-primary)" }}
                         >
                           <Icon name="terminal" class="w-4 h-4" />
                           Open Terminal
@@ -479,7 +479,7 @@ export function RemoteHostsList(props: RemoteHostsListProps) {
                             handleOpenWSLFolder(distro.name);
                           }}
                           class="w-full flex items-center gap-2 px-3 py-1.5 text-sm text-left transition-colors hover:bg-[var(--surface-raised)]"
-                          style={{ color: "var(--text-base)" }}
+                          style={{ color: "var(--text-primary)" }}
                         >
                           <Icon name="folder" class="w-4 h-4" />
                           Open in Explorer
@@ -492,7 +492,7 @@ export function RemoteHostsList(props: RemoteHostsListProps) {
                               setWslMenuOpenId(null);
                             }}
                             class="w-full flex items-center gap-2 px-3 py-1.5 text-sm text-left transition-colors hover:bg-[var(--surface-raised)]"
-                            style={{ color: "var(--text-base)" }}
+                            style={{ color: "var(--text-primary)" }}
                           >
                             <Icon name="wifi-slash" class="w-4 h-4" />
                             Disconnect

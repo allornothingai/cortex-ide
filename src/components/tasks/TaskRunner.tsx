@@ -198,7 +198,7 @@ export function TaskRunner(props: TaskRunnerProps) {
               class="flex-1 px-3 py-1.5 rounded text-sm bg-transparent outline-none"
               style={{ 
                 border: "1px solid var(--border-base)",
-                color: "var(--text-base)"
+                color: "var(--text-primary)"
               }}
               value={searchQuery()}
               onInput={(e) => setSearchQuery(e.currentTarget.value)}
@@ -395,7 +395,7 @@ export function TaskOutputPanel(props: TaskOutputPanelProps) {
           class="w-2 h-2 rounded-full"
           style={{ background: getStatusColor() }}
         />
-        <span class="text-xs font-medium truncate" style={{ color: "var(--text-base)" }}>
+        <span class="text-xs font-medium truncate" style={{ color: "var(--text-primary)" }}>
           {props.run.taskLabel}
         </span>
         <div class="flex-1" />

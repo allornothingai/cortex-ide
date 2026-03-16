@@ -185,7 +185,7 @@ export function InlineDiffEditor(props: InlineDiffEditorProps) {
       <div class="flex items-center justify-between px-3 py-2 border-b shrink-0" style={{ "border-color": "var(--border-weak)" }}>
         <div class="flex items-center gap-2">
           <Icon name="code-compare" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />
-          <span class="text-sm font-medium truncate" style={{ color: "var(--text-base)" }}>{props.filePath}</span>
+          <span class="text-sm font-medium truncate" style={{ color: "var(--text-primary)" }}>{props.filePath}</span>
           <Show when={hunkNav()}>
             <span class="text-xs" style={{ color: "var(--cortex-success)" }}>+{hunkNav()!.totalAdditions}</span>
             <span class="text-xs" style={{ color: "var(--cortex-error)" }}>-{hunkNav()!.totalDeletions}</span>

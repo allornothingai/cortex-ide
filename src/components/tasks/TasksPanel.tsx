@@ -276,7 +276,7 @@ export function TasksPanel() {
                       <Icon name="chevron-right" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />
                     )}
                     <Icon name="clock" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />
-                    <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>Recent</span>
+                    <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>Recent</span>
                     <span class="text-xs px-1.5 rounded" style={{ background: "var(--surface-hover)", color: "var(--text-weak)" }}>
                       {recentTasks().length}
                     </span>
@@ -315,7 +315,7 @@ export function TasksPanel() {
                       ) : (
                         <Icon name="chevron-right" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />
                       )}
-                      <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+                      <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
                         {section.label}
                       </span>
                       <span class="text-xs px-1.5 rounded" style={{ background: "var(--surface-hover)", color: "var(--text-weak)" }}>
@@ -421,7 +421,7 @@ export function TasksPanel() {
                       >
                         <Icon name="eye" class="w-4 h-4" style={{ color: isRunning() ? "var(--cortex-success)" : "var(--text-weak)" }} />
                         <div class="flex-1 min-w-0">
-                          <div class="text-sm truncate" style={{ color: "var(--text-base)" }}>
+                          <div class="text-sm truncate" style={{ color: "var(--text-primary)" }}>
                             {task.label}
                           </div>
                           <div class="text-xs truncate" style={{ color: "var(--text-weak)" }}>
@@ -554,7 +554,7 @@ export function TasksPanel() {
               >
                 <div class="flex items-center gap-2">
                   <Icon name="floppy-disk" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />
-                  <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+                  <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
                     Enable Run on Save
                   </span>
                 </div>
@@ -584,7 +584,7 @@ export function TasksPanel() {
                       style={{
                         background: "var(--surface-hover)",
                         "border-color": "var(--border-base)",
-                        color: "var(--text-base)",
+                        color: "var(--text-primary)",
                       }}
                     >
                       <option value="">Select a task...</option>
@@ -701,7 +701,7 @@ function TaskItem(props: TaskItemProps) {
       
       <div class="flex-1 min-w-0">
         <div class="flex items-center gap-2">
-          <span class="text-sm truncate" style={{ color: "var(--text-base)" }}>
+          <span class="text-sm truncate" style={{ color: "var(--text-primary)" }}>
             {props.task.label}
           </span>
           <Show when={props.task.isDefault}>
@@ -803,7 +803,7 @@ function RunOnSaveItem(props: RunOnSaveItemProps) {
       
       <div class="flex-1 min-w-0">
         <div class="flex items-center gap-2">
-          <span class="text-sm font-medium truncate" style={{ color: "var(--text-base)" }}>
+          <span class="text-sm font-medium truncate" style={{ color: "var(--text-primary)" }}>
             {props.taskLabel}
           </span>
           <span class="text-xs px-1.5 rounded" style={{ background: "var(--surface-hover)", color: "var(--text-weak)" }}>

@@ -81,7 +81,7 @@ function AddPortDialog(props: AddPortDialogProps) {
             class="flex items-center justify-between px-4 py-3 border-b"
             style={{ "border-color": "var(--border-weak)" }}
           >
-            <h2 class="text-sm font-semibold" style={{ color: "var(--text-base)" }}>
+            <h2 class="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>
               Forward Port
             </h2>
             <IconButton
@@ -114,7 +114,7 @@ function AddPortDialog(props: AddPortDialogProps) {
                 style={{
                   "background-color": "var(--surface-base)",
                   border: "1px solid var(--border-base)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                 }}
                 required
               />
@@ -158,7 +158,7 @@ function AddPortDialog(props: AddPortDialogProps) {
                   style={{
                     "background-color": "var(--surface-base)",
                     border: "1px solid var(--border-base)",
-                    color: "var(--text-base)",
+                    color: "var(--text-primary)",
                   }}
                   required
                 />
@@ -182,7 +182,7 @@ function AddPortDialog(props: AddPortDialogProps) {
                 style={{
                   "background-color": "var(--surface-base)",
                   border: "1px solid var(--border-base)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                 }}
               />
               <p class="text-xs" style={{ color: "var(--text-weaker)" }}>
@@ -460,7 +460,7 @@ export function PortForwarding(props: PortForwardingProps) {
                   }}
                 >
                   {/* Local Port */}
-                  <span class="font-mono text-xs" style={{ color: "var(--text-base)" }}>
+                  <span class="font-mono text-xs" style={{ color: "var(--text-primary)" }}>
                     :{port.localPort}
                   </span>
 
@@ -523,7 +523,7 @@ export function PortForwarding(props: PortForwardingProps) {
                     <div class="flex items-center gap-2">
                       <span
                         class="font-mono text-xs"
-                        style={{ color: "var(--text-base)" }}
+                        style={{ color: "var(--text-primary)" }}
                       >
                         :{detected.port}
                       </span>

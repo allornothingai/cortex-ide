@@ -365,7 +365,7 @@ export function TaskQuickPick() {
               type="text"
               placeholder="Search tasks... (type to filter)"
               class="flex-1 bg-transparent outline-none text-sm"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
               value={query()}
               onInput={(e) => setQuery(e.currentTarget.value)}
               onKeyDown={handleKeyDown}
@@ -661,7 +661,7 @@ function TaskPickerItem(props: TaskPickerItemProps) {
         <div class="flex items-center gap-2">
           <span
             class="text-sm truncate"
-            style={{ color: "var(--text-base)" }}
+            style={{ color: "var(--text-primary)" }}
           >
             {highlightText(props.item.task.label)}
           </span>

@@ -60,7 +60,7 @@ function JsonOutput(props: { data: Record<string, unknown> }) {
     <pre
       class="font-mono text-sm"
       style={{
-        color: "var(--text-base)",
+        color: "var(--text-primary)",
         background: "var(--surface-raised)",
         padding: "8px",
         "border-radius": "var(--cortex-radius-sm)",

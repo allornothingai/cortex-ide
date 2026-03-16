@@ -185,7 +185,7 @@ export function WatchView() {
         <div class="mx-2 mb-1 rounded border overflow-hidden" style={{ "border-color": "var(--border-weak)", background: "var(--surface-sunken)" }}>
           <For each={expressionHistory()}>
             {(expr) => (
-              <button onClick={() => useHistoryItem(expr)} class="w-full text-left px-2 py-0.5 text-xs font-mono truncate hover:bg-[var(--surface-raised)] transition-colors" style={{ color: "var(--text-base)" }}>
+              <button onClick={() => useHistoryItem(expr)} class="w-full text-left px-2 py-0.5 text-xs font-mono truncate hover:bg-[var(--surface-raised)] transition-colors" style={{ color: "var(--text-primary)" }}>
                 {expr}
               </button>
             )}
@@ -195,7 +195,7 @@ export function WatchView() {
 
       <Show when={isAdding()}>
         <div class="px-2 pb-2">
-          <input type="text" value={newExpression()} onInput={(e) => setNewExpression(e.currentTarget.value)} onKeyDown={handleKeyDown} onBlur={() => { if (!newExpression().trim()) setIsAdding(false); }} placeholder="Enter expression to watch" class="w-full px-2 py-1 text-xs rounded outline-none" style={{ background: "var(--surface-sunken)", color: "var(--text-base)", border: "1px solid var(--border-weak)" }} autofocus />
+          <input type="text" value={newExpression()} onInput={(e) => setNewExpression(e.currentTarget.value)} onKeyDown={handleKeyDown} onBlur={() => { if (!newExpression().trim()) setIsAdding(false); }} placeholder="Enter expression to watch" class="w-full px-2 py-1 text-xs rounded outline-none" style={{ background: "var(--surface-sunken)", color: "var(--text-primary)", border: "1px solid var(--border-weak)" }} autofocus />
         </div>
       </Show>
 
@@ -230,7 +230,7 @@ export function WatchView() {
                     </span>
                   </div>
                 }>
-                  <input type="text" value={editingValue()} onInput={(e) => setEditingValue(e.currentTarget.value)} onKeyDown={handleEditKeyDown} onBlur={handleSaveEdit} class="flex-1 px-1 py-0 text-xs rounded outline-none" style={{ background: "var(--surface-sunken)", color: "var(--text-base)", border: "1px solid var(--accent)", height: "18px", "line-height": "18px" }} autofocus />
+                  <input type="text" value={editingValue()} onInput={(e) => setEditingValue(e.currentTarget.value)} onKeyDown={handleEditKeyDown} onBlur={handleSaveEdit} class="flex-1 px-1 py-0 text-xs rounded outline-none" style={{ background: "var(--surface-sunken)", color: "var(--text-primary)", border: "1px solid var(--accent)", height: "18px", "line-height": "18px" }} autofocus />
                 </Show>
 
                 <Show when={watch.result !== undefined && !watch.error}>

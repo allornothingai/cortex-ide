@@ -145,7 +145,7 @@ export function EmmetWrapDialog() {
                 class="w-full px-3 py-2 rounded text-[14px] outline-none border transition-colors"
                 style={{ 
                   background: "var(--background-base)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                   "border-color": "var(--border-default)",
                 }}
                 value={abbreviation()}
@@ -174,7 +174,7 @@ export function EmmetWrapDialog() {
                 class="p-3 rounded text-[13px] font-mono overflow-x-auto max-h-[120px] overflow-y-auto"
                 style={{ 
                   background: "var(--background-base)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                   "white-space": "pre-wrap",
                   "word-break": "break-word",
                 }}

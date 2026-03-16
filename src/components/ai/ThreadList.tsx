@@ -374,7 +374,7 @@ export function ThreadList(props: ThreadListProps) {
               border: "none",
               outline: "none",
               "font-size": "12px",
-              color: "var(--text-base)",
+              color: "var(--text-primary)",
             }}
           />
         </div>

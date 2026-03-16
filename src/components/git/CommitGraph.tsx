@@ -105,7 +105,7 @@ function CommitRow(props: CommitRowProps) {
           {/* Message */}
           <span
             class="flex-1 text-sm truncate"
-            style={{ color: "var(--text-base)" }}
+            style={{ color: "var(--text-primary)" }}
           >
             {props.node.commit.message.split("\n")[0]}
           </span>
@@ -161,7 +161,7 @@ function CommitRow(props: CommitRowProps) {
             <div class="flex items-start gap-2">
               <Icon name="user" class="w-4 h-4 mt-0.5 shrink-0" style={{ color: "var(--text-weak)" }} />
               <div>
-                <div class="text-sm" style={{ color: "var(--text-base)" }}>
+                <div class="text-sm" style={{ color: "var(--text-primary)" }}>
                   {props.node.commit.author}
                 </div>
                 <div class="text-xs" style={{ color: "var(--text-weak)" }}>
@@ -172,14 +172,14 @@ function CommitRow(props: CommitRowProps) {
 
             <div class="flex items-center gap-2">
               <Icon name="clock" class="w-4 h-4 shrink-0" style={{ color: "var(--text-weak)" }} />
-              <span class="text-sm" style={{ color: "var(--text-base)" }}>
+              <span class="text-sm" style={{ color: "var(--text-primary)" }}>
                 {new Date(props.node.commit.date).toLocaleString()}
               </span>
             </div>
 
             <div class="flex items-center gap-2">
               <Icon name="code-commit" class="w-4 h-4 shrink-0" style={{ color: "var(--text-weak)" }} />
-              <span class="text-sm font-mono" style={{ color: "var(--text-base)" }}>
+              <span class="text-sm font-mono" style={{ color: "var(--text-primary)" }}>
                 {props.node.commit.hash}
               </span>
               <button
@@ -205,7 +205,7 @@ function CommitRow(props: CommitRowProps) {
             >
               <pre
                 class="text-sm whitespace-pre-wrap"
-                style={{ color: "var(--text-base)" }}
+                style={{ color: "var(--text-primary)" }}
               >
                 {props.node.commit.message}
               </pre>
@@ -613,7 +613,7 @@ export function CommitGraph(props: CommitGraphProps) {
       >
         <div class="flex items-center gap-2">
           <Icon name="code-commit" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />
-          <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+          <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
             Commit History
           </span>
           <span
@@ -706,7 +706,7 @@ export function CommitGraph(props: CommitGraphProps) {
             type="text"
             placeholder="Search commits..."
             class="flex-1 bg-transparent text-sm outline-none"
-            style={{ color: "var(--text-base)" }}
+            style={{ color: "var(--text-primary)" }}
             value={searchQuery()}
             onInput={(e) => setSearchQuery(e.currentTarget.value)}
           />
@@ -818,7 +818,7 @@ export function CommitGraph(props: CommitGraphProps) {
             class="flex items-center justify-between px-3 py-2 border-b sticky top-0"
             style={{ background: "var(--surface-base)", "border-color": "var(--border-weak)" }}
           >
-            <span class="text-xs font-medium" style={{ color: "var(--text-base)" }}>
+            <span class="text-xs font-medium" style={{ color: "var(--text-primary)" }}>
               Comparing {compareFrom()?.slice(0, 7)}..{compareTo()?.slice(0, 7)}
               {" · "}{compareResult()!.length} file(s) changed
             </span>
@@ -834,7 +834,7 @@ export function CommitGraph(props: CommitGraphProps) {
             {(diff) => (
               <div class="px-3 py-1.5 flex items-center gap-2 hover:bg-white/5 cursor-pointer text-xs">
                 <Icon name="file-code" class="w-3.5 h-3.5 shrink-0" style={{ color: "var(--text-weak)" }} />
-                <span class="flex-1 truncate" style={{ color: "var(--text-base)" }}>
+                <span class="flex-1 truncate" style={{ color: "var(--text-primary)" }}>
                   {diff.filePath}
                 </span>
                 <span style={{ color: "var(--cortex-success)" }}>+{diff.additions}</span>
@@ -860,7 +860,7 @@ export function CommitGraph(props: CommitGraphProps) {
           >
             <button
               class="w-full flex items-center gap-2 px-3 py-1.5 text-sm text-left hover:bg-white/10"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
               onClick={() => copyCommitHash(pos().commit.hash)}
             >
               <Icon name="copy" class="w-4 h-4" />
@@ -868,7 +868,7 @@ export function CommitGraph(props: CommitGraphProps) {
             </button>
             <button
               class="w-full flex items-center gap-2 px-3 py-1.5 text-sm text-left hover:bg-white/10"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
               onClick={() => {
                 props.onCheckout?.(pos().commit);
                 closeContextMenu();
@@ -880,7 +880,7 @@ export function CommitGraph(props: CommitGraphProps) {
             <div class="my-1 border-t" style={{ "border-color": "var(--border-weak)" }} />
             <button
               class="w-full flex items-center gap-2 px-3 py-1.5 text-sm text-left hover:bg-white/10"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
               onClick={() => {
                 props.onCherryPick?.(pos().commit);
                 closeContextMenu();
@@ -891,7 +891,7 @@ export function CommitGraph(props: CommitGraphProps) {
             </button>
             <button
               class="w-full flex items-center gap-2 px-3 py-1.5 text-sm text-left hover:bg-white/10"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
               onClick={() => {
                 props.onRevert?.(pos().commit);
                 closeContextMenu();
@@ -903,7 +903,7 @@ export function CommitGraph(props: CommitGraphProps) {
             <div class="my-1 border-t" style={{ "border-color": "var(--border-weak)" }} />
             <button
               class="w-full flex items-center gap-2 px-3 py-1.5 text-sm text-left hover:bg-white/10"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
               onClick={() => {
                 props.onCreateBranch?.(pos().commit);
                 closeContextMenu();
@@ -914,7 +914,7 @@ export function CommitGraph(props: CommitGraphProps) {
             </button>
             <button
               class="w-full flex items-center gap-2 px-3 py-1.5 text-sm text-left hover:bg-white/10"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
               onClick={() => {
                 props.onCreateTag?.(pos().commit);
                 closeContextMenu();

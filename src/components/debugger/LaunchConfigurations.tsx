@@ -98,7 +98,7 @@ export function LaunchConfigurations(props: LaunchConfigurationsProps) {
           class="flex items-center gap-1.5 px-2 py-1 text-xs rounded transition-colors min-w-[140px] max-w-[200px] disabled:opacity-50"
           style={{
             background: "var(--surface-sunken)",
-            color: "var(--text-base)",
+            color: "var(--text-primary)",
             border: "1px solid var(--border-weak)",
           }}
         >
@@ -139,7 +139,7 @@ export function LaunchConfigurations(props: LaunchConfigurationsProps) {
                       handleSelect({ type: "config", name: config.name, config })
                     }
                     class="w-full flex items-center gap-2 px-3 py-1.5 text-xs text-left transition-colors hover:bg-[var(--surface-raised)]"
-                    style={{ color: "var(--text-base)" }}
+                    style={{ color: "var(--text-primary)" }}
                   >
                     <Icon name="play" size="xs" style={{ color: "var(--text-weak)", "flex-shrink": "0" }} />
                     <span class="truncate flex-1">{config.name}</span>
@@ -172,7 +172,7 @@ export function LaunchConfigurations(props: LaunchConfigurationsProps) {
                         handleSelect({ type: "compound", name: compound.name, compound })
                       }
                       class="flex-1 flex items-center gap-2 text-xs text-left"
-                      style={{ color: "var(--text-base)" }}
+                      style={{ color: "var(--text-primary)" }}
                     >
                       <Icon
                         name="layer-group"
@@ -354,7 +354,7 @@ function CompoundEditor(props: CompoundEditorProps) {
         >
           <div class="flex items-center gap-2">
             <Icon name="layer-group" size="md" style={{ color: "var(--accent)" }} />
-            <h2 class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+            <h2 class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
               Edit Compound
             </h2>
           </div>
@@ -384,7 +384,7 @@ function CompoundEditor(props: CompoundEditorProps) {
               class="w-full px-3 py-2 text-sm rounded outline-none"
               style={{
                 background: "var(--surface-sunken)",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
                 border: "1px solid var(--border-weak)",
               }}
             />
@@ -429,7 +429,7 @@ function CompoundEditor(props: CompoundEditorProps) {
                       />
                       <span
                         class="text-sm flex-1"
-                        style={{ color: "var(--text-base)" }}
+                        style={{ color: "var(--text-primary)" }}
                       >
                         {config.name}
                       </span>
@@ -462,7 +462,7 @@ function CompoundEditor(props: CompoundEditorProps) {
               class="w-full px-3 py-2 text-sm rounded outline-none"
               style={{
                 background: "var(--surface-sunken)",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
                 border: "1px solid var(--border-weak)",
               }}
             />
@@ -484,7 +484,7 @@ function CompoundEditor(props: CompoundEditorProps) {
               class="w-full px-3 py-2 text-sm rounded outline-none"
               style={{
                 background: "var(--surface-sunken)",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
                 border: "1px solid var(--border-weak)",
               }}
             />
@@ -502,7 +502,7 @@ function CompoundEditor(props: CompoundEditorProps) {
             <label
               for="stopAll"
               class="text-sm"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
             >
               Stop all when one stops
             </label>

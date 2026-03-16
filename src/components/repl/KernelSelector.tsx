@@ -96,7 +96,7 @@ export function KernelSelector() {
         <Show when={activeKernel()} fallback={<span style={{ color: "var(--text-weak)" }}>No kernel</span>}>
           {(kernel) => (
             <>
-              <span style={{ color: "var(--text-base)" }}>{kernel().spec.display_name}</span>
+              <span style={{ color: "var(--text-primary)" }}>{kernel().spec.display_name}</span>
               <StatusBadge status={kernel().status} />
             </>
           )}
@@ -132,7 +132,7 @@ export function KernelSelector() {
                   <button
                     onClick={handleRestartKernel}
                     class="px-2 py-1 text-xs rounded hover:bg-[var(--surface-hover)]"
-                    style={{ color: "var(--text-base)", border: "1px solid var(--border-base)" }}
+                    style={{ color: "var(--text-primary)", border: "1px solid var(--border-base)" }}
                   >
                     Restart
                   </button>
@@ -165,7 +165,7 @@ export function KernelSelector() {
                     <Show when={kernel.id === state.activeKernelId}>
                       <Icon name="check" class="w-4 h-4" style={{ color: "var(--cortex-success)" }} />
                     </Show>
-                    <span style={{ color: "var(--text-base)" }}>{kernel.spec.display_name}</span>
+                    <span style={{ color: "var(--text-primary)" }}>{kernel.spec.display_name}</span>
                   </div>
                   <StatusBadge status={kernel.status} />
                 </button>
@@ -224,7 +224,7 @@ export function KernelSelector() {
                       </span>
                     </div>
                     <div class="text-left">
-                      <div class="text-sm" style={{ color: "var(--text-base)" }}>
+                      <div class="text-sm" style={{ color: "var(--text-primary)" }}>
                         {spec.display_name}
                       </div>
                       <div class="text-xs" style={{ color: "var(--text-weak)" }}>

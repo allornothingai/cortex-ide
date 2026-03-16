@@ -119,7 +119,7 @@ export function KernelSelector() {
       <button
         onClick={() => setIsOpen(!isOpen())}
         class="flex items-center gap-2 px-2.5 py-1.5 rounded hover:bg-[var(--surface-hover)] transition-colors text-xs"
-        style={{ color: "var(--text-base)" }}
+        style={{ color: "var(--text-primary)" }}
       >
         <span
           class="inline-block w-2 h-2 rounded-full"

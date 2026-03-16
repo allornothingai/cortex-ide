@@ -73,7 +73,7 @@ export function DataBreakpointView(_props: DataBreakpointViewProps) {
         class="flex items-center justify-between px-2 py-1"
         style={{ "border-bottom": "1px solid var(--border-weak)" }}
       >
-        <span class="text-xs font-medium" style={{ color: "var(--text-base)" }}>
+        <span class="text-xs font-medium" style={{ color: "var(--text-primary)" }}>
           Data Breakpoints
         </span>
         <div class="flex items-center gap-1">
@@ -112,7 +112,7 @@ export function DataBreakpointView(_props: DataBreakpointViewProps) {
             class="w-full px-2 py-1 text-xs rounded outline-none"
             style={{
               background: "var(--surface-sunken)",
-              color: "var(--text-base)",
+              color: "var(--text-primary)",
               border: "1px solid var(--border-weak)",
             }}
             autofocus
@@ -124,7 +124,7 @@ export function DataBreakpointView(_props: DataBreakpointViewProps) {
               class="px-2 py-1 text-xs rounded outline-none"
               style={{
                 background: "var(--surface-sunken)",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
                 border: "1px solid var(--border-weak)",
               }}
             >
@@ -196,7 +196,7 @@ export function DataBreakpointView(_props: DataBreakpointViewProps) {
                   <div class="flex items-center gap-1">
                     <span
                       class="font-mono text-xs truncate"
-                      style={{ color: "var(--text-base)" }}
+                      style={{ color: "var(--text-primary)" }}
                     >
                       {bp.variableName}
                     </span>

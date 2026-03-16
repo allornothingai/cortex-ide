@@ -88,7 +88,7 @@ function ContainerCard(props: {
               <Icon name="box" class="w-4 h-4" style={{ color: "var(--accent)" }} />
             </div>
             <div class="min-w-0">
-              <h3 class="text-sm font-medium truncate" style={{ color: "var(--text-base)" }}>
+              <h3 class="text-sm font-medium truncate" style={{ color: "var(--text-primary)" }}>
                 {props.container.name}
               </h3>
               <p class="text-xs truncate" style={{ color: "var(--text-weak)" }}>

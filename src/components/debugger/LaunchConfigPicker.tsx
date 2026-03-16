@@ -954,7 +954,7 @@ export function LaunchConfigPicker(props: LaunchConfigPickerProps) {
             onInput={(e) => setSearchQuery(e.currentTarget.value)}
             placeholder="Select debug configuration to start..."
             class="flex-1 bg-transparent text-sm outline-none"
-            style={{ color: "var(--text-base)" }}
+            style={{ color: "var(--text-primary)" }}
           />
           <Show when={searchQuery()}>
             <button
@@ -1014,7 +1014,7 @@ export function LaunchConfigPicker(props: LaunchConfigPickerProps) {
                     <div class="flex items-center gap-2">
                       <span 
                         class="text-sm truncate"
-                        style={{ color: "var(--text-base)" }}
+                        style={{ color: "var(--text-primary)" }}
                       >
                         {item.name}
                       </span>
@@ -1192,7 +1192,7 @@ const debugTypes = [
           class="shrink-0 flex items-center justify-between px-4 py-3 border-b"
           style={{ "border-color": "var(--border-weak)" }}
         >
-          <h2 class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+          <h2 class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
             {props.initialConfig ? "Edit Configuration" : "New Debug Configuration"}
           </h2>
           <button
@@ -1248,7 +1248,7 @@ const debugTypes = [
                 checked={request() === "launch"}
                 onChange={() => setRequest("launch")}
               />
-              <span class="text-sm" style={{ color: "var(--text-base)" }}>Launch</span>
+              <span class="text-sm" style={{ color: "var(--text-primary)" }}>Launch</span>
             </label>
             <label class="flex items-center gap-2 cursor-pointer">
               <input
@@ -1257,7 +1257,7 @@ const debugTypes = [
                 checked={request() === "attach"}
                 onChange={() => setRequest("attach")}
               />
-              <span class="text-sm" style={{ color: "var(--text-base)" }}>Attach</span>
+              <span class="text-sm" style={{ color: "var(--text-primary)" }}>Attach</span>
             </label>
           </div>
 
@@ -1274,7 +1274,7 @@ const debugTypes = [
               class="w-full px-3 py-2 text-sm rounded outline-none"
               style={{
                 background: "var(--surface-sunken)",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
                 border: "1px solid var(--border-weak)",
               }}
             />
@@ -1295,7 +1295,7 @@ const debugTypes = [
                   class="flex-1 px-3 py-2 text-sm rounded outline-none font-mono"
                   style={{
                     background: "var(--surface-sunken)",
-                    color: "var(--text-base)",
+                    color: "var(--text-primary)",
                     border: "1px solid var(--border-weak)",
                   }}
                 />
@@ -1326,7 +1326,7 @@ const debugTypes = [
                 class="w-full px-3 py-2 text-sm rounded outline-none font-mono"
                 style={{
                   background: "var(--surface-sunken)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                   border: "1px solid var(--border-weak)",
                 }}
               />
@@ -1345,7 +1345,7 @@ const debugTypes = [
                 class="w-full px-3 py-2 text-sm rounded outline-none font-mono"
                 style={{
                   background: "var(--surface-sunken)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                   border: "1px solid var(--border-weak)",
                 }}
               />
@@ -1365,7 +1365,7 @@ const debugTypes = [
               class="w-full px-3 py-2 text-sm rounded outline-none resize-none font-mono"
               style={{
                 background: "var(--surface-sunken)",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
                 border: "1px solid var(--border-weak)",
               }}
             />
@@ -1378,7 +1378,7 @@ const debugTypes = [
               checked={stopOnEntry()}
               onChange={(e) => setStopOnEntry(e.currentTarget.checked)}
             />
-            <span class="text-sm" style={{ color: "var(--text-base)" }}>Stop on entry</span>
+            <span class="text-sm" style={{ color: "var(--text-primary)" }}>Stop on entry</span>
           </label>
 
           {/* Tasks */}
@@ -1401,7 +1401,7 @@ const debugTypes = [
                   class="w-full px-3 py-2 text-sm rounded outline-none"
                   style={{
                     background: "var(--surface-sunken)",
-                    color: "var(--text-base)",
+                    color: "var(--text-primary)",
                     border: "1px solid var(--border-weak)",
                   }}
                 >
@@ -1421,7 +1421,7 @@ const debugTypes = [
                   class="w-full px-3 py-2 text-sm rounded outline-none"
                   style={{
                     background: "var(--surface-sunken)",
-                    color: "var(--text-base)",
+                    color: "var(--text-primary)",
                     border: "1px solid var(--border-weak)",
                   }}
                 >
@@ -1616,7 +1616,7 @@ function SnippetPickerModal(props: {
             onInput={(e) => setSearchQuery(e.currentTarget.value)}
             placeholder="Search configuration snippets..."
             class="flex-1 bg-transparent text-sm outline-none"
-            style={{ color: "var(--text-base)" }}
+            style={{ color: "var(--text-primary)" }}
           />
           <Show when={searchQuery()}>
             <button
@@ -1691,7 +1691,7 @@ function SnippetPickerModal(props: {
 
                             {/* Content */}
                             <div class="flex-1 min-w-0">
-                              <div class="text-sm truncate" style={{ color: "var(--text-base)" }}>
+                              <div class="text-sm truncate" style={{ color: "var(--text-primary)" }}>
                                 {snippet.name}
                               </div>
                               <div class="text-xs truncate" style={{ color: "var(--text-muted)" }}>

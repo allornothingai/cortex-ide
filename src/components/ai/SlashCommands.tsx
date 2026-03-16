@@ -335,7 +335,7 @@ export function SlashCommandPicker(props: {
                   <div class="flex items-center gap-2">
                     <span 
                       class="text-sm font-medium"
-                      style={{ color: "var(--text-base)" }}
+                      style={{ color: "var(--text-primary)" }}
                     >
                       /{command.name}
                     </span>

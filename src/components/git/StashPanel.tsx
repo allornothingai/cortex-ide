@@ -186,7 +186,7 @@ export function StashPanel(props: StashPanelProps) {
       >
         <div class="flex items-center gap-2">
           <Icon name="box-archive" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />
-          <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+          <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
             Stashes
           </span>
           <span
@@ -230,7 +230,7 @@ export function StashPanel(props: StashPanelProps) {
               type="text"
               placeholder="Search stashes..."
               class="flex-1 bg-transparent text-sm outline-none"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
               value={searchQuery()}
               onInput={(e) => setSearchQuery(e.currentTarget.value)}
             />
@@ -319,7 +319,7 @@ export function StashPanel(props: StashPanelProps) {
                             >
                               stash@{`{${stash.index}}`}
                             </span>
-                            <span class="text-sm truncate" style={{ color: "var(--text-base)" }}>
+                            <span class="text-sm truncate" style={{ color: "var(--text-primary)" }}>
                               {stash.message}
                             </span>
                           </div>
@@ -392,7 +392,7 @@ export function StashPanel(props: StashPanelProps) {
                         <div class="space-y-3">
                           <div class="flex items-center gap-2">
                             <Icon name="clock" class="w-4 h-4 shrink-0" style={{ color: "var(--text-weak)" }} />
-                            <span class="text-sm" style={{ color: "var(--text-base)" }}>
+                            <span class="text-sm" style={{ color: "var(--text-primary)" }}>
                               {new Date(stash.timestamp * 1000).toLocaleString()}
                             </span>
                           </div>
@@ -408,7 +408,7 @@ export function StashPanel(props: StashPanelProps) {
                             </button>
                             <button
                               class="flex-1 flex items-center justify-center gap-1.5 px-3 py-1.5 rounded text-sm transition-colors border"
-                              style={{ "border-color": "var(--border-weak)", color: "var(--text-base)" }}
+                              style={{ "border-color": "var(--border-weak)", color: "var(--text-primary)" }}
                               onClick={() => setConfirmAction({ type: "pop", index: stash.index })}
                             >
                               <Icon name="play" class="w-4 h-4" />
@@ -447,7 +447,7 @@ export function StashPanel(props: StashPanelProps) {
             onClick={(e) => e.stopPropagation()}
           >
             <div class="flex items-center justify-between mb-4">
-              <h3 class="text-lg font-medium" style={{ color: "var(--text-base)" }}>
+              <h3 class="text-lg font-medium" style={{ color: "var(--text-primary)" }}>
                 Create Stash
               </h3>
               <button
@@ -469,7 +469,7 @@ export function StashPanel(props: StashPanelProps) {
                   class="w-full px-3 py-2 rounded text-sm outline-none"
                   style={{
                     background: "var(--background-stronger)",
-                    color: "var(--text-base)",
+                    color: "var(--text-primary)",
                     border: "1px solid var(--border-weak)"
                   }}
                   value={newStashMessage()}
@@ -489,7 +489,7 @@ export function StashPanel(props: StashPanelProps) {
                   onChange={(e) => setIncludeUntracked(e.currentTarget.checked)}
                   class="rounded"
                 />
-                <span class="text-sm" style={{ color: "var(--text-base)" }}>
+                <span class="text-sm" style={{ color: "var(--text-primary)" }}>
                   Include untracked files
                 </span>
               </label>
@@ -529,7 +529,7 @@ export function StashPanel(props: StashPanelProps) {
               style={{ background: "var(--surface-raised)" }}
               onClick={(e) => e.stopPropagation()}
             >
-              <h3 class="text-lg font-medium mb-2" style={{ color: "var(--text-base)" }}>
+              <h3 class="text-lg font-medium mb-2" style={{ color: "var(--text-primary)" }}>
                 {action().type === "drop" ? "Drop Stash?" : "Pop Stash?"}
               </h3>
               <p class="text-sm mb-4" style={{ color: "var(--text-weak)" }}>

@@ -426,7 +426,7 @@ export function CommentsPanel(props: CommentsPanelProps) {
               class="px-1.5 py-0.5 text-[10px] rounded-full"
               style={{
                 background: "var(--surface-active)",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
               }}
             >
               {comments.unresolvedCount()}/{comments.totalCount()}
@@ -466,7 +466,7 @@ export function CommentsPanel(props: CommentsPanelProps) {
             onInput={(e) => setSearchQuery(e.currentTarget.value)}
             placeholder="Search comments..."
             class="flex-1 bg-transparent border-none outline-none text-xs"
-            style={{ color: "var(--text-base)" }}
+            style={{ color: "var(--text-primary)" }}
           />
           <Show when={searchQuery()}>
             <button

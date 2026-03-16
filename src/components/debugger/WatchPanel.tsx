@@ -178,7 +178,7 @@ function WatchExpressionRow(props: { watch: WatchExpression }) {
             class="flex-1 min-w-0"
             style={{
               background: "var(--cortex-bg-primary)",
-              color: "var(--text-base)",
+              color: "var(--text-primary)",
               border: "1px solid var(--cortex-accent-primary)",
               "border-radius": "2px",
               padding: "0 4px",
@@ -224,7 +224,7 @@ export function WatchPanel() {
   };
 
   return (
-    <div class="flex flex-col h-full" style={{ background: "var(--cortex-bg-primary)", color: "var(--text-base)" }}>
+    <div class="flex flex-col h-full" style={{ background: "var(--cortex-bg-primary)", color: "var(--text-primary)" }}>
       <div class="flex items-center justify-between px-2 shrink-0" style={{ height: "28px", "border-bottom": "1px solid var(--surface-border)" }}>
         <span style={{ "font-size": "11px", "font-weight": "600", "text-transform": "uppercase" }}>Watch</span>
         <div class="flex gap-0.5">
@@ -255,7 +255,7 @@ export function WatchPanel() {
             style={{
               flex: "1",
               background: "var(--cortex-bg-primary)",
-              color: "var(--text-base)",
+              color: "var(--text-primary)",
               border: "1px solid var(--surface-border)",
               "border-radius": "3px",
               padding: "2px 6px",

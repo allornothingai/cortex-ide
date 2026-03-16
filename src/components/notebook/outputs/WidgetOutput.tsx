@@ -21,7 +21,7 @@ function WidgetTreeNode(props: { label: string; data: unknown; depth: number }) 
           {props.label}
         </span>
         <Show when={!isExpandable()}>
-          <span class="font-mono text-code-sm" style={{ color: "var(--text-base)" }}>
+          <span class="font-mono text-code-sm" style={{ color: "var(--text-primary)" }}>
             : {JSON.stringify(props.data)}
           </span>
         </Show>
@@ -62,7 +62,7 @@ export function WidgetOutput(props: WidgetOutputProps) {
         }}
       >
         <Icon name="puzzle-piece" class="w-3.5 h-3.5" style={{ color: "var(--cortex-info)" }} />
-        <span class="text-xs font-medium" style={{ color: "var(--text-base)" }}>
+        <span class="text-xs font-medium" style={{ color: "var(--text-primary)" }}>
           {modelName()}
         </span>
         <span class="text-[10px]" style={{ color: "var(--text-weaker)" }}>

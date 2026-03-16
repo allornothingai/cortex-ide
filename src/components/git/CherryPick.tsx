@@ -439,7 +439,7 @@ export function CherryPick(props: CherryPickProps) {
         <div class="flex items-center gap-3">
           <Icon name="copy" class="w-5 h-5" style={{ color: "var(--accent-primary)" }} />
           <div>
-            <h2 class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+            <h2 class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
               Cherry Pick Commits
             </h2>
             <Show when={currentBranchInfo()}>
@@ -601,7 +601,7 @@ export function CherryPick(props: CherryPickProps) {
                 class="w-full flex items-center justify-between px-3 py-2 rounded text-sm transition-colors"
                 style={{
                   background: "var(--surface-base)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                   border: "1px solid var(--border-weak)"
                 }}
                 onClick={() => setBranchDropdownOpen(!branchDropdownOpen())}
@@ -633,7 +633,7 @@ export function CherryPick(props: CherryPickProps) {
                         type="text"
                         placeholder="Search branches..."
                         class="flex-1 bg-transparent text-sm outline-none"
-                        style={{ color: "var(--text-base)" }}
+                        style={{ color: "var(--text-primary)" }}
                         value={branchSearchQuery()}
                         onInput={(e) => setBranchSearchQuery(e.currentTarget.value)}
                         autofocus
@@ -657,7 +657,7 @@ export function CherryPick(props: CherryPickProps) {
                           disabled={branch.isCurrent}
                         >
                           <Icon name="code-branch" class="w-4 h-4 shrink-0" style={{ color: branch.isRemote ? "var(--cortex-info)" : "var(--text-weak)" }} />
-                          <span class="flex-1 truncate text-sm" style={{ color: "var(--text-base)" }}>
+                          <span class="flex-1 truncate text-sm" style={{ color: "var(--text-primary)" }}>
                             {branch.name}
                           </span>
                           <Show when={branch.isCurrent}>
@@ -693,7 +693,7 @@ export function CherryPick(props: CherryPickProps) {
                 type="text"
                 placeholder="Search commits..."
                 class="flex-1 bg-transparent text-sm outline-none"
-                style={{ color: "var(--text-base)" }}
+                style={{ color: "var(--text-primary)" }}
                 value={commitSearchQuery()}
                 onInput={(e) => setCommitSearchQuery(e.currentTarget.value)}
                 disabled={isCherryPickActive()}
@@ -759,7 +759,7 @@ export function CherryPick(props: CherryPickProps) {
                           </span>
                           <span
                             class="text-sm truncate"
-                            style={{ color: "var(--text-base)" }}
+                            style={{ color: "var(--text-primary)" }}
                             title={commit.message}
                           >
                             {commit.message.split("\n")[0]}
@@ -806,7 +806,7 @@ export function CherryPick(props: CherryPickProps) {
             >
               <div class="flex items-center gap-2">
                 <Icon name="code-commit" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />
-                <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+                <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
                   Selected ({selectedCommits().length})
                 </span>
               </div>
@@ -880,7 +880,7 @@ export function CherryPick(props: CherryPickProps) {
                           </div>
                           <span
                             class="text-xs truncate block"
-                            style={{ color: "var(--text-base)" }}
+                            style={{ color: "var(--text-primary)" }}
                             title={commit.message}
                           >
                             {commit.message.split("\n")[0]}
@@ -917,7 +917,7 @@ export function CherryPick(props: CherryPickProps) {
             >
               <div class="flex items-center gap-2">
                 <Icon name="file-lines" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />
-                <span class="text-sm font-medium" style={{ color: "var(--text-base)" }}>
+                <span class="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
                   Commit Details
                 </span>
               </div>
@@ -949,7 +949,7 @@ export function CherryPick(props: CherryPickProps) {
                       >
                         {previewCommit()!.shortHash}
                       </span>
-                      <p class="text-sm mt-1.5" style={{ color: "var(--text-base)" }}>
+                      <p class="text-sm mt-1.5" style={{ color: "var(--text-primary)" }}>
                         {previewCommit()!.message}
                       </p>
                     </div>
@@ -1000,7 +1000,7 @@ export function CherryPick(props: CherryPickProps) {
                             {(file) => (
                               <div
                                 class="text-xs px-2 py-1 rounded truncate"
-                                style={{ background: "var(--surface-base)", color: "var(--text-base)" }}
+                                style={{ background: "var(--surface-base)", color: "var(--text-primary)" }}
                                 title={file.path}
                               >
                                 <span
@@ -1080,7 +1080,7 @@ export function CherryPick(props: CherryPickProps) {
               <Show when={cherryPickState() === "paused-conflict"}>
                 <button
                   class="flex items-center gap-2 px-4 py-2 rounded text-sm transition-colors border"
-                  style={{ "border-color": "var(--border-weak)", color: "var(--text-base)" }}
+                  style={{ "border-color": "var(--border-weak)", color: "var(--text-primary)" }}
                   onClick={resolveConflicts}
                 >
                   <Icon name="code-merge" class="w-4 h-4" />

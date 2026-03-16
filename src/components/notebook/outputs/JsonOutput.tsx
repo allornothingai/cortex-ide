@@ -21,7 +21,7 @@ function JsonTreeNode(props: { label: string; data: unknown; depth: number }) {
           {props.label}
         </span>
         <Show when={!isExpandable()}>
-          <span class="font-mono text-code-sm" style={{ color: "var(--text-base)" }}>
+          <span class="font-mono text-code-sm" style={{ color: "var(--text-primary)" }}>
             : {JSON.stringify(props.data)}
           </span>
         </Show>
@@ -68,7 +68,7 @@ export function JsonOutput(props: JsonOutputProps) {
           <pre
             class="font-mono text-code-sm"
             style={{
-              color: "var(--text-base)",
+              color: "var(--text-primary)",
               background: "var(--surface-raised)",
               padding: "8px",
               "border-radius": "var(--cortex-radius-sm)",

@@ -330,7 +330,7 @@ function JsonOutput(props: { data: unknown }) {
     <pre
       class="font-mono text-code-sm"
       style={{
-        color: "var(--text-base)",
+        color: "var(--text-primary)",
         background: "var(--surface-raised)",
         padding: "8px",
         "border-radius": "var(--cortex-radius-sm)",
@@ -447,7 +447,7 @@ function CellOutputRenderer(props: { output: NotebookCellOutput }) {
         return (
           <pre
             class="font-mono text-code-sm"
-            style={{ color: "var(--text-base)", margin: "4px 0" }}
+            style={{ color: "var(--text-primary)", margin: "4px 0" }}
           >
             {latex}
           </pre>
@@ -777,7 +777,7 @@ function MarkdownCellEditor(props: MarkdownCellEditorProps) {
           class="w-full resize-none outline-none font-mono text-sm p-3"
           style={{
             background: "var(--surface-base)",
-            color: "var(--text-base)",
+            color: "var(--text-primary)",
             border: "1px solid var(--accent)",
             "border-radius": "var(--cortex-radius-sm)",
             "min-height": "80px",
@@ -822,7 +822,7 @@ function RawCellEditor(props: RawCellEditorProps) {
       class="w-full resize-none outline-none font-mono text-sm p-3"
       style={{
         background: "var(--surface-base)",
-        color: "var(--text-base)",
+        color: "var(--text-primary)",
         border: "1px solid var(--border-base)",
         "border-radius": "var(--cortex-radius-sm)",
         "min-height": "60px",
@@ -1270,7 +1270,7 @@ function AddCellButton(props: AddCellButtonProps) {
                 setShowMenu(false);
               }}
               class="flex items-center gap-2 w-full px-3 py-1.5 text-xs hover:bg-[var(--surface-hover)] transition-colors"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
             >
               <Icon name="code" class="w-3.5 h-3.5" />
               <span>Code Cell</span>
@@ -1281,7 +1281,7 @@ function AddCellButton(props: AddCellButtonProps) {
                 setShowMenu(false);
               }}
               class="flex items-center gap-2 w-full px-3 py-1.5 text-xs hover:bg-[var(--surface-hover)] transition-colors"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
             >
               <Icon name="file-lines" class="w-3.5 h-3.5" />
               <span>Markdown Cell</span>
@@ -1804,7 +1804,7 @@ function NotebookSearch(props: NotebookSearchProps) {
               type="text"
               placeholder="Search notebook..."
               class="flex-1 bg-transparent outline-none text-[13px] min-w-0"
-              style={{ color: "var(--text-base)" }}
+              style={{ color: "var(--text-primary)" }}
               value={query()}
               onInput={(e) => setQuery(e.currentTarget.value)}
               onKeyDown={handleInputKeyDown}
@@ -1933,7 +1933,7 @@ function NotebookSearch(props: NotebookSearchProps) {
                 onChange={(e) => setSearchInCode(e.currentTarget.checked)}
                 class="w-3 h-3 accent-[var(--accent-primary)]"
               />
-              <span class="text-[11px]" style={{ color: "var(--text-base)" }}>Code</span>
+              <span class="text-[11px]" style={{ color: "var(--text-primary)" }}>Code</span>
             </label>
             
             <label class="flex items-center gap-1.5 cursor-pointer">
@@ -1943,7 +1943,7 @@ function NotebookSearch(props: NotebookSearchProps) {
                 onChange={(e) => setSearchInMarkdown(e.currentTarget.checked)}
                 class="w-3 h-3 accent-[var(--accent-primary)]"
               />
-              <span class="text-[11px]" style={{ color: "var(--text-base)" }}>Markdown</span>
+              <span class="text-[11px]" style={{ color: "var(--text-primary)" }}>Markdown</span>
             </label>
             
             <label class="flex items-center gap-1.5 cursor-pointer">
@@ -1953,7 +1953,7 @@ function NotebookSearch(props: NotebookSearchProps) {
                 onChange={(e) => setSearchInOutput(e.currentTarget.checked)}
                 class="w-3 h-3 accent-[var(--accent-primary)]"
               />
-              <span class="text-[11px]" style={{ color: "var(--text-base)" }}>Output</span>
+              <span class="text-[11px]" style={{ color: "var(--text-primary)" }}>Output</span>
             </label>
             
             <div class="w-px h-4" style={{ background: "var(--border-weak)" }} />
@@ -1965,7 +1965,7 @@ function NotebookSearch(props: NotebookSearchProps) {
               class="text-[11px] px-2 py-0.5 rounded outline-none"
               style={{
                 background: "var(--background-base)",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
                 border: "1px solid var(--border-weak)",
               }}
             >
@@ -1989,7 +1989,7 @@ function NotebookSearch(props: NotebookSearchProps) {
                 type="text"
                 placeholder="Replace with..."
                 class="flex-1 bg-transparent outline-none text-[13px] min-w-0"
-                style={{ color: "var(--text-base)" }}
+                style={{ color: "var(--text-primary)" }}
                 value={replaceText()}
                 onInput={(e) => setReplaceText(e.currentTarget.value)}
                 onKeyDown={handleReplaceKeyDown}
@@ -1999,7 +1999,7 @@ function NotebookSearch(props: NotebookSearchProps) {
               class="px-2.5 py-1.5 text-[11px] rounded-md transition-colors font-medium disabled:opacity-30 hover:bg-white/5"
               style={{ 
                 background: "var(--surface-active)", 
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
               }}
               onClick={replaceOne}
               disabled={matches().length === 0 || matches()[currentMatchIndex()]?.scope === "output"}
@@ -2011,7 +2011,7 @@ function NotebookSearch(props: NotebookSearchProps) {
               class="px-2.5 py-1.5 text-[11px] rounded-md transition-colors font-medium disabled:opacity-30 hover:bg-white/5"
               style={{ 
                 background: "var(--surface-active)", 
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
               }}
               onClick={replaceAll}
               disabled={matches().filter((m) => m.scope !== "output").length === 0}

@@ -67,7 +67,7 @@ export function VoiceInput(props: VoiceInputProps) {
 
     return {
       background: "var(--surface-raised)",
-      color: "var(--text-base)",
+      color: "var(--text-primary)",
       cursor: "pointer",
     };
   });
@@ -332,7 +332,7 @@ export function VoiceInput(props: VoiceInputProps) {
             </p>
           }
         >
-          <p class="text-sm leading-relaxed" style={{ color: "var(--text-base)" }}>
+          <p class="text-sm leading-relaxed" style={{ color: "var(--text-primary)" }}>
             {/* Show final transcript */}
             <span>{state.finalTranscript}</span>
             {/* Show interim transcript with different styling */}

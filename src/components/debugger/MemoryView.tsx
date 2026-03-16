@@ -580,7 +580,7 @@ export function MemoryView() {
             style={{
               "font-family": "monospace",
               background: "var(--surface-sunken)",
-              color: "var(--text-base)",
+              color: "var(--text-primary)",
               border: "1px solid var(--border-weak)",
             }}
           />
@@ -636,7 +636,7 @@ export function MemoryView() {
           class="px-2 py-1 text-xs rounded outline-none cursor-pointer"
           style={{
             background: "var(--surface-sunken)",
-            color: "var(--text-base)",
+            color: "var(--text-primary)",
             border: "1px solid var(--border-weak)",
           }}
           title="Bytes per row"
@@ -653,7 +653,7 @@ export function MemoryView() {
           class="px-2 py-1 text-xs rounded outline-none cursor-pointer"
           style={{
             background: "var(--surface-sunken)",
-            color: "var(--text-base)",
+            color: "var(--text-primary)",
             border: "1px solid var(--border-weak)",
           }}
           title="Byte grouping"
@@ -727,7 +727,7 @@ export function MemoryView() {
             style={{
               "font-family": "monospace",
               background: "var(--surface-sunken)",
-              color: "var(--text-base)",
+              color: "var(--text-primary)",
               border: "1px solid var(--border-weak)",
             }}
             autofocus
@@ -783,7 +783,7 @@ export function MemoryView() {
                 class="group flex items-center gap-1 px-2 py-0.5 text-xs rounded cursor-pointer transition-colors hover:bg-[var(--surface-raised)]"
                 style={{
                   background: "var(--surface-sunken)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                 }}
               >
                 <span

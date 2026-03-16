@@ -587,7 +587,7 @@ function CallHierarchyNode(props: CallHierarchyNodeProps) {
         {/* Function name */}
         <span
           class="text-sm font-medium truncate"
-          style={{ color: "var(--text-base)" }}
+          style={{ color: "var(--text-primary)" }}
         >
           {hierarchyItem().name}
         </span>
@@ -1416,7 +1416,7 @@ export function CallHierarchyView(props: CallHierarchyViewProps) {
             <Show when={rootItem()}>
               <div class="flex items-center gap-2 flex-1 min-w-0">
                 {getSymbolIcon(rootItem()!.kind)}
-                <span class="text-sm font-medium truncate" style={{ color: "var(--text-base)" }}>
+                <span class="text-sm font-medium truncate" style={{ color: "var(--text-primary)" }}>
                   {rootItem()!.name}
                 </span>
                 <span class="text-xs" style={{ color: "var(--text-weak)" }}>
@@ -1550,7 +1550,7 @@ export function CallHierarchyView(props: CallHierarchyViewProps) {
                 <Show when={preview() && !preview()!.loading && preview()!.content.length > 0}>
                   <pre
                     class="text-xs font-mono leading-relaxed"
-                    style={{ color: "var(--text-base)" }}
+                    style={{ color: "var(--text-primary)" }}
                   >
                     <For each={preview()!.content as unknown as Array<{ lineNumber: number; content: string; isHighlighted: boolean }>}>
                       {(line) => (

@@ -227,7 +227,7 @@ export function PromptEditor() {
               style={{
                 "border-color": "var(--border-base)",
                 background: "var(--cortex-info)10",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
               }}
             >
               <div class="font-semibold mb-2" style={{ color: "var(--text-strong)" }}>
@@ -283,7 +283,7 @@ export function PromptEditor() {
                 class="w-full px-3 py-2 rounded text-sm"
                 style={{
                   background: "var(--surface-hover)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                   border: getFieldError("title")
                     ? "1px solid var(--cortex-error)"
                     : "1px solid var(--border-base)",
@@ -308,7 +308,7 @@ export function PromptEditor() {
                 class="w-full px-3 py-2 rounded text-sm"
                 style={{
                   background: "var(--surface-hover)",
-                  color: "var(--text-base)",
+                  color: "var(--text-primary)",
                   border: "1px solid var(--border-base)",
                   outline: "none",
                 }}
@@ -328,7 +328,7 @@ export function PromptEditor() {
                   class="w-full px-3 py-2 rounded text-sm"
                   style={{
                     background: "var(--surface-hover)",
-                    color: "var(--text-base)",
+                    color: "var(--text-primary)",
                     border: "1px solid var(--border-base)",
                     outline: "none",
                   }}
@@ -399,7 +399,7 @@ export function PromptEditor() {
                   onBlur={handleAddTag}
                   placeholder={tags().length === 0 ? "Add tags..." : ""}
                   class="flex-1 min-w-[100px] bg-transparent text-sm outline-none"
-                  style={{ color: "var(--text-base)" }}
+                  style={{ color: "var(--text-primary)" }}
                 />
               </div>
               <p class="text-xs mt-1" style={{ color: "var(--text-weak)" }}>
@@ -462,7 +462,7 @@ Please review the following code and provide feedback on:
                   class="px-3 py-2 rounded text-sm overflow-x-auto"
                   style={{
                     background: "var(--surface-hover)",
-                    color: "var(--text-base)",
+                    color: "var(--text-primary)",
                     border: "1px solid var(--border-base)",
                     "white-space": "pre-wrap",
                     "max-height": "200px",
@@ -501,7 +501,7 @@ Please review the following code and provide feedback on:
               class="px-4 py-2 rounded text-sm font-medium"
               style={{
                 background: "var(--surface-hover)",
-                color: "var(--text-base)",
+                color: "var(--text-primary)",
               }}
             >
               Cancel
