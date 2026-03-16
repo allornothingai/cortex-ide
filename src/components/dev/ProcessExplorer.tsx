@@ -1357,7 +1357,8 @@ Process List:
                   </div>
                 }
               >
-                <table class="w-full">
+                <table class="w-full" aria-label="Process list">
+                  <caption class="sr-only">List of running processes</caption>
                   <thead
                     class="sticky top-0 z-10"
                     style={{ background: isDark() ? "var(--cortex-bg-secondary)" : "var(--cortex-text-primary)" }}

@@ -1008,11 +1008,11 @@ export function FileFinder() {
         </Show>
 
         {/* Results list - Design specs: max-height 400px */}
-        <div 
+        <div
           id="file-finder-list"
           role="listbox"
-          style={{
-            "max-height": "400px",
+          aria-label="File finder results"
+          style={{            "max-height": "400px",
             overflow: "auto",
             "overscroll-behavior": "contain",
           }}

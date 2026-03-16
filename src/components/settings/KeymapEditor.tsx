@@ -326,7 +326,7 @@ export function KeymapEditor(_props: KeymapEditorProps) {
       </div>
 
       {/* Keybindings list - VS Code keybindings table container */}
-      <div class="keybindings-table-container flex-1 overflow-y-auto rounded-b-lg border-x border-b border-border">
+      <div class="keybindings-table-container flex-1 overflow-y-auto rounded-b-lg border-x border-b border-border" role="region" aria-label="Keybindings list">
         <Show
           when={groupedBindings().length > 0}
           fallback={

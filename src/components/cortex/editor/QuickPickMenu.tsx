@@ -242,7 +242,7 @@ export const QuickPickMenu: Component<QuickPickMenuProps> = (props) => {
               </div>
             </Show>
 
-            <div style={listStyle}>
+            <div style={listStyle} role="listbox" aria-label="Quick pick items">
               <Show
                 when={filteredItems().length > 0}
                 fallback={<div style={emptyStyle}>No matching items</div>}

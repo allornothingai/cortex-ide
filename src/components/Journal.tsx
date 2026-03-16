@@ -426,7 +426,7 @@ export function JournalPanel() {
               </div>
 
               {/* Search results */}
-              <div class="flex-1 overflow-y-auto">
+              <div class="flex-1 overflow-y-auto" role="region" aria-label="Entries list">
                 <Show when={journal.state.isSearching}>
                   <div class="p-4 text-center">
                     <div class="animate-spin w-6 h-6 border-2 border-current border-t-transparent rounded-full mx-auto" style={{ color: "var(--accent-primary)" }} />
