@@ -873,6 +873,8 @@ export function MessageInput(props: MessageInputProps) {
       <Show when={isDragging()}>
         <div
           class="absolute inset-0 z-40 rounded-lg flex items-center justify-center"
+          role="status"
+          aria-live="polite"
           style={{
             background: `color-mix(in srgb, ${tokens.colors.semantic.primary} 15%, transparent)`,
             border: `2px dashed ${tokens.colors.semantic.primary}`,
