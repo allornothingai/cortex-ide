@@ -989,6 +989,7 @@ export function MessageInput(props: MessageInputProps) {
                       textareaRef?.focus();
                     }}
                     title={mention.description}
+                    aria-label={mention.description}
                   >
                     <Icon name={mention.icon} class="w-3 h-3" />
                     <span class="hidden sm:inline">{mention.label}</span>

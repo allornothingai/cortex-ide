@@ -536,6 +536,7 @@ export function ModelSelectorCompact(
         disabled={props.disabled}
         aria-haspopup="listbox"
         aria-expanded={open()}
+        aria-label="Select AI Model"
       >
         <Show when={selectedModel()} fallback={<span class="text-foreground-muted">Model</span>}>
           {(model) => (

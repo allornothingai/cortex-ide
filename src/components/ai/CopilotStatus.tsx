@@ -298,6 +298,7 @@ export function CopilotSignInModal(props: CopilotSignInModalProps) {
                 {/* Device Code Display */}
                 <button
                   onClick={copyCode}
+                  aria-label="Copy device code"
                   class="w-full px-4 py-3 rounded-lg font-mono text-2xl tracking-widest flex items-center justify-center gap-3 transition-colors"
                   style={{
                     background: "var(--surface-hover)",
