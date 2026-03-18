@@ -370,7 +370,7 @@ export function ImageViewer(props: ImageViewerProps) {
         {/* Left: File info */}
         <div class="flex items-center gap-2">
           <Icon name="image" class="w-4 h-4" style={{ color: "var(--text-weak)" }} />
-          <span class="text-xs" style={{ color: "var(--text-base)" }}>
+          <span class="text-xs" style={{ color: "var(--cortex-text-primary)" }}>
             {props.name}
           </span>
           <Show when={primaryImageInfo()}>
@@ -393,7 +393,7 @@ export function ImageViewer(props: ImageViewerProps) {
 
           <span 
             class="w-14 text-center text-xs tabular-nums"
-            style={{ color: "var(--text-base)" }}
+            style={{ color: "var(--cortex-text-primary)" }}
           >
             {zoomPercent()}
           </span>

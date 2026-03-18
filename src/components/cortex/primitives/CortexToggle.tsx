@@ -12,6 +12,7 @@ import { Component, JSX, splitProps } from "solid-js";
 import { CortexIcon } from "./CortexIcon";
 
 export interface CortexToggleProps {
+  id?: string;
   checked?: boolean;
   onChange?: (checked: boolean) => void;
   disabled?: boolean;
@@ -117,6 +118,7 @@ export const CortexToggle: Component<CortexToggleProps> = (props) => {
 
   return (
     <button
+      id={local.id}
       type="button"
       class={local.class}
       style={trackStyle()}
